@@ -1,0 +1,16 @@
+Started GET "/" for 127.0.0.1 at 2021-08-06 10:37:18 +0930
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/xiangyushi/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/xiangyushi/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.6ms | Allocations: 441)
+Completed 200 OK in 39ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 3755)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-06 10:45:11 +0930
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/xiangyushi/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/xiangyushi/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.5ms | Allocations: 333)
+Completed 200 OK in 28ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 2443)
+
+
