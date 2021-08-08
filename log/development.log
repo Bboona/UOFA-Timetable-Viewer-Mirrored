@@ -14,3 +14,263 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 28ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 2443)
 
 
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-08-08 02:33:56.045040"], ["updated_at", "2021-08-08 02:33:56.045040"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-08-08 12:05:23 +0930
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/xiangyushi/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/xiangyushi/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.1ms | Allocations: 333)
+Completed 200 OK in 25ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 2448)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-08 12:05:48 +0930
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/xiangyushi/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/xiangyushi/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 10.1ms | Allocations: 215)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 828)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-08 12:05:49 +0930
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/xiangyushi/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/xiangyushi/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 30.1ms | Allocations: 45)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms | Allocations: 343)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-08 12:05:49 +0930
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/xiangyushi/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/xiangyushi/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | Allocations: 45)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 341)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-08 12:05:50 +0930
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/xiangyushi/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/xiangyushi/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | Allocations: 44)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 335)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-08 12:30:37 +0930
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/xiangyushi/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/xiangyushi/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.7ms | Allocations: 219)
+Completed 200 OK in 13ms (Views: 10.5ms | Allocations: 827)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-08 12:30:38 +0930
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/xiangyushi/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/xiangyushi/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | Allocations: 44)
+Completed 200 OK in 3ms (Views: 1.3ms | Allocations: 336)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-08 12:30:39 +0930
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/xiangyushi/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/xiangyushi/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | Allocations: 44)
+Completed 200 OK in 2ms (Views: 0.9ms | Allocations: 335)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-08 12:31:33 +0930
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/xiangyushi/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/xiangyushi/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 31.5ms | Allocations: 333)
+Completed 200 OK in 45ms (Views: 35.2ms | ActiveRecord: 0.0ms | Allocations: 2459)
+
+
+Started GET "/article" for 127.0.0.1 at 2021-08-08 12:31:40 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/article"):
+  
+Started GET "/articles" for 127.0.0.1 at 2021-08-08 12:31:50 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 102)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/xiangyushi/RubymineProjects/ESaS2-Group1-TimetableViewer/public/packs
+[Webpacker] warning ../../package.json: No license field
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: e2f281de3ea1fdc4fa5a
+Version: webpack 4.46.0
+Time: 2022ms
+Built at: 08/08/2021 12:31:54 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-be412d64645010827f4e.js    125 KiB  application  [emitted] [immutable]  application
+js/application-be412d64645010827f4e.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-be412d64645010827f4e.js js/application-be412d64645010827f4e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 4664.1ms | Allocations: 17129)
+Completed 200 OK in 4668ms (Views: 4666.6ms | ActiveRecord: 0.0ms | Allocations: 18293)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-08 12:39:46 +0930
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/xiangyushi/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/xiangyushi/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.4ms | Allocations: 333)
+Completed 200 OK in 32ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 2528)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-08 12:40:00 +0930
+  
+ArgumentError ('Articles' is not a supported controller name. This can lead to potential routing problems. See https://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2021-08-08 12:40:01 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-08 12:40:02 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-08 12:40:07 +0930
+  
+ArgumentError ('Articles' is not a supported controller name. This can lead to potential routing problems. See https://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2021-08-08 12:40:14 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 67.5ms | Allocations: 17237)
+Completed 200 OK in 71ms (Views: 69.6ms | Allocations: 18447)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-08 12:40:23 +0930
+  
+ActionController::RoutingError (uninitialized constant TimetablesController):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-08 12:40:25 +0930
+  
+ActionController::RoutingError (uninitialized constant TimetablesController):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-08 12:40:33 +0930
+  
+ActionController::RoutingError (uninitialized constant TimetableController
+Did you mean?  TimeoutError):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-08 12:40:33 +0930
+  
+ActionController::RoutingError (uninitialized constant TimetableController
+Did you mean?  TimeoutError):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-08 12:40:34 +0930
+  
+ActionController::RoutingError (uninitialized constant TimetableController
+Did you mean?  TimeoutError):
+  
+Started GET "/articles" for 127.0.0.1 at 2021-08-08 12:41:23 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/articles"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-08 12:41:37 +0930
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 218)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 6139)
+Completed 200 OK in 55ms (Views: 32.5ms | ActiveRecord: 0.0ms | Allocations: 8756)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-08 12:48:55 +0930
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 104)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 3807)
+Completed 200 OK in 17ms (Views: 15.7ms | Allocations: 4897)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-08 12:48:55 +0930
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 3587)
+Completed 200 OK in 11ms (Views: 10.0ms | Allocations: 3967)
+
+
