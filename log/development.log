@@ -274,3 +274,781 @@ Processing by TableviewerController#index as HTML
 Completed 200 OK in 11ms (Views: 10.0ms | Allocations: 3967)
 
 
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:15:21 +0930
+  [1m[35m (36.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 13.4ms | Allocations: 325)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/usr/local/rvm/rubies/ruby-2.7.2/bin/ruby: warning: shebang line ending with \r may cause problems
+/mnt/c/Users/Borna/RubymineProjects/ESaS2-Group1-TimetableViewer-local/node_modules/.bin/webpack: 1: /mnt/c/Users/Borna/RubymineProjects/ESaS2-Group1-TimetableViewer-local/node_modules/.bin/webpack: ../webpack/bin/webpack.js: not found
+
+  Rendered layout layouts/application.html.erb (Duration: 2795.5ms | Allocations: 19362)
+Completed 200 OK in 2948ms (Views: 2845.5ms | ActiveRecord: 0.0ms | Allocations: 22976)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:15:44 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 3417)
+Completed 200 OK in 17ms (Views: 15.5ms | Allocations: 4513)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:15:47 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 3287)
+Completed 200 OK in 16ms (Views: 15.2ms | Allocations: 3787)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:20:10 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 409)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 78.6ms | Allocations: 4192)
+Completed 200 OK in 107ms (Views: 102.0ms | Allocations: 5278)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:20:13 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.3ms | Allocations: 3348)
+Completed 200 OK in 56ms (Views: 55.4ms | Allocations: 3731)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:23:32 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 315)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.4ms | Allocations: 3747)
+Completed 200 OK in 77ms (Views: 68.1ms | Allocations: 4835)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/style.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/util.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:24:40 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.1ms | Allocations: 3607)
+Completed 200 OK in 30ms (Views: 29.0ms | Allocations: 4053)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/style.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/util.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/style.css"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:26:29 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 317)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 3546)
+Completed 200 OK in 28ms (Views: 25.0ms | Allocations: 4641)
+
+
+Started GET "/app/views/assets/css/style.css" for 127.0.0.1 at 2021-08-13 14:26:29 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/assets/css/style.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/util.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:26:51 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 312)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.8ms | Allocations: 3881)
+Completed 200 OK in 48ms (Views: 46.0ms | Allocations: 4966)
+
+
+Started GET "/app/views/assets/css/style.css" for 127.0.0.1 at 2021-08-13 14:26:51 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/assets/css/style.css"):
+  
+Started GET "/app/views/assets/js/main.js" for 127.0.0.1 at 2021-08-13 14:26:51 +0930
+Started GET "/app/views/assets/js/util.js" for 127.0.0.1 at 2021-08-13 14:26:51 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/assets/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/assets/js/util.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:27:06 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 312)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 107.1ms | Allocations: 6197)
+Completed 200 OK in 115ms (Views: 113.2ms | Allocations: 7282)
+
+
+Started GET "/app/views/assets/css/style.css" for 127.0.0.1 at 2021-08-13 14:27:06 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/assets/css/style.css"):
+  
+Started GET "/app/views/assets/js/main.js" for 127.0.0.1 at 2021-08-13 14:27:06 +0930
+Started GET "/app/views/assets/js/util.js" for 127.0.0.1 at 2021-08-13 14:27:06 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/assets/js/util.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/assets/js/main.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:27:13 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 312)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 76.3ms | Allocations: 4473)
+Completed 200 OK in 84ms (Views: 82.2ms | Allocations: 5558)
+
+
+Started GET "/app/views/assets/js/util.js" for 127.0.0.1 at 2021-08-13 14:27:14 +0930
+Started GET "/app/views/assets/js/main.js" for 127.0.0.1 at 2021-08-13 14:27:14 +0930
+Started GET "/app/views/assets/css/style.css" for 127.0.0.1 at 2021-08-13 14:27:14 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/assets/js/util.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/assets/css/style.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/assets/js/main.js"):
+  
+Started GET "/app/views/assets/js/main.js" for 127.0.0.1 at 2021-08-13 14:27:14 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/assets/js/main.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:28:34 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 317)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 3546)
+Completed 200 OK in 25ms (Views: 22.3ms | Allocations: 4631)
+
+
+Started GET "/app/views/assets/css/style.css" for 127.0.0.1 at 2021-08-13 14:28:34 +0930
+Started GET "/app/views/assets/js/util.js" for 127.0.0.1 at 2021-08-13 14:28:34 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/assets/js/util.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/assets/css/style.css"):
+  
+Started GET "/app/views/assets/js/main.js" for 127.0.0.1 at 2021-08-13 14:28:34 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/assets/js/main.js"):
+  
+Started GET "/app/views/assets/js/util.js" for 127.0.0.1 at 2021-08-13 14:28:35 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/assets/js/util.js"):
+  
+Started GET "/app/views/assets/js/main.js" for 127.0.0.1 at 2021-08-13 14:28:35 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/assets/js/main.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:29:18 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 317)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.1ms | Allocations: 5242)
+Completed 200 OK in 56ms (Views: 54.8ms | Allocations: 6328)
+
+
+Started GET "/app/views/assets/css/style.css" for 127.0.0.1 at 2021-08-13 14:29:18 +0930
+Started GET "/app/views/assets/js/main.js" for 127.0.0.1 at 2021-08-13 14:29:18 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/assets/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/assets/css/style.css"):
+  
+Started GET "/app/views/assets/js/util.js" for 127.0.0.1 at 2021-08-13 14:29:18 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/assets/js/util.js"):
+  
+Started GET "/app/views/assets/js/main.js" for 127.0.0.1 at 2021-08-13 14:29:18 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/assets/js/main.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:30:34 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 317)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.8ms | Allocations: 3672)
+Completed 200 OK in 49ms (Views: 46.9ms | Allocations: 4758)
+
+
+Started GET "/app/views/articles/assets/css/style.css" for 127.0.0.1 at 2021-08-13 14:30:34 +0930
+Started GET "/app/views/articles/assets/js/main.js" for 127.0.0.1 at 2021-08-13 14:30:34 +0930
+Started GET "/app/views/articles/assets/js/util.js" for 127.0.0.1 at 2021-08-13 14:30:34 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/articles/assets/css/style.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/articles/assets/js/util.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/articles/assets/js/main.js"):
+  
+Started GET "/app/views/articles/assets/js/main.js" for 127.0.0.1 at 2021-08-13 14:30:35 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/articles/assets/js/main.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:30:39 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.5ms | Allocations: 3213)
+Completed 200 OK in 41ms (Views: 40.4ms | Allocations: 3592)
+
+
+Started GET "/app/views/articles/assets/css/style.css" for 127.0.0.1 at 2021-08-13 14:30:39 +0930
+Started GET "/app/views/articles/assets/js/util.js" for 127.0.0.1 at 2021-08-13 14:30:39 +0930
+Started GET "/app/views/articles/assets/js/main.js" for 127.0.0.1 at 2021-08-13 14:30:39 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/articles/assets/css/style.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/articles/assets/js/util.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/articles/assets/js/main.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:30:43 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 82.3ms | Allocations: 3654)
+Completed 200 OK in 86ms (Views: 84.4ms | Allocations: 4029)
+
+
+Started GET "/app/views/articles/assets/js/main.js" for 127.0.0.1 at 2021-08-13 14:30:43 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/articles/assets/js/main.js"):
+  
+Started GET "/app/views/articles/assets/css/style.css" for 127.0.0.1 at 2021-08-13 14:30:43 +0930
+Started GET "/app/views/articles/assets/js/util.js" for 127.0.0.1 at 2021-08-13 14:30:43 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/articles/assets/css/style.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/articles/assets/js/util.js"):
+  
+Started GET "/app/views/articles/assets/js/main.js" for 127.0.0.1 at 2021-08-13 14:30:43 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/articles/assets/js/main.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:31:49 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 313)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 3546)
+Completed 200 OK in 31ms (Views: 29.5ms | Allocations: 4632)
+
+
+Started GET "/app/views/articles/assets/css/style.css" for 127.0.0.1 at 2021-08-13 14:31:49 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/articles/assets/css/style.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/util.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:32:10 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 315)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.6ms | Allocations: 3659)
+Completed 200 OK in 78ms (Views: 69.8ms | Allocations: 4745)
+
+
+Started GET "/app/views/articles/assets/css/style.css" for 127.0.0.1 at 2021-08-13 14:32:10 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/articles/assets/css/style.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/util.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:32:34 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 317)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.5ms | Allocations: 3988)
+Completed 200 OK in 44ms (Views: 40.1ms | Allocations: 5074)
+
+
+Started GET "/~app/views/articles/assets/js/util.js" for 127.0.0.1 at 2021-08-13 14:32:35 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/~app/views/articles/assets/js/util.js"):
+  
+Started GET "/app/views/articles/assets/css/style.css" for 127.0.0.1 at 2021-08-13 14:32:35 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/articles/assets/css/style.css"):
+  
+Started GET "/~app/views/articles/assets/js/util.js" for 127.0.0.1 at 2021-08-13 14:32:35 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/~app/views/articles/assets/js/util.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:32:46 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 312)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 106.4ms | Allocations: 4505)
+Completed 200 OK in 119ms (Views: 115.8ms | Allocations: 5591)
+
+
+Started GET "/~/app/views/articles/assets/js/util.js" for 127.0.0.1 at 2021-08-13 14:32:46 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/~/app/views/articles/assets/js/util.js"):
+  
+Started GET "/app/views/articles/assets/css/style.css" for 127.0.0.1 at 2021-08-13 14:32:47 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/articles/assets/css/style.css"):
+  
+Started GET "/~/app/views/articles/assets/js/util.js" for 127.0.0.1 at 2021-08-13 14:32:47 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/~/app/views/articles/assets/js/util.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:32:57 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 312)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.5ms | Allocations: 4467)
+Completed 200 OK in 61ms (Views: 58.3ms | Allocations: 5553)
+
+
+Started GET "/app/views/articles/assets/css/style.css" for 127.0.0.1 at 2021-08-13 14:32:58 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/articles/assets/css/style.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/util.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:33:11 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 311)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.9ms | Allocations: 4160)
+Completed 200 OK in 55ms (Views: 51.6ms | Allocations: 5245)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/style.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/util.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/util.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:33:27 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 313)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 80.8ms | Allocations: 4898)
+Completed 200 OK in 102ms (Views: 98.9ms | Allocations: 5983)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/style.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/util.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:33:36 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 313)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.3ms | Allocations: 4068)
+Completed 200 OK in 51ms (Views: 47.5ms | Allocations: 5154)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/style.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/util.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/util.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:33:59 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 312)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.2ms | Allocations: 3545)
+Completed 200 OK in 65ms (Views: 60.6ms | Allocations: 4631)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/style.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/util.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:34:19 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 312)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 78.3ms | Allocations: 6113)
+Completed 200 OK in 85ms (Views: 81.7ms | Allocations: 7198)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/style.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/util.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:34:22 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 61.0ms | Allocations: 3491)
+Completed 200 OK in 65ms (Views: 63.0ms | Allocations: 3868)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/style.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/util.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:34:28 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.5ms | Allocations: 3574)
+Completed 200 OK in 38ms (Views: 36.9ms | Allocations: 3963)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/style.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/util.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:34:30 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.0ms | Allocations: 3908)
+Completed 200 OK in 30ms (Views: 29.7ms | Allocations: 4286)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/util.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/style.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:34:32 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.3ms | Allocations: 3736)
+Completed 200 OK in 42ms (Views: 41.3ms | Allocations: 4112)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/style.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/util.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/util.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:34:35 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.2ms | Allocations: 3063)
+Completed 200 OK in 30ms (Views: 29.4ms | Allocations: 3438)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/style.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/util.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/main.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:38:32 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 183.4ms | Allocations: 11370)
+  Rendered layout layouts/application.html.erb (Duration: 187.8ms | Allocations: 11434)
+Completed 500 Internal Server Error in 210ms (Allocations: 12496)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: ../../../../../codyhouse-framework/main/assets/css/style.scss.
+        on line 1:1 of app/assets/stylesheets/style.scss
+>> @import '../../../../../codyhouse-framework/main/assets/css/style.scss';
+   ^
+):
+  
+app/assets/stylesheets/style.scss:1
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:39:52 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 161.0ms | Allocations: 4487)
+  Rendered layout layouts/application.html.erb (Duration: 163.7ms | Allocations: 4551)
+Completed 500 Internal Server Error in 168ms (Allocations: 4898)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: ../../../../../codyhouse-framework/main/assets/css/style.scss.
+        on line 1:1 of app/assets/stylesheets/style.scss
+>> @import '../../../../../codyhouse-framework/main/assets/css/style.scss';
+   ^
+):
+  
+app/assets/stylesheets/style.scss:1
+Started GET "/" for 127.0.0.1 at 2021-08-13 14:40:15 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 158.5ms | Allocations: 4789)
+  Rendered layout layouts/application.html.erb (Duration: 161.9ms | Allocations: 4853)
+Completed 500 Internal Server Error in 170ms (Allocations: 5199)
+
+
+  
+ActionView::Template::Error (style.css):
+    4:   <meta charset="UTF-8">
+    5:   <meta name="viewport" content="width=device-width, initial-scale=1">
+    6:   <script>document.getElementsByTagName("html")[0].className += " js";</script>
+    7:   <%= stylesheet_link_tag "style" %>
+    8:   <title>Schedule Template | CodyHouse</title>
+    9: </head>
+   10: <body>
+  
+app/views/articles/index.html.erb:7
+Started GET "/" for 127.0.0.1 at 2021-08-13 15:18:37 +0930
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 339)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 148.9ms | Allocations: 10433)
+Completed 200 OK in 166ms (Views: 155.1ms | ActiveRecord: 0.0ms | Allocations: 13022)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-13 15:19:17 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 226)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.0ms | Allocations: 3575)
+Completed 200 OK in 35ms (Views: 32.6ms | ActiveRecord: 0.0ms | Allocations: 4661)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-13 15:19:21 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 226)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.1ms | Allocations: 4087)
+Completed 200 OK in 60ms (Views: 57.3ms | ActiveRecord: 0.0ms | Allocations: 5174)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-13 15:19:24 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 226)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 3841)
+Completed 200 OK in 34ms (Views: 32.2ms | ActiveRecord: 0.0ms | Allocations: 4927)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-13 15:21:28 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 226)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.7ms | Allocations: 4894)
+Completed 200 OK in 54ms (Views: 52.0ms | ActiveRecord: 0.0ms | Allocations: 5973)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-13 15:21:39 +0930
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 229)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.7ms | Allocations: 4588)
+Completed 200 OK in 58ms (Views: 55.5ms | ActiveRecord: 0.0ms | Allocations: 5681)
+
+
