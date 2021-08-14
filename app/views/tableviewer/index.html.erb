@@ -31,9 +31,14 @@
 </div>
 
 <div style="text-align:center">
-  <button class="login">Log in as a Student</button>
-  <br>
+  <%= link_to "students/index" do %>
+    <button class="login">Log in as a Student</button>
+  <% end %>
 
-  <button class="login">Log in as a Teacher</button>
+  <br>
+  <%= link_to "teachers/index" do %>
+    <button class="login">Log in as a Teacher</button>
+  <% end %>
+
 </div>
 </body>

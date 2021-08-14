@@ -1978,3 +1978,437 @@ Processing by TableviewerController#index as HTML
 Completed 200 OK in 14ms (Views: 13.3ms | Allocations: 4029)
 
 
+Started GET "/" for 127.0.0.1 at 2021-08-14 14:05:23 +0930
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 334)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 86.4ms | Allocations: 21127)
+Completed 200 OK in 102ms (Views: 90.8ms | ActiveRecord: 0.0ms | Allocations: 23681)
+
+
+Started GET "/students/index" for 127.0.0.1 at 2021-08-14 14:05:28 +0930
+Processing by StudentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 104)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3715)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 4596)
+
+
+Started GET "/students/index" for 127.0.0.1 at 2021-08-14 14:05:31 +0930
+Processing by StudentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 3644)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 4027)
+
+
+Started GET "/students/index" for 127.0.0.1 at 2021-08-14 14:05:44 +0930
+Processing by StudentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3642)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 4019)
+
+
+Started GET "/students/index" for 127.0.0.1 at 2021-08-14 14:05:48 +0930
+Processing by StudentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3642)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 4019)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-14 14:06:43 +0930
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 390)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.9ms | Allocations: 21909)
+Completed 200 OK in 77ms (Views: 71.0ms | ActiveRecord: 0.0ms | Allocations: 24810)
+
+
+Started GET "/teachers/index" for 127.0.0.1 at 2021-08-14 14:06:44 +0930
+Processing by TeachersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teachers/index.html.erb within layouts/application
+  Rendered teachers/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 104)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3769)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 4647)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-14 18:08:16 +0930
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 390)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.0ms | Allocations: 7027)
+Completed 200 OK in 52ms (Views: 37.8ms | ActiveRecord: 0.0ms | Allocations: 9651)
+
+
+Started GET "/students/index" for 127.0.0.1 at 2021-08-14 18:08:18 +0930
+Processing by StudentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 112)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 3775)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 4646)
+
+
+Started GET "/students/index" for 127.0.0.1 at 2021-08-14 18:08:27 +0930
+Processing by StudentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 113)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3948)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 5035)
+
+
+Started GET "/students/index" for 127.0.0.1 at 2021-08-14 18:08:28 +0930
+Processing by StudentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3698)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 4078)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-14 18:08:33 +0930
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 260)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3923)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 4793)
+
+
+Started GET "/students/index" for 127.0.0.1 at 2021-08-14 18:09:15 +0930
+Processing by StudentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 113)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3946)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 5030)
+
+
+Started GET "/students/index" for 127.0.0.1 at 2021-08-14 18:09:24 +0930
+Processing by StudentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 3948)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.0ms | Allocations: 5030)
+
+
+Started GET "/students/index" for 127.0.0.1 at 2021-08-14 18:10:10 +0930
+Processing by StudentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 130)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3974)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 5060)
+
+
+Started GET "/students/index" for 127.0.0.1 at 2021-08-14 18:10:11 +0930
+Processing by StudentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3696)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 4071)
+
+
+Started GET "/students/index" for 127.0.0.1 at 2021-08-14 18:10:11 +0930
+Processing by StudentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 3696)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 4070)
+
+
+Started GET "/students/index" for 127.0.0.1 at 2021-08-14 18:10:12 +0930
+Processing by StudentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3696)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 4082)
+
+
+Started GET "/students/index" for 127.0.0.1 at 2021-08-14 18:10:33 +0930
+Processing by StudentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3959)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 5046)
+
+
+Started GET "/students/index" for 127.0.0.1 at 2021-08-14 18:10:34 +0930
+Processing by StudentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3704)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 4079)
+
+
+Started GET "/students/index" for 127.0.0.1 at 2021-08-14 18:10:58 +0930
+Processing by StudentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 127)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3960)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 5042)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-14 18:10:59 +0930
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 260)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 3923)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 4799)
+
+
+Started GET "/teachers/index" for 127.0.0.1 at 2021-08-14 18:11:01 +0930
+Processing by TeachersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teachers/index.html.erb within layouts/application
+  Rendered teachers/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 3754)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 4625)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-14 18:26:56 +0930
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 390)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.5ms | Allocations: 7027)
+Completed 200 OK in 58ms (Views: 48.6ms | ActiveRecord: 0.0ms | Allocations: 9928)
+
+
+Started GET "/teachers/index" for 127.0.0.1 at 2021-08-14 18:26:58 +0930
+Processing by TeachersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teachers/index.html.erb within layouts/application
+  Rendered teachers/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 3791)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 4669)
+
+
+Started GET "/teachers/index?user_name=&password=" for 127.0.0.1 at 2021-08-14 18:26:59 +0930
+Processing by TeachersController#index as HTML
+  Parameters: {"user_name"=>"", "password"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering teachers/index.html.erb within layouts/application
+  Rendered teachers/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3698)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 4077)
+
+
+Started GET "/teachers/index?user_name=&password=" for 127.0.0.1 at 2021-08-14 18:27:00 +0930
+Processing by TeachersController#index as HTML
+  Parameters: {"user_name"=>"", "password"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering teachers/index.html.erb within layouts/application
+  Rendered teachers/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 3698)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 4077)
+
+
+Started GET "/teachers/index" for 127.0.0.1 at 2021-08-14 18:27:00 +0930
+Processing by TeachersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teachers/index.html.erb within layouts/application
+  Rendered teachers/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 3698)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 4077)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-14 18:27:02 +0930
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 69)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 3730)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 4108)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-14 18:28:08 +0930
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 260)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 4091)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 5174)
+
+
+Started GET "/students/index" for 127.0.0.1 at 2021-08-14 18:28:09 +0930
+Processing by StudentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 129)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3770)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 4645)
+
+
+Started GET "/teachers/index" for 127.0.0.1 at 2021-08-14 18:28:11 +0930
+Processing by TeachersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teachers/index.html.erb within layouts/application
+  Rendered teachers/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 196)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3857)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 4725)
+
+
+Started GET "/teachers/tableviewer/index" for 127.0.0.1 at 2021-08-14 18:28:13 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/teachers/tableviewer/index"):
+  
+Started GET "/teachers/index" for 127.0.0.1 at 2021-08-14 18:28:18 +0930
+Processing by TeachersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teachers/index.html.erb within layouts/application
+  Rendered teachers/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 56)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 3864)
+Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.0ms | Allocations: 4315)
+
+
+Started GET "/teachers/tableviewer/index" for 127.0.0.1 at 2021-08-14 18:28:27 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/teachers/tableviewer/index"):
+  
+Started GET "/teachers/index" for 127.0.0.1 at 2021-08-14 18:28:30 +0930
+Processing by TeachersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teachers/index.html.erb within layouts/application
+  Rendered teachers/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 194)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 4041)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 5138)
+
+
+Started GET "/teachers/tableviewer/index" for 127.0.0.1 at 2021-08-14 18:28:32 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/teachers/tableviewer/index"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-14 18:30:02 +0930
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 390)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 7027)
+Completed 200 OK in 35ms (Views: 26.1ms | ActiveRecord: 0.0ms | Allocations: 9651)
+
+
+Started GET "/teachers/index" for 127.0.0.1 at 2021-08-14 18:30:04 +0930
+Processing by TeachersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teachers/index.html.erb within layouts/application
+  Rendered teachers/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 221)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 3882)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 4753)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-14 18:30:05 +0930
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 69)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 4390)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 4773)
+
+
+Started GET "/students/index" for 127.0.0.1 at 2021-08-14 18:30:27 +0930
+Processing by StudentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 211)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 4042)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms | Allocations: 5134)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-14 18:30:28 +0930
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 260)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3921)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 4786)
+
+
+Started GET "/teachers/index" for 127.0.0.1 at 2021-08-14 18:30:30 +0930
+Processing by TeachersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teachers/index.html.erb within layouts/application
+  Rendered teachers/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 211)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 3874)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 4744)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-14 18:30:31 +0930
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 69)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 3744)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.0ms | Allocations: 4127)
+
+
