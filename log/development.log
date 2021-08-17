@@ -1052,3 +1052,610 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 58ms (Views: 55.5ms | ActiveRecord: 0.0ms | Allocations: 5681)
 
 
+  [1m[35m (27.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (17.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (21.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateActivities (20210817023031)
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateActivities (20210817023031)
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateActivities (20210817023031)
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateActivities (20210817023031)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "activities" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "class_name" text, "class_code" text, "colour" text, "description" text, "weeks" text, "hours" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210817023031"]]
+  [1m[36mTRANSACTION (13.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-08-17 02:41:36.609067"], ["updated_at", "2021-08-17 02:41:36.609067"]]
+  [1m[36mTRANSACTION (12.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-08-17 12:48:30 +0930
+  [1m[35m (13.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 27.0ms | Allocations: 339)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 909.0ms | Allocations: 25528)
+Completed 200 OK in 1070ms (Views: 965.0ms | ActiveRecord: 0.0ms | Allocations: 28073)
+
+
+Started GET "/activities" for 127.0.0.1 at 2021-08-17 12:48:42 +0930
+Processing by ActivitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering activities/index.html.erb within layouts/application
+  [1m[36mActivity Load (0.9ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/activities/index.html.erb:19
+  Rendered activities/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1079)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.6ms | Allocations: 4643)
+Completed 200 OK in 109ms (Views: 48.9ms | ActiveRecord: 0.9ms | Allocations: 7056)
+
+
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDaysToActivities (20210817051600)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.0ms)[0m  [1m[35mALTER TABLE "activities" ADD "days" text[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210817051600"]]
+  [1m[36mTRANSACTION (9.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_orgs"[0m
+  [1m[35m (16.1ms)[0m  [1m[35mCREATE TABLE "acad_orgs" ("Acad_Org" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "FormalDesc" text, "Institution" text, "Campus" text, "MgrID" text, "Instr_Edit" text, "Campus_Edit" text, "Subject_Edit" text, "Course_Edit" text, "AOU_Code" text, "DeptID" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_plans"[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "acad_plans" ("Acad_Group" text, "Acad_Prog" text, "Prog_Eff_Date" text, "Acad_Plan" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "Plan_Owner" text, "Pct_Owned" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_progs"[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "acad_progs" ("Acad_Prog" text, "Descr" text, "Acad_Org" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "activities"[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "activities" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "class_name" text, "class_code" text, "colour" text, "description" text, "weeks" text, "hours" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "days" text)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "all_classes"[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "all_classes" ("Term" text, "Course_ID" text, "Offer_Nbr" text, "Class_Nbr" text, "Section" text, "Enrl_Stat" text, "Class_Stat" text, "Assoc" text, "Session" text, "Auto_Enrol" text, "Auto_Enr_2" text, "Class_Type" text, "Cap_Enrl" text, "Tot_Enrl" text, "Comb_Sects_ID" text, "Combined_Sect_Cap_Enrl" text, "Combined_Sect_Tot_Enrl" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_catalogs"[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "ccat_catalogs" ("Eff_Date" text, "Course_ID" text, "Status" text, "Short_Title" text, "Long_Title" text, "Min_Units" text, "Max_Units" text, "Prgrss_Unt" text, "Grading" text, "Last_Crse" text, "Enrl_Unt_Calc" text, "Descr" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_components"[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "ccat_components" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Primary_Component" text, "Enrol_Component" text, "Final_Exam" text, "Sect_Size" text, "Contact" text, "SPlus_Templates_Reqd" text, "Component" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_offerings"[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "ccat_offerings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Acad_Group" text, "Subject" text, "Catalogue" text, "Approved" text, "Campus" text, "Sch_Print" text, "Cat_Print" text, "Print" text, "Acad_Org" text, "Career" text, "Schedule_Course" text, "Band_ID" text, "Rq_Group" text, "Discp_Grp_Cd" text, "Field_of_Ed_Cd" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_owners"[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "ccat_owners" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Offering_Acad_Org" text, "Owner_Acad_Org" text, "Pct_Owned" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_publications"[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE "ccat_publications" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Contact_Hours_YN" text, "Contact_Hours" text, "Restriction_YN" text, "Restriction" text, "Avail_NAWD" text, "Quota_YN" text, "Quota" text, "Pre-Requisite_YN" text, "Pre-Requisite" text, "Co-Requisite_YN" text, "Co-Requisite" text, "Assumed_Knowl_YN" text, "Assumed_Knowl" text, "Incompatible_YN" text, "Incompatible" text, "Assessment_YN" text, "Assessment" text, "Biennial_Course_YN" text, "Biennial_Course" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_schedulings"[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "ccat_schedulings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "TTble_for_SPlus" text, "Est_Enrol_Total" text, "Enrol_Component" text, "Summer_Semester" text, "Semester_1" text, "Winter_Semester" text, "Semester_2" text, "Trimester_1" text, "Trimester_2" text, "Trimester_3" text, "Quadmester_1" text, "Quadmester_2" text, "Quadmester_3" text, "Quadmester_4" text, "PCE_1" text, "PCE_2" text, "PCE_3" text, "Summer_Crse_Coordinator" text, "Sem1_Crse_Coordinator" text, "Winter_Crse_Coordinator" text, "Sem2_Crse_Coordinator" text, "Tri1_Crse_Coordinator" text, "Tri2_Crse_Coordinator" text, "Tri3_Crse_Coordinator" text, "Quad1_Crse_Coordinator" text, "Quad2_Crse_Coordinator" text, "Quad3_Crse_Coordinator" text, "Quad4_Crse_Coordinator" text, "PCE1_Crse_Coordinator" text, "PCE2_Crse_Coordinator" text, "PCE3_Crse_Coordinator" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_topics"[0m
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE TABLE "ccat_topics" ("Subject" text, "Catalogue" text, "Eff_Date" text, "Course_ID" text, "Topic_ID" text, "Descr" text, "Short_Desc" text, "Repeatable" text, "Allowd_Unt" text, "Allow_Comp" text, "FormalDesc" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "full_enrolments"[0m
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "full_enrolments" ("ID" text, "Term" text, "Class_Nbr" text, "Status" text, "Reason" text, "Acad_Prog" text, "Add_Dt" text, "Drop_Dt" text, "Unit_Taken" text, "Progress" text, "Grade" text, "Grade_In" text, "Grade_Dt" text, "Sdt_Positn" text, "Grd_Points" text, "Note_ID" text, "Rpt_Candidat" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_templates"[0m
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "sp_activity_templates" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_types"[0m
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "sp_activity_types" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activitys"[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "sp_activitys" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "studentset" text, "sametime" text, "activity_template" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "scheduled" text, "scheduled_time" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "allocated_staff" text, "allocated_location" text, "allocated_studentset" text, "allocated_module" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "preset_module" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "scheduled_week_pattern" text, "scheduled_day_pattern" text, "scheduled_time_pattern" text, "class" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_departments"[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "sp_departments" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_locations"[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "sp_locations" ("hostkey" text, "name" text, "description" text, "department" text, "size" text, "weeks" text, "unavailable" text, "usertext1" text, "usertext4" text, "sharewith" text, "avoidconcurrency" text, "suitability" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_modules"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "sp_modules" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "planned_size" text, "weeks" text, "named_availability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "programme" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_suitabilitys"[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "sp_suitabilitys" ("hostkey" text, "name" text, "description" text, "department" text, "location" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (6.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210817051600)[0m
+  [1m[35m (5.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210817023031);
+
+[0m
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-08-17 05:47:00.784703"], ["updated_at", "2021-08-17 05:47:00.784703"]]
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "04f55496d60701f0c44e1496e85c7dce46619717"], ["created_at", "2021-08-17 05:47:00.799460"], ["updated_at", "2021-08-17 05:47:00.799460"]]
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_orgs"[0m
+  [1m[35m (9.3ms)[0m  [1m[35mCREATE TABLE "acad_orgs" ("Acad_Org" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "FormalDesc" text, "Institution" text, "Campus" text, "MgrID" text, "Instr_Edit" text, "Campus_Edit" text, "Subject_Edit" text, "Course_Edit" text, "AOU_Code" text, "DeptID" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_plans"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "acad_plans" ("Acad_Group" text, "Acad_Prog" text, "Prog_Eff_Date" text, "Acad_Plan" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "Plan_Owner" text, "Pct_Owned" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_progs"[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "acad_progs" ("Acad_Prog" text, "Descr" text, "Acad_Org" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "activities"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "activities" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "class_name" text, "class_code" text, "colour" text, "description" text, "weeks" text, "hours" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "days" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "all_classes"[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "all_classes" ("Term" text, "Course_ID" text, "Offer_Nbr" text, "Class_Nbr" text, "Section" text, "Enrl_Stat" text, "Class_Stat" text, "Assoc" text, "Session" text, "Auto_Enrol" text, "Auto_Enr_2" text, "Class_Type" text, "Cap_Enrl" text, "Tot_Enrl" text, "Comb_Sects_ID" text, "Combined_Sect_Cap_Enrl" text, "Combined_Sect_Tot_Enrl" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_catalogs"[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "ccat_catalogs" ("Eff_Date" text, "Course_ID" text, "Status" text, "Short_Title" text, "Long_Title" text, "Min_Units" text, "Max_Units" text, "Prgrss_Unt" text, "Grading" text, "Last_Crse" text, "Enrl_Unt_Calc" text, "Descr" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_components"[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "ccat_components" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Primary_Component" text, "Enrol_Component" text, "Final_Exam" text, "Sect_Size" text, "Contact" text, "SPlus_Templates_Reqd" text, "Component" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_offerings"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "ccat_offerings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Acad_Group" text, "Subject" text, "Catalogue" text, "Approved" text, "Campus" text, "Sch_Print" text, "Cat_Print" text, "Print" text, "Acad_Org" text, "Career" text, "Schedule_Course" text, "Band_ID" text, "Rq_Group" text, "Discp_Grp_Cd" text, "Field_of_Ed_Cd" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_owners"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "ccat_owners" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Offering_Acad_Org" text, "Owner_Acad_Org" text, "Pct_Owned" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_publications"[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "ccat_publications" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Contact_Hours_YN" text, "Contact_Hours" text, "Restriction_YN" text, "Restriction" text, "Avail_NAWD" text, "Quota_YN" text, "Quota" text, "Pre-Requisite_YN" text, "Pre-Requisite" text, "Co-Requisite_YN" text, "Co-Requisite" text, "Assumed_Knowl_YN" text, "Assumed_Knowl" text, "Incompatible_YN" text, "Incompatible" text, "Assessment_YN" text, "Assessment" text, "Biennial_Course_YN" text, "Biennial_Course" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_schedulings"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "ccat_schedulings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "TTble_for_SPlus" text, "Est_Enrol_Total" text, "Enrol_Component" text, "Summer_Semester" text, "Semester_1" text, "Winter_Semester" text, "Semester_2" text, "Trimester_1" text, "Trimester_2" text, "Trimester_3" text, "Quadmester_1" text, "Quadmester_2" text, "Quadmester_3" text, "Quadmester_4" text, "PCE_1" text, "PCE_2" text, "PCE_3" text, "Summer_Crse_Coordinator" text, "Sem1_Crse_Coordinator" text, "Winter_Crse_Coordinator" text, "Sem2_Crse_Coordinator" text, "Tri1_Crse_Coordinator" text, "Tri2_Crse_Coordinator" text, "Tri3_Crse_Coordinator" text, "Quad1_Crse_Coordinator" text, "Quad2_Crse_Coordinator" text, "Quad3_Crse_Coordinator" text, "Quad4_Crse_Coordinator" text, "PCE1_Crse_Coordinator" text, "PCE2_Crse_Coordinator" text, "PCE3_Crse_Coordinator" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_topics"[0m
+  [1m[35m (8.4ms)[0m  [1m[35mCREATE TABLE "ccat_topics" ("Subject" text, "Catalogue" text, "Eff_Date" text, "Course_ID" text, "Topic_ID" text, "Descr" text, "Short_Desc" text, "Repeatable" text, "Allowd_Unt" text, "Allow_Comp" text, "FormalDesc" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "full_enrolments"[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "full_enrolments" ("ID" text, "Term" text, "Class_Nbr" text, "Status" text, "Reason" text, "Acad_Prog" text, "Add_Dt" text, "Drop_Dt" text, "Unit_Taken" text, "Progress" text, "Grade" text, "Grade_In" text, "Grade_Dt" text, "Sdt_Positn" text, "Grd_Points" text, "Note_ID" text, "Rpt_Candidat" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_templates"[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "sp_activity_templates" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_types"[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "sp_activity_types" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activitys"[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "sp_activitys" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "studentset" text, "sametime" text, "activity_template" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "scheduled" text, "scheduled_time" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "allocated_staff" text, "allocated_location" text, "allocated_studentset" text, "allocated_module" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "preset_module" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "scheduled_week_pattern" text, "scheduled_day_pattern" text, "scheduled_time_pattern" text, "class" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_departments"[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "sp_departments" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_locations"[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "sp_locations" ("hostkey" text, "name" text, "description" text, "department" text, "size" text, "weeks" text, "unavailable" text, "usertext1" text, "usertext4" text, "sharewith" text, "avoidconcurrency" text, "suitability" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_modules"[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "sp_modules" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "planned_size" text, "weeks" text, "named_availability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "programme" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_suitabilitys"[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "sp_suitabilitys" ("hostkey" text, "name" text, "description" text, "department" text, "location" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210817051600)[0m
+  [1m[35m (5.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210817023031);
+
+[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-08-17 05:47:01.028600"], ["updated_at", "2021-08-17 05:47:01.028600"]]
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (1.0ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2021-08-17 05:47:01.038485"], ["key", "environment"]]
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "04f55496d60701f0c44e1496e85c7dce46619717"], ["created_at", "2021-08-17 05:47:01.052489"], ["updated_at", "2021-08-17 05:47:01.052489"]]
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_orgs"[0m
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "acad_orgs" ("Acad_Org" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "FormalDesc" text, "Institution" text, "Campus" text, "MgrID" text, "Instr_Edit" text, "Campus_Edit" text, "Subject_Edit" text, "Course_Edit" text, "AOU_Code" text, "DeptID" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_plans"[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "acad_plans" ("Acad_Group" text, "Acad_Prog" text, "Prog_Eff_Date" text, "Acad_Plan" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "Plan_Owner" text, "Pct_Owned" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_progs"[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "acad_progs" ("Acad_Prog" text, "Descr" text, "Acad_Org" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "activities"[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "activities" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "class_name" text, "class_code" text, "colour" text, "description" text, "weeks" text, "hours" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "days" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "all_classes"[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "all_classes" ("Term" text, "Course_ID" text, "Offer_Nbr" text, "Class_Nbr" text, "Section" text, "Enrl_Stat" text, "Class_Stat" text, "Assoc" text, "Session" text, "Auto_Enrol" text, "Auto_Enr_2" text, "Class_Type" text, "Cap_Enrl" text, "Tot_Enrl" text, "Comb_Sects_ID" text, "Combined_Sect_Cap_Enrl" text, "Combined_Sect_Tot_Enrl" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_catalogs"[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "ccat_catalogs" ("Eff_Date" text, "Course_ID" text, "Status" text, "Short_Title" text, "Long_Title" text, "Min_Units" text, "Max_Units" text, "Prgrss_Unt" text, "Grading" text, "Last_Crse" text, "Enrl_Unt_Calc" text, "Descr" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_components"[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "ccat_components" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Primary_Component" text, "Enrol_Component" text, "Final_Exam" text, "Sect_Size" text, "Contact" text, "SPlus_Templates_Reqd" text, "Component" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_offerings"[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "ccat_offerings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Acad_Group" text, "Subject" text, "Catalogue" text, "Approved" text, "Campus" text, "Sch_Print" text, "Cat_Print" text, "Print" text, "Acad_Org" text, "Career" text, "Schedule_Course" text, "Band_ID" text, "Rq_Group" text, "Discp_Grp_Cd" text, "Field_of_Ed_Cd" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_owners"[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "ccat_owners" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Offering_Acad_Org" text, "Owner_Acad_Org" text, "Pct_Owned" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_publications"[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "ccat_publications" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Contact_Hours_YN" text, "Contact_Hours" text, "Restriction_YN" text, "Restriction" text, "Avail_NAWD" text, "Quota_YN" text, "Quota" text, "Pre-Requisite_YN" text, "Pre-Requisite" text, "Co-Requisite_YN" text, "Co-Requisite" text, "Assumed_Knowl_YN" text, "Assumed_Knowl" text, "Incompatible_YN" text, "Incompatible" text, "Assessment_YN" text, "Assessment" text, "Biennial_Course_YN" text, "Biennial_Course" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_schedulings"[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "ccat_schedulings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "TTble_for_SPlus" text, "Est_Enrol_Total" text, "Enrol_Component" text, "Summer_Semester" text, "Semester_1" text, "Winter_Semester" text, "Semester_2" text, "Trimester_1" text, "Trimester_2" text, "Trimester_3" text, "Quadmester_1" text, "Quadmester_2" text, "Quadmester_3" text, "Quadmester_4" text, "PCE_1" text, "PCE_2" text, "PCE_3" text, "Summer_Crse_Coordinator" text, "Sem1_Crse_Coordinator" text, "Winter_Crse_Coordinator" text, "Sem2_Crse_Coordinator" text, "Tri1_Crse_Coordinator" text, "Tri2_Crse_Coordinator" text, "Tri3_Crse_Coordinator" text, "Quad1_Crse_Coordinator" text, "Quad2_Crse_Coordinator" text, "Quad3_Crse_Coordinator" text, "Quad4_Crse_Coordinator" text, "PCE1_Crse_Coordinator" text, "PCE2_Crse_Coordinator" text, "PCE3_Crse_Coordinator" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_topics"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "ccat_topics" ("Subject" text, "Catalogue" text, "Eff_Date" text, "Course_ID" text, "Topic_ID" text, "Descr" text, "Short_Desc" text, "Repeatable" text, "Allowd_Unt" text, "Allow_Comp" text, "FormalDesc" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "full_enrolments"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "full_enrolments" ("ID" text, "Term" text, "Class_Nbr" text, "Status" text, "Reason" text, "Acad_Prog" text, "Add_Dt" text, "Drop_Dt" text, "Unit_Taken" text, "Progress" text, "Grade" text, "Grade_In" text, "Grade_Dt" text, "Sdt_Positn" text, "Grd_Points" text, "Note_ID" text, "Rpt_Candidat" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_templates"[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "sp_activity_templates" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_types"[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "sp_activity_types" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activitys"[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "sp_activitys" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "studentset" text, "sametime" text, "activity_template" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "scheduled" text, "scheduled_time" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "allocated_staff" text, "allocated_location" text, "allocated_studentset" text, "allocated_module" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "preset_module" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "scheduled_week_pattern" text, "scheduled_day_pattern" text, "scheduled_time_pattern" text, "class" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_departments"[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "sp_departments" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_locations"[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "sp_locations" ("hostkey" text, "name" text, "description" text, "department" text, "size" text, "weeks" text, "unavailable" text, "usertext1" text, "usertext4" text, "sharewith" text, "avoidconcurrency" text, "suitability" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_modules"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "sp_modules" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "planned_size" text, "weeks" text, "named_availability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "programme" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_suitabilitys"[0m
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE TABLE "sp_suitabilitys" ("hostkey" text, "name" text, "description" text, "department" text, "location" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (7.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210817051600)[0m
+  [1m[35m (7.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210817023031);
+
+[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-08-17 05:53:31.289896"], ["updated_at", "2021-08-17 05:53:31.289896"]]
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "04f55496d60701f0c44e1496e85c7dce46619717"], ["created_at", "2021-08-17 05:53:31.302306"], ["updated_at", "2021-08-17 05:53:31.302306"]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_orgs"[0m
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "acad_orgs" ("Acad_Org" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "FormalDesc" text, "Institution" text, "Campus" text, "MgrID" text, "Instr_Edit" text, "Campus_Edit" text, "Subject_Edit" text, "Course_Edit" text, "AOU_Code" text, "DeptID" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_plans"[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "acad_plans" ("Acad_Group" text, "Acad_Prog" text, "Prog_Eff_Date" text, "Acad_Plan" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "Plan_Owner" text, "Pct_Owned" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_progs"[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "acad_progs" ("Acad_Prog" text, "Descr" text, "Acad_Org" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "activities"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "activities" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "class_name" text, "class_code" text, "colour" text, "description" text, "weeks" text, "hours" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "days" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "all_classes"[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "all_classes" ("Term" text, "Course_ID" text, "Offer_Nbr" text, "Class_Nbr" text, "Section" text, "Enrl_Stat" text, "Class_Stat" text, "Assoc" text, "Session" text, "Auto_Enrol" text, "Auto_Enr_2" text, "Class_Type" text, "Cap_Enrl" text, "Tot_Enrl" text, "Comb_Sects_ID" text, "Combined_Sect_Cap_Enrl" text, "Combined_Sect_Tot_Enrl" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_catalogs"[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "ccat_catalogs" ("Eff_Date" text, "Course_ID" text, "Status" text, "Short_Title" text, "Long_Title" text, "Min_Units" text, "Max_Units" text, "Prgrss_Unt" text, "Grading" text, "Last_Crse" text, "Enrl_Unt_Calc" text, "Descr" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_components"[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "ccat_components" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Primary_Component" text, "Enrol_Component" text, "Final_Exam" text, "Sect_Size" text, "Contact" text, "SPlus_Templates_Reqd" text, "Component" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_offerings"[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "ccat_offerings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Acad_Group" text, "Subject" text, "Catalogue" text, "Approved" text, "Campus" text, "Sch_Print" text, "Cat_Print" text, "Print" text, "Acad_Org" text, "Career" text, "Schedule_Course" text, "Band_ID" text, "Rq_Group" text, "Discp_Grp_Cd" text, "Field_of_Ed_Cd" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_owners"[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "ccat_owners" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Offering_Acad_Org" text, "Owner_Acad_Org" text, "Pct_Owned" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_publications"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "ccat_publications" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Contact_Hours_YN" text, "Contact_Hours" text, "Restriction_YN" text, "Restriction" text, "Avail_NAWD" text, "Quota_YN" text, "Quota" text, "Pre-Requisite_YN" text, "Pre-Requisite" text, "Co-Requisite_YN" text, "Co-Requisite" text, "Assumed_Knowl_YN" text, "Assumed_Knowl" text, "Incompatible_YN" text, "Incompatible" text, "Assessment_YN" text, "Assessment" text, "Biennial_Course_YN" text, "Biennial_Course" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_schedulings"[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "ccat_schedulings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "TTble_for_SPlus" text, "Est_Enrol_Total" text, "Enrol_Component" text, "Summer_Semester" text, "Semester_1" text, "Winter_Semester" text, "Semester_2" text, "Trimester_1" text, "Trimester_2" text, "Trimester_3" text, "Quadmester_1" text, "Quadmester_2" text, "Quadmester_3" text, "Quadmester_4" text, "PCE_1" text, "PCE_2" text, "PCE_3" text, "Summer_Crse_Coordinator" text, "Sem1_Crse_Coordinator" text, "Winter_Crse_Coordinator" text, "Sem2_Crse_Coordinator" text, "Tri1_Crse_Coordinator" text, "Tri2_Crse_Coordinator" text, "Tri3_Crse_Coordinator" text, "Quad1_Crse_Coordinator" text, "Quad2_Crse_Coordinator" text, "Quad3_Crse_Coordinator" text, "Quad4_Crse_Coordinator" text, "PCE1_Crse_Coordinator" text, "PCE2_Crse_Coordinator" text, "PCE3_Crse_Coordinator" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_topics"[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "ccat_topics" ("Subject" text, "Catalogue" text, "Eff_Date" text, "Course_ID" text, "Topic_ID" text, "Descr" text, "Short_Desc" text, "Repeatable" text, "Allowd_Unt" text, "Allow_Comp" text, "FormalDesc" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "full_enrolments"[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "full_enrolments" ("ID" text, "Term" text, "Class_Nbr" text, "Status" text, "Reason" text, "Acad_Prog" text, "Add_Dt" text, "Drop_Dt" text, "Unit_Taken" text, "Progress" text, "Grade" text, "Grade_In" text, "Grade_Dt" text, "Sdt_Positn" text, "Grd_Points" text, "Note_ID" text, "Rpt_Candidat" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_templates"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "sp_activity_templates" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_types"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "sp_activity_types" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activitys"[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "sp_activitys" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "studentset" text, "sametime" text, "activity_template" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "scheduled" text, "scheduled_time" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "allocated_staff" text, "allocated_location" text, "allocated_studentset" text, "allocated_module" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "preset_module" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "scheduled_week_pattern" text, "scheduled_day_pattern" text, "scheduled_time_pattern" text, "class" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_departments"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "sp_departments" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_locations"[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "sp_locations" ("hostkey" text, "name" text, "description" text, "department" text, "size" text, "weeks" text, "unavailable" text, "usertext1" text, "usertext4" text, "sharewith" text, "avoidconcurrency" text, "suitability" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_modules"[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "sp_modules" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "planned_size" text, "weeks" text, "named_availability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "programme" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_suitabilitys"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "sp_suitabilitys" ("hostkey" text, "name" text, "description" text, "department" text, "location" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210817051600)[0m
+  [1m[35m (6.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210817023031);
+
+[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-08-17 05:53:31.511205"], ["updated_at", "2021-08-17 05:53:31.511205"]]
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (1.0ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2021-08-17 05:53:31.521149"], ["key", "environment"]]
+  [1m[36mTRANSACTION (8.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "04f55496d60701f0c44e1496e85c7dce46619717"], ["created_at", "2021-08-17 05:53:31.534856"], ["updated_at", "2021-08-17 05:53:31.534856"]]
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_orgs"[0m
+  [1m[35m (10.1ms)[0m  [1m[35mCREATE TABLE "acad_orgs" ("Acad_Org" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "FormalDesc" text, "Institution" text, "Campus" text, "MgrID" text, "Instr_Edit" text, "Campus_Edit" text, "Subject_Edit" text, "Course_Edit" text, "AOU_Code" text, "DeptID" text)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_plans"[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "acad_plans" ("Acad_Group" text, "Acad_Prog" text, "Prog_Eff_Date" text, "Acad_Plan" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "Plan_Owner" text, "Pct_Owned" text)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_progs"[0m
+  [1m[35m (8.8ms)[0m  [1m[35mCREATE TABLE "acad_progs" ("Acad_Prog" text, "Descr" text, "Acad_Org" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "activities"[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "activities" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "class_name" text, "class_code" text, "colour" text, "description" text, "weeks" text, "hours" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "days" text)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "all_classes"[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "all_classes" ("Term" text, "Course_ID" text, "Offer_Nbr" text, "Class_Nbr" text, "Section" text, "Enrl_Stat" text, "Class_Stat" text, "Assoc" text, "Session" text, "Auto_Enrol" text, "Auto_Enr_2" text, "Class_Type" text, "Cap_Enrl" text, "Tot_Enrl" text, "Comb_Sects_ID" text, "Combined_Sect_Cap_Enrl" text, "Combined_Sect_Tot_Enrl" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_catalogs"[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "ccat_catalogs" ("Eff_Date" text, "Course_ID" text, "Status" text, "Short_Title" text, "Long_Title" text, "Min_Units" text, "Max_Units" text, "Prgrss_Unt" text, "Grading" text, "Last_Crse" text, "Enrl_Unt_Calc" text, "Descr" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_components"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "ccat_components" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Primary_Component" text, "Enrol_Component" text, "Final_Exam" text, "Sect_Size" text, "Contact" text, "SPlus_Templates_Reqd" text, "Component" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_offerings"[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "ccat_offerings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Acad_Group" text, "Subject" text, "Catalogue" text, "Approved" text, "Campus" text, "Sch_Print" text, "Cat_Print" text, "Print" text, "Acad_Org" text, "Career" text, "Schedule_Course" text, "Band_ID" text, "Rq_Group" text, "Discp_Grp_Cd" text, "Field_of_Ed_Cd" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_owners"[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "ccat_owners" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Offering_Acad_Org" text, "Owner_Acad_Org" text, "Pct_Owned" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_publications"[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "ccat_publications" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Contact_Hours_YN" text, "Contact_Hours" text, "Restriction_YN" text, "Restriction" text, "Avail_NAWD" text, "Quota_YN" text, "Quota" text, "Pre-Requisite_YN" text, "Pre-Requisite" text, "Co-Requisite_YN" text, "Co-Requisite" text, "Assumed_Knowl_YN" text, "Assumed_Knowl" text, "Incompatible_YN" text, "Incompatible" text, "Assessment_YN" text, "Assessment" text, "Biennial_Course_YN" text, "Biennial_Course" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_schedulings"[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "ccat_schedulings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "TTble_for_SPlus" text, "Est_Enrol_Total" text, "Enrol_Component" text, "Summer_Semester" text, "Semester_1" text, "Winter_Semester" text, "Semester_2" text, "Trimester_1" text, "Trimester_2" text, "Trimester_3" text, "Quadmester_1" text, "Quadmester_2" text, "Quadmester_3" text, "Quadmester_4" text, "PCE_1" text, "PCE_2" text, "PCE_3" text, "Summer_Crse_Coordinator" text, "Sem1_Crse_Coordinator" text, "Winter_Crse_Coordinator" text, "Sem2_Crse_Coordinator" text, "Tri1_Crse_Coordinator" text, "Tri2_Crse_Coordinator" text, "Tri3_Crse_Coordinator" text, "Quad1_Crse_Coordinator" text, "Quad2_Crse_Coordinator" text, "Quad3_Crse_Coordinator" text, "Quad4_Crse_Coordinator" text, "PCE1_Crse_Coordinator" text, "PCE2_Crse_Coordinator" text, "PCE3_Crse_Coordinator" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_topics"[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "ccat_topics" ("Subject" text, "Catalogue" text, "Eff_Date" text, "Course_ID" text, "Topic_ID" text, "Descr" text, "Short_Desc" text, "Repeatable" text, "Allowd_Unt" text, "Allow_Comp" text, "FormalDesc" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "full_enrolments"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "full_enrolments" ("ID" text, "Term" text, "Class_Nbr" text, "Status" text, "Reason" text, "Acad_Prog" text, "Add_Dt" text, "Drop_Dt" text, "Unit_Taken" text, "Progress" text, "Grade" text, "Grade_In" text, "Grade_Dt" text, "Sdt_Positn" text, "Grd_Points" text, "Note_ID" text, "Rpt_Candidat" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_templates"[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "sp_activity_templates" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_types"[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "sp_activity_types" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activitys"[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "sp_activitys" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "studentset" text, "sametime" text, "activity_template" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "scheduled" text, "scheduled_time" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "allocated_staff" text, "allocated_location" text, "allocated_studentset" text, "allocated_module" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "preset_module" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "scheduled_week_pattern" text, "scheduled_day_pattern" text, "scheduled_time_pattern" text, "class" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_departments"[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "sp_departments" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_locations"[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "sp_locations" ("hostkey" text, "name" text, "description" text, "department" text, "size" text, "weeks" text, "unavailable" text, "usertext1" text, "usertext4" text, "sharewith" text, "avoidconcurrency" text, "suitability" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_modules"[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "sp_modules" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "planned_size" text, "weeks" text, "named_availability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "programme" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_suitabilitys"[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "sp_suitabilitys" ("hostkey" text, "name" text, "description" text, "department" text, "location" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210817051600)[0m
+  [1m[35m (5.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210817023031);
+
+[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-08-17 05:58:33.266875"], ["updated_at", "2021-08-17 05:58:33.266875"]]
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "04f55496d60701f0c44e1496e85c7dce46619717"], ["created_at", "2021-08-17 05:58:33.278808"], ["updated_at", "2021-08-17 05:58:33.278808"]]
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_orgs"[0m
+  [1m[35m (9.0ms)[0m  [1m[35mCREATE TABLE "acad_orgs" ("Acad_Org" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "FormalDesc" text, "Institution" text, "Campus" text, "MgrID" text, "Instr_Edit" text, "Campus_Edit" text, "Subject_Edit" text, "Course_Edit" text, "AOU_Code" text, "DeptID" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_plans"[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "acad_plans" ("Acad_Group" text, "Acad_Prog" text, "Prog_Eff_Date" text, "Acad_Plan" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "Plan_Owner" text, "Pct_Owned" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_progs"[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "acad_progs" ("Acad_Prog" text, "Descr" text, "Acad_Org" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "activities"[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "activities" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "class_name" text, "class_code" text, "colour" text, "description" text, "weeks" text, "hours" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "days" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "all_classes"[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "all_classes" ("Term" text, "Course_ID" text, "Offer_Nbr" text, "Class_Nbr" text, "Section" text, "Enrl_Stat" text, "Class_Stat" text, "Assoc" text, "Session" text, "Auto_Enrol" text, "Auto_Enr_2" text, "Class_Type" text, "Cap_Enrl" text, "Tot_Enrl" text, "Comb_Sects_ID" text, "Combined_Sect_Cap_Enrl" text, "Combined_Sect_Tot_Enrl" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_catalogs"[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "ccat_catalogs" ("Eff_Date" text, "Course_ID" text, "Status" text, "Short_Title" text, "Long_Title" text, "Min_Units" text, "Max_Units" text, "Prgrss_Unt" text, "Grading" text, "Last_Crse" text, "Enrl_Unt_Calc" text, "Descr" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_components"[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "ccat_components" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Primary_Component" text, "Enrol_Component" text, "Final_Exam" text, "Sect_Size" text, "Contact" text, "SPlus_Templates_Reqd" text, "Component" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_offerings"[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "ccat_offerings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Acad_Group" text, "Subject" text, "Catalogue" text, "Approved" text, "Campus" text, "Sch_Print" text, "Cat_Print" text, "Print" text, "Acad_Org" text, "Career" text, "Schedule_Course" text, "Band_ID" text, "Rq_Group" text, "Discp_Grp_Cd" text, "Field_of_Ed_Cd" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_owners"[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "ccat_owners" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Offering_Acad_Org" text, "Owner_Acad_Org" text, "Pct_Owned" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_publications"[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "ccat_publications" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Contact_Hours_YN" text, "Contact_Hours" text, "Restriction_YN" text, "Restriction" text, "Avail_NAWD" text, "Quota_YN" text, "Quota" text, "Pre-Requisite_YN" text, "Pre-Requisite" text, "Co-Requisite_YN" text, "Co-Requisite" text, "Assumed_Knowl_YN" text, "Assumed_Knowl" text, "Incompatible_YN" text, "Incompatible" text, "Assessment_YN" text, "Assessment" text, "Biennial_Course_YN" text, "Biennial_Course" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_schedulings"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "ccat_schedulings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "TTble_for_SPlus" text, "Est_Enrol_Total" text, "Enrol_Component" text, "Summer_Semester" text, "Semester_1" text, "Winter_Semester" text, "Semester_2" text, "Trimester_1" text, "Trimester_2" text, "Trimester_3" text, "Quadmester_1" text, "Quadmester_2" text, "Quadmester_3" text, "Quadmester_4" text, "PCE_1" text, "PCE_2" text, "PCE_3" text, "Summer_Crse_Coordinator" text, "Sem1_Crse_Coordinator" text, "Winter_Crse_Coordinator" text, "Sem2_Crse_Coordinator" text, "Tri1_Crse_Coordinator" text, "Tri2_Crse_Coordinator" text, "Tri3_Crse_Coordinator" text, "Quad1_Crse_Coordinator" text, "Quad2_Crse_Coordinator" text, "Quad3_Crse_Coordinator" text, "Quad4_Crse_Coordinator" text, "PCE1_Crse_Coordinator" text, "PCE2_Crse_Coordinator" text, "PCE3_Crse_Coordinator" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_topics"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "ccat_topics" ("Subject" text, "Catalogue" text, "Eff_Date" text, "Course_ID" text, "Topic_ID" text, "Descr" text, "Short_Desc" text, "Repeatable" text, "Allowd_Unt" text, "Allow_Comp" text, "FormalDesc" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "full_enrolments"[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "full_enrolments" ("ID" text, "Term" text, "Class_Nbr" text, "Status" text, "Reason" text, "Acad_Prog" text, "Add_Dt" text, "Drop_Dt" text, "Unit_Taken" text, "Progress" text, "Grade" text, "Grade_In" text, "Grade_Dt" text, "Sdt_Positn" text, "Grd_Points" text, "Note_ID" text, "Rpt_Candidat" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_templates"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "sp_activity_templates" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_types"[0m
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "sp_activity_types" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activitys"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "sp_activitys" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "studentset" text, "sametime" text, "activity_template" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "scheduled" text, "scheduled_time" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "allocated_staff" text, "allocated_location" text, "allocated_studentset" text, "allocated_module" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "preset_module" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "scheduled_week_pattern" text, "scheduled_day_pattern" text, "scheduled_time_pattern" text, "class" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_departments"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "sp_departments" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_locations"[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "sp_locations" ("hostkey" text, "name" text, "description" text, "department" text, "size" text, "weeks" text, "unavailable" text, "usertext1" text, "usertext4" text, "sharewith" text, "avoidconcurrency" text, "suitability" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_modules"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "sp_modules" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "planned_size" text, "weeks" text, "named_availability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "programme" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_suitabilitys"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "sp_suitabilitys" ("hostkey" text, "name" text, "description" text, "department" text, "location" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (6.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210817051600)[0m
+  [1m[35m (5.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210817023031);
+
+[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-08-17 05:58:33.490991"], ["updated_at", "2021-08-17 05:58:33.490991"]]
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (1.0ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2021-08-17 05:58:33.500288"], ["key", "environment"]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "04f55496d60701f0c44e1496e85c7dce46619717"], ["created_at", "2021-08-17 05:58:33.510367"], ["updated_at", "2021-08-17 05:58:33.510367"]]
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateActivities (20210817023031)
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateActivities (20210817023031)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "activities" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "class_name" text, "class_code" text, "colour" text, "description" text, "weeks" text, "days" text, "hours" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210817023031"]]
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-08-17 06:04:38.319973"], ["updated_at", "2021-08-17 06:04:38.319973"]]
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-08-17 15:39:58 +0930
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 339)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 65.1ms | Allocations: 8516)
+Completed 200 OK in 86ms (Views: 70.2ms | ActiveRecord: 0.0ms | Allocations: 11119)
+
+
+Started GET "/activities" for 127.0.0.1 at 2021-08-17 15:40:04 +0930
+Processing by ActivitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering activities/index.html.erb within layouts/application
+  [1m[36mActivity Load (0.6ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/activities/index.html.erb:19
+  Rendered activities/index.html.erb within layouts/application (Duration: 81.6ms | Allocations: 10362)
+  Rendered layout layouts/application.html.erb (Duration: 82.6ms | Allocations: 10861)
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 5.1ms | Allocations: 12266)
+
+
+  
+ActionView::Template::Error (undefined method `calss_name' for #<Activity:0x00007f77ac084898>
+Did you mean?  class_name
+               class_name?
+               class_name=):
+    18:   <tbody>
+    19:     <% @activities.each do |activity| %>
+    20:       <tr>
+    21:         <td><%= activity.calss_name %></td>
+    22:         <td><%= activity.class_code %></td>
+    23:         <td><%= activity.colour %></td>
+    24:         <td><%= activity.description %></td>
+  
+app/views/activities/index.html.erb:21
+app/views/activities/index.html.erb:19
+Started GET "/activities" for 127.0.0.1 at 2021-08-17 15:40:40 +0930
+Processing by ActivitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering activities/index.html.erb within layouts/application
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/activities/index.html.erb:19
+  Rendered activities/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1525)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 5221)
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 0.3ms | Allocations: 6451)
+
+
+Started GET "/activities" for 127.0.0.1 at 2021-08-17 15:41:33 +0930
+Processing by ActivitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering activities/index.html.erb within layouts/application
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/activities/index.html.erb:19
+  Rendered activities/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1371)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 4807)
+Completed 200 OK in 33ms (Views: 30.2ms | ActiveRecord: 0.4ms | Allocations: 5913)
+
+
+Started GET "/activities" for 127.0.0.1 at 2021-08-17 15:41:50 +0930
+Processing by ActivitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering activities/index.html.erb within layouts/application
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/activities/index.html.erb:20
+  Rendered activities/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1369)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 5131)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.4ms | Allocations: 6231)
+
+
+Started GET "/activities" for 127.0.0.1 at 2021-08-17 15:42:02 +0930
+Processing by ActivitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering activities/index.html.erb within layouts/application
+  [1m[36mActivity Load (0.7ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/activities/index.html.erb:20
+  Rendered activities/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1377)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 70.7ms | Allocations: 6029)
+Completed 200 OK in 79ms (Views: 74.2ms | ActiveRecord: 0.7ms | Allocations: 7142)
+
+
