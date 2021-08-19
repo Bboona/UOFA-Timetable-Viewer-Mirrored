@@ -1,2 +1,50 @@
-<h1>Tableviewer</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+      table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+      }
+  </style>
+</head>
+<body>
 
+  <h1>TIMETABLE: WEEKLY VIEW</h1>
+  <h1>2 - 8 August 2021</h1>
+
+  <table>
+    <tr>
+      <th>Time</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+    </tr>
+    <% for i in 0..48 do %>
+      <tr>
+        <td>
+          <% if i.modulo(2) == 0  %>
+            <%= i/2 %>:00
+            <% if i < 24  %>
+            am
+            <% else %>
+            pm
+            <% end %>
+          <% else %>
+            &nbsp;
+          <% end %>
+        </td>
+        <% for j in 0..6 %>
+          <td id="<%= i*7+j %>"></td>
+        <% end %>
+      </tr>
+    <% end %>
+
+  </table>
+
+</body>
+</html>
