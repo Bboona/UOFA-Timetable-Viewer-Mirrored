@@ -1,2 +1,80 @@
-<h1>Tableviewer</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
 
+      h2, h3 {
+          text-align: center;
+      }
+
+      table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+      }
+
+      table {
+          float: right;
+      }
+
+      th, td {
+          padding: 0.3em 0.8em;
+      }
+  </style>
+</head>
+<body>
+
+  <div>
+    <h2>TIMETABLE: WEEKLY VIEW</h2>
+    <h3>2 - 8 August 2021</h3>
+  </div>
+
+  <div style="float: left">
+    <a href="https://www.adelaide.edu.au/ask-adelaide/">Ask ADEL</a>
+    <p>Find answers to frequently asked questions</p>
+    <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Online Chat</a>
+    <p>Chat with a sevice agent</p>
+    <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Phone Us</a>
+    <p>+61 8 83135208</p>
+    <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Enquire</a>
+    <p>Submit your question to a service agent</p>
+    <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Visit Us</a>
+    <p>Level 3 Hub Central North Terrace</p>
+  </div>
+
+  <div>
+    <table>
+      <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </tr>
+      <% for i in 18..33 do %>
+        <tr>
+          <td>
+            <% if i.modulo(2) == 0  %>
+              <% if (i/2) <= 12 %>
+                <%= i/2 %>:00
+              <% else %>
+                <%= (i/2).modulo(13) + 1 %>:00
+              <% end %>
+              <% if i < 24  %>am<% else %>pm<% end %>
+            <% else %>
+              &nbsp;
+            <% end %>
+          </td>
+          <% for j in 0..6 %>
+            <td id="<%= i*7+j %>"></td>
+          <% end %>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+
+
+</body>
+</html>
