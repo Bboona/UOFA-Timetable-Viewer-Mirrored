@@ -1052,1805 +1052,610 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 58ms (Views: 55.5ms | ActiveRecord: 0.0ms | Allocations: 5681)
 
 
-Started GET "/" for 127.0.0.1 at 2021-08-19 15:53:40 +0930
-  [1m[35m (11.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (27.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (17.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (21.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateActivities (20210817023031)
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateActivities (20210817023031)
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateActivities (20210817023031)
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateActivities (20210817023031)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "activities" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "class_name" text, "class_code" text, "colour" text, "description" text, "weeks" text, "hours" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210817023031"]]
+  [1m[36mTRANSACTION (13.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-08-17 02:41:36.609067"], ["updated_at", "2021-08-17 02:41:36.609067"]]
+  [1m[36mTRANSACTION (12.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-08-17 12:48:30 +0930
+  [1m[35m (13.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by ArticlesController#index as HTML
   Rendering layout layouts/application.html.erb
   Rendering articles/index.html.erb within layouts/application
-  Rendered articles/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 342)
-[Webpacker] Compiling...
-[Webpacker] Compiled all packs in /mnt/c/Users/micst/Documents/Uni/2021/Semester-2/ESaS2-Group1-TimetableViewer/public/packs
-[Webpacker] Hash: e2f281de3ea1fdc4fa5a
-Version: webpack 4.46.0
-Time: 3214ms
-Built at: 08/19/2021 3:53:53 PM
-                                     Asset       Size       Chunks                         Chunk Names
-    js/application-be412d64645010827f4e.js    125 KiB  application  [emitted] [immutable]  application
-js/application-be412d64645010827f4e.js.map    139 KiB  application  [emitted] [dev]        application
-                             manifest.json  364 bytes               [emitted]              
-Entrypoint application = js/application-be412d64645010827f4e.js js/application-be412d64645010827f4e.js.map
-[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
-[./app/javascript/channels/index.js] 211 bytes {application} [built]
-[./app/javascript/packs/application.js] 492 bytes {application} [built]
-[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
-    + 3 hidden modules
-
-  Rendered layout layouts/application.html.erb (Duration: 13080.3ms | Allocations: 21050)
-Completed 200 OK in 13127ms (Views: 13096.7ms | ActiveRecord: 0.0ms | Allocations: 23707)
-
-
-Started GET "/tableviewer/index" for 127.0.0.1 at 2021-08-19 15:58:56 +0930
-  
-ActionController::RoutingError (No route matches [GET] "/tableviewer/index"):
-  
-Started GET "/" for 127.0.0.1 at 2021-08-19 15:59:25 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 112)
+  Rendered articles/index.html.erb within layouts/application (Duration: 27.0ms | Allocations: 339)
 [Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 43.3ms | Allocations: 3426)
-Completed 200 OK in 50ms (Views: 47.6ms | Allocations: 4374)
+  Rendered layout layouts/application.html.erb (Duration: 909.0ms | Allocations: 25528)
+Completed 200 OK in 1070ms (Views: 965.0ms | ActiveRecord: 0.0ms | Allocations: 28073)
 
 
-Started GET "/articles/index.html" for 127.0.0.1 at 2021-08-19 16:01:20 +0930
-  
-ActionController::RoutingError (No route matches [GET] "/articles/index.html"):
-  
-Started GET "/article/index.html" for 127.0.0.1 at 2021-08-19 16:01:22 +0930
-  
-ActionController::RoutingError (No route matches [GET] "/article/index.html"):
-  
-Started GET "/articles/index.html" for 127.0.0.1 at 2021-08-19 16:01:27 +0930
-  
-ActionController::RoutingError (No route matches [GET] "/articles/index.html"):
-  
-Started GET "/articles/index" for 127.0.0.1 at 2021-08-19 16:01:30 +0930
-  
-ActionController::RoutingError (No route matches [GET] "/articles/index"):
-  
-Started GET "/articles/" for 127.0.0.1 at 2021-08-19 16:01:32 +0930
-  
-ActionController::RoutingError (No route matches [GET] "/articles"):
-  
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:01:38 +0930
-Processing by TableviewerController#index as HTML
+Started GET "/activities" for 127.0.0.1 at 2021-08-17 12:48:42 +0930
+Processing by ActivitiesController#index as HTML
   Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 118)
+  Rendering activities/index.html.erb within layouts/application
+  [1m[36mActivity Load (0.9ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/activities/index.html.erb:19
+  Rendered activities/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1079)
 [Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 39.1ms | Allocations: 3450)
-Completed 200 OK in 47ms (Views: 44.7ms | Allocations: 4537)
+  Rendered layout layouts/application.html.erb (Duration: 44.6ms | Allocations: 4643)
+Completed 200 OK in 109ms (Views: 48.9ms | ActiveRecord: 0.9ms | Allocations: 7056)
 
 
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:03:59 +0930
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:03:59 +0930
-Processing by TableviewerController#index as HTML
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 157)
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 195)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 352.8ms | Allocations: 6851)
-Completed 200 OK in 373ms (Views: 365.5ms | Allocations: 8403)
-
-
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 366.1ms | Allocations: 8425)
-Completed 200 OK in 387ms (Views: 380.9ms | Allocations: 10167)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:04:09 +0930
-  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 248)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 163.1ms | Allocations: 6072)
-Completed 200 OK in 201ms (Views: 175.9ms | ActiveRecord: 0.0ms | Allocations: 8685)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:04:30 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 134)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 38.4ms | Allocations: 3449)
-Completed 200 OK in 48ms (Views: 45.3ms | ActiveRecord: 0.0ms | Allocations: 4529)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:05:18 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 135)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 62.7ms | Allocations: 3538)
-Completed 200 OK in 74ms (Views: 70.5ms | ActiveRecord: 0.0ms | Allocations: 4625)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:07:32 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 139)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 29.2ms | Allocations: 3456)
-Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.0ms | Allocations: 4543)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:11:53 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 186)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 54.2ms | Allocations: 3648)
-Completed 200 OK in 62ms (Views: 59.1ms | Allocations: 4739)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:11:59 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 528)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 111.9ms | Allocations: 6009)
-Completed 200 OK in 119ms (Views: 117.2ms | Allocations: 7094)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:12:16 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 181)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 3498)
-Completed 200 OK in 31ms (Views: 29.6ms | Allocations: 4584)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:13:01 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 213)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 3528)
-Completed 200 OK in 28ms (Views: 26.5ms | Allocations: 4608)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:13:09 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 51.7ms | Allocations: 3598)
-  Rendered layout layouts/application.html.erb (Duration: 54.4ms | Allocations: 3663)
-Completed 500 Internal Server Error in 67ms (Allocations: 6644)
-
-
-  
-ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
-
-  <h1>TIMETABLE: WEEKLY VIEW</h1>
-  <h1>2 - 8 August 2021</h1>
-
-  <table>
-    <tr>
-      <th>Time</th>
-      <th>Monday</th>
-      <th>Tuesday</th>
-      <th>Wednesday</th>
-      <th>Thursday</th>
-      <th>Friday</th>
-      <th>Saturday</th>
-      <th>Sunday</th>
-    </tr>
-    <% for i in 1..10 do %>
-      <tr>
-        <td><%= "00:"i %></td>
-      </tr>
-    <% end %>
-
-  </table>
-
-</body>
-</html>
-):
-1:    <!DOCTYPE html>
-2:    <html>
-3:    <head>
-4:    </head>
-5:    <body>
-6:    
-7:      <h1>TIMETABLE: WEEKLY VIEW</h1>
-8:      <h1>2 - 8 August 2021</h1>
-9:    
-10:      <table>
-11:        <tr>
-12:          <th>Time</th>
-13:          <th>Monday</th>
-14:          <th>Tuesday</th>
-15:          <th>Wednesday</th>
-16:          <th>Thursday</th>
-17:          <th>Friday</th>
-18:          <th>Saturday</th>
-19:          <th>Sunday</th>
-20:        </tr>
-21:        <% for i in 1..10 do %>
-22:          <tr>
-23:            <td><%= "00:"i %></td>
-24:          </tr>
-25:        <% end %>
-26:    
-27:      </table>
-28:    
-29:    </body>
-30:    </html>
-  
-app/views/tableviewer/index.html.erb:23: syntax error, unexpected local variable or method, expecting ')'
-app/views/tableviewer/index.html.erb:23: syntax error, unexpected local variable or method, expecting ')'
-app/views/tableviewer/index.html.erb:23: syntax error, unexpected local variable or method, expecting ')'
-app/views/tableviewer/index.html.erb:23: syntax error, unexpected local variable or method, expecting ')'
-app/views/tableviewer/index.html.erb:23: syntax error, unexpected local variable or method, expecting ')'
-app/views/tableviewer/index.html.erb:23: syntax error, unexpected local variable or method, expecting ')'
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:13:14 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1141)
-  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 1205)
-Completed 500 Internal Server Error in 12ms (Allocations: 4275)
-
-
-  
-ActionView::Template::Error (no implicit conversion of Integer into String):
-    20:     </tr>
-    21:     <% for i in 1..10 do %>
-    22:       <tr>
-    23:         <td><%= "00:" + i %></td>
-    24:       </tr>
-    25:     <% end %>
-    26: 
-  
-app/views/tableviewer/index.html.erb:23:in `+'
-app/views/tableviewer/index.html.erb:23
-app/views/tableviewer/index.html.erb:21
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:13:23 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 213)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 64.0ms | Allocations: 3717)
-Completed 200 OK in 79ms (Views: 75.5ms | Allocations: 6733)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:15:57 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 212)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 33.9ms | Allocations: 3532)
-Completed 200 OK in 40ms (Views: 38.1ms | Allocations: 4613)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:16:18 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 17.6ms | Allocations: 3919)
-  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 3983)
-Completed 500 Internal Server Error in 29ms (Allocations: 6962)
-
-
-  
-ActionView::Template::Error (undefined method `floor' for #<ActionView::Base:0x000000000097b8>):
-    20:     </tr>
-    21:     <% for i in 1..10 do %>
-    22:       <tr>
-    23:         <td><%= floor(i/2) %></td>
-    24:       </tr>
-    25:     <% end %>
-    26: 
-  
-app/views/tableviewer/index.html.erb:23
-app/views/tableviewer/index.html.erb:21
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:16:38 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 212)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 24.9ms | Allocations: 3541)
-Completed 200 OK in 33ms (Views: 30.2ms | Allocations: 6548)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:16:39 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 62)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 39.2ms | Allocations: 3224)
-Completed 200 OK in 41ms (Views: 40.3ms | Allocations: 3599)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:16:44 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 215)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 49.9ms | Allocations: 3544)
-Completed 200 OK in 68ms (Views: 62.6ms | Allocations: 6546)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:16:48 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 218)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 57.5ms | Allocations: 3767)
-Completed 200 OK in 72ms (Views: 68.6ms | Allocations: 6775)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:16:59 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 291)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 3606)
-Completed 200 OK in 34ms (Views: 31.1ms | Allocations: 6608)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:18:15 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 426)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 743.1ms | Allocations: 6512)
-Completed 200 OK in 755ms (Views: 750.4ms | Allocations: 7592)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:18:16 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 264)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 76.1ms | Allocations: 3726)
-Completed 200 OK in 79ms (Views: 77.8ms | Allocations: 4102)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:19:42 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 420)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 33.9ms | Allocations: 3749)
-Completed 200 OK in 41ms (Views: 38.2ms | Allocations: 4834)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:19:47 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 443)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 42.0ms | Allocations: 3784)
-Completed 200 OK in 55ms (Views: 52.4ms | Allocations: 6792)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:19:52 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 263)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 130.0ms | Allocations: 4214)
-Completed 200 OK in 135ms (Views: 133.2ms | Allocations: 4590)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:20:13 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 442)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 42.0ms | Allocations: 3771)
-Completed 200 OK in 53ms (Views: 49.6ms | Allocations: 6778)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:22:26 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 334)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 38.5ms | Allocations: 3651)
-Completed 200 OK in 46ms (Views: 43.9ms | Allocations: 4732)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:22:31 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 334)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 163.7ms | Allocations: 4819)
-Completed 200 OK in 174ms (Views: 169.0ms | Allocations: 5904)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:22:47 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 355)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 49.3ms | Allocations: 3696)
-Completed 200 OK in 59ms (Views: 57.0ms | Allocations: 6704)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:23:45 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 444)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 44.5ms | Allocations: 3769)
-Completed 200 OK in 59ms (Views: 54.5ms | Allocations: 6776)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:23:56 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 441)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 40.4ms | Allocations: 3760)
-Completed 200 OK in 53ms (Views: 48.3ms | Allocations: 6763)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:24:07 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 441)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 3772)
-Completed 200 OK in 35ms (Views: 33.1ms | Allocations: 6779)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:24:32 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 449)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 35.1ms | Allocations: 3780)
-Completed 200 OK in 44ms (Views: 41.4ms | Allocations: 6788)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:24:38 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 440)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 3755)
-Completed 200 OK in 35ms (Views: 31.5ms | Allocations: 6757)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:25:48 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 448)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 39.6ms | Allocations: 3763)
-Completed 200 OK in 51ms (Views: 46.9ms | Allocations: 6765)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:26:31 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 448)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 3763)
-Completed 200 OK in 36ms (Views: 33.5ms | Allocations: 6765)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:27:28 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 455)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 33.3ms | Allocations: 3784)
-Completed 200 OK in 40ms (Views: 37.6ms | Allocations: 4870)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:29:34 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 393)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 3722)
-Completed 200 OK in 27ms (Views: 25.7ms | Allocations: 4808)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:29:56 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 341)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 3670)
-Completed 200 OK in 27ms (Views: 25.4ms | Allocations: 4756)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:30:02 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 343)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 29.4ms | Allocations: 3660)
-Completed 200 OK in 36ms (Views: 33.7ms | Allocations: 6662)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:30:07 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 390)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 28.3ms | Allocations: 3709)
-Completed 200 OK in 35ms (Views: 33.0ms | Allocations: 6711)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:31:15 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 360)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 3689)
-Completed 200 OK in 27ms (Views: 25.6ms | Allocations: 4775)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:31:18 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 356)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 3685)
-Completed 200 OK in 36ms (Views: 33.3ms | Allocations: 6693)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:31:23 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 357)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 40.2ms | Allocations: 3686)
-Completed 200 OK in 47ms (Views: 45.0ms | Allocations: 4772)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:31:37 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1673)
-  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 1737)
-Completed 500 Internal Server Error in 15ms (Allocations: 4711)
-
-
-  
-ActionView::Template::Error (uninitialized constant #<Class:0x00007f7a441a2870>::NULL):
-    35:             pm
-    36:             <% end %>
-    37:           <% else %>
-    38:             <%= NULL %>
-    39:           <% end %>
-    40:         </td>
-    41:         <td></td>
-  
-app/views/tableviewer/index.html.erb:38
-app/views/tableviewer/index.html.erb:27
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:31:42 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 369)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 55.0ms | Allocations: 3738)
-Completed 200 OK in 68ms (Views: 63.9ms | Allocations: 6746)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:32:07 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 375)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 38.8ms | Allocations: 3692)
-Completed 200 OK in 52ms (Views: 47.5ms | Allocations: 6694)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:32:15 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 363)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 45.8ms | Allocations: 3694)
-Completed 200 OK in 52ms (Views: 50.3ms | Allocations: 4774)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:32:17 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 364)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 316.9ms | Allocations: 5306)
-Completed 200 OK in 325ms (Views: 322.3ms | Allocations: 8308)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:33:13 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 364)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 31.7ms | Allocations: 3689)
-Completed 200 OK in 38ms (Views: 36.0ms | Allocations: 6691)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:34:02 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 339)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 30.0ms | Allocations: 3654)
-Completed 200 OK in 41ms (Views: 36.4ms | Allocations: 4735)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:34:03 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 92)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 3248)
-Completed 200 OK in 35ms (Views: 34.2ms | Allocations: 3624)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:34:03 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 92)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 3248)
-Completed 200 OK in 24ms (Views: 23.7ms | Allocations: 3623)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:34:03 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 92)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 3246)
-Completed 200 OK in 24ms (Views: 23.4ms | Allocations: 3620)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:34:12 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 351)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 38.7ms | Allocations: 3680)
-Completed 200 OK in 52ms (Views: 48.2ms | Allocations: 6687)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:34:33 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 355)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 36.3ms | Allocations: 3670)
-Completed 200 OK in 42ms (Views: 40.3ms | Allocations: 4750)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:35:28 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 355)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 3674)
-Completed 200 OK in 31ms (Views: 29.5ms | Allocations: 4754)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:35:36 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 356)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 125.7ms | Allocations: 4383)
-Completed 200 OK in 138ms (Views: 134.1ms | Allocations: 7385)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:35:44 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 358)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 42.9ms | Allocations: 3689)
-Completed 200 OK in 55ms (Views: 51.7ms | Allocations: 6697)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:35:54 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 356)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 45.3ms | Allocations: 3689)
-Completed 200 OK in 55ms (Views: 52.3ms | Allocations: 6692)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:36:04 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 356)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 74.3ms | Allocations: 3703)
-Completed 200 OK in 93ms (Views: 85.3ms | Allocations: 6710)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:51:08 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 360)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 54.7ms | Allocations: 3673)
-Completed 200 OK in 65ms (Views: 62.0ms | Allocations: 4765)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:53:43 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1191)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 4485)
-Completed 200 OK in 29ms (Views: 27.7ms | Allocations: 5576)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:53:49 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1088)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 50.5ms | Allocations: 4403)
-Completed 200 OK in 63ms (Views: 58.8ms | Allocations: 7406)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:54:20 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1092)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 43.4ms | Allocations: 4495)
-Completed 200 OK in 50ms (Views: 48.0ms | Allocations: 5581)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 16:55:17 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1087)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 33.2ms | Allocations: 4402)
-Completed 200 OK in 39ms (Views: 37.3ms | Allocations: 5482)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:07:01 +0930
-  [1m[35m (6.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Migrating to AddDaysToActivities (20210817051600)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.0ms)[0m  [1m[35mALTER TABLE "activities" ADD "days" text[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210817051600"]]
+  [1m[36mTRANSACTION (9.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by TableviewerController#index as HTML
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_orgs"[0m
+  [1m[35m (16.1ms)[0m  [1m[35mCREATE TABLE "acad_orgs" ("Acad_Org" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "FormalDesc" text, "Institution" text, "Campus" text, "MgrID" text, "Instr_Edit" text, "Campus_Edit" text, "Subject_Edit" text, "Course_Edit" text, "AOU_Code" text, "DeptID" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_plans"[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "acad_plans" ("Acad_Group" text, "Acad_Prog" text, "Prog_Eff_Date" text, "Acad_Plan" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "Plan_Owner" text, "Pct_Owned" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_progs"[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "acad_progs" ("Acad_Prog" text, "Descr" text, "Acad_Org" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "activities"[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "activities" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "class_name" text, "class_code" text, "colour" text, "description" text, "weeks" text, "hours" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "days" text)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "all_classes"[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "all_classes" ("Term" text, "Course_ID" text, "Offer_Nbr" text, "Class_Nbr" text, "Section" text, "Enrl_Stat" text, "Class_Stat" text, "Assoc" text, "Session" text, "Auto_Enrol" text, "Auto_Enr_2" text, "Class_Type" text, "Cap_Enrl" text, "Tot_Enrl" text, "Comb_Sects_ID" text, "Combined_Sect_Cap_Enrl" text, "Combined_Sect_Tot_Enrl" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_catalogs"[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "ccat_catalogs" ("Eff_Date" text, "Course_ID" text, "Status" text, "Short_Title" text, "Long_Title" text, "Min_Units" text, "Max_Units" text, "Prgrss_Unt" text, "Grading" text, "Last_Crse" text, "Enrl_Unt_Calc" text, "Descr" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_components"[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "ccat_components" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Primary_Component" text, "Enrol_Component" text, "Final_Exam" text, "Sect_Size" text, "Contact" text, "SPlus_Templates_Reqd" text, "Component" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_offerings"[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "ccat_offerings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Acad_Group" text, "Subject" text, "Catalogue" text, "Approved" text, "Campus" text, "Sch_Print" text, "Cat_Print" text, "Print" text, "Acad_Org" text, "Career" text, "Schedule_Course" text, "Band_ID" text, "Rq_Group" text, "Discp_Grp_Cd" text, "Field_of_Ed_Cd" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_owners"[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "ccat_owners" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Offering_Acad_Org" text, "Owner_Acad_Org" text, "Pct_Owned" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_publications"[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE "ccat_publications" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Contact_Hours_YN" text, "Contact_Hours" text, "Restriction_YN" text, "Restriction" text, "Avail_NAWD" text, "Quota_YN" text, "Quota" text, "Pre-Requisite_YN" text, "Pre-Requisite" text, "Co-Requisite_YN" text, "Co-Requisite" text, "Assumed_Knowl_YN" text, "Assumed_Knowl" text, "Incompatible_YN" text, "Incompatible" text, "Assessment_YN" text, "Assessment" text, "Biennial_Course_YN" text, "Biennial_Course" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_schedulings"[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "ccat_schedulings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "TTble_for_SPlus" text, "Est_Enrol_Total" text, "Enrol_Component" text, "Summer_Semester" text, "Semester_1" text, "Winter_Semester" text, "Semester_2" text, "Trimester_1" text, "Trimester_2" text, "Trimester_3" text, "Quadmester_1" text, "Quadmester_2" text, "Quadmester_3" text, "Quadmester_4" text, "PCE_1" text, "PCE_2" text, "PCE_3" text, "Summer_Crse_Coordinator" text, "Sem1_Crse_Coordinator" text, "Winter_Crse_Coordinator" text, "Sem2_Crse_Coordinator" text, "Tri1_Crse_Coordinator" text, "Tri2_Crse_Coordinator" text, "Tri3_Crse_Coordinator" text, "Quad1_Crse_Coordinator" text, "Quad2_Crse_Coordinator" text, "Quad3_Crse_Coordinator" text, "Quad4_Crse_Coordinator" text, "PCE1_Crse_Coordinator" text, "PCE2_Crse_Coordinator" text, "PCE3_Crse_Coordinator" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_topics"[0m
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE TABLE "ccat_topics" ("Subject" text, "Catalogue" text, "Eff_Date" text, "Course_ID" text, "Topic_ID" text, "Descr" text, "Short_Desc" text, "Repeatable" text, "Allowd_Unt" text, "Allow_Comp" text, "FormalDesc" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "full_enrolments"[0m
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "full_enrolments" ("ID" text, "Term" text, "Class_Nbr" text, "Status" text, "Reason" text, "Acad_Prog" text, "Add_Dt" text, "Drop_Dt" text, "Unit_Taken" text, "Progress" text, "Grade" text, "Grade_In" text, "Grade_Dt" text, "Sdt_Positn" text, "Grd_Points" text, "Note_ID" text, "Rpt_Candidat" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_templates"[0m
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "sp_activity_templates" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_types"[0m
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "sp_activity_types" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activitys"[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "sp_activitys" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "studentset" text, "sametime" text, "activity_template" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "scheduled" text, "scheduled_time" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "allocated_staff" text, "allocated_location" text, "allocated_studentset" text, "allocated_module" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "preset_module" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "scheduled_week_pattern" text, "scheduled_day_pattern" text, "scheduled_time_pattern" text, "class" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_departments"[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "sp_departments" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_locations"[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "sp_locations" ("hostkey" text, "name" text, "description" text, "department" text, "size" text, "weeks" text, "unavailable" text, "usertext1" text, "usertext4" text, "sharewith" text, "avoidconcurrency" text, "suitability" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_modules"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "sp_modules" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "planned_size" text, "weeks" text, "named_availability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "programme" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_suitabilitys"[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "sp_suitabilitys" ("hostkey" text, "name" text, "description" text, "department" text, "location" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (6.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210817051600)[0m
+  [1m[35m (5.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210817023031);
+
+[0m
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-08-17 05:47:00.784703"], ["updated_at", "2021-08-17 05:47:00.784703"]]
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "04f55496d60701f0c44e1496e85c7dce46619717"], ["created_at", "2021-08-17 05:47:00.799460"], ["updated_at", "2021-08-17 05:47:00.799460"]]
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_orgs"[0m
+  [1m[35m (9.3ms)[0m  [1m[35mCREATE TABLE "acad_orgs" ("Acad_Org" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "FormalDesc" text, "Institution" text, "Campus" text, "MgrID" text, "Instr_Edit" text, "Campus_Edit" text, "Subject_Edit" text, "Course_Edit" text, "AOU_Code" text, "DeptID" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_plans"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "acad_plans" ("Acad_Group" text, "Acad_Prog" text, "Prog_Eff_Date" text, "Acad_Plan" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "Plan_Owner" text, "Pct_Owned" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_progs"[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "acad_progs" ("Acad_Prog" text, "Descr" text, "Acad_Org" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "activities"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "activities" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "class_name" text, "class_code" text, "colour" text, "description" text, "weeks" text, "hours" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "days" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "all_classes"[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "all_classes" ("Term" text, "Course_ID" text, "Offer_Nbr" text, "Class_Nbr" text, "Section" text, "Enrl_Stat" text, "Class_Stat" text, "Assoc" text, "Session" text, "Auto_Enrol" text, "Auto_Enr_2" text, "Class_Type" text, "Cap_Enrl" text, "Tot_Enrl" text, "Comb_Sects_ID" text, "Combined_Sect_Cap_Enrl" text, "Combined_Sect_Tot_Enrl" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_catalogs"[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "ccat_catalogs" ("Eff_Date" text, "Course_ID" text, "Status" text, "Short_Title" text, "Long_Title" text, "Min_Units" text, "Max_Units" text, "Prgrss_Unt" text, "Grading" text, "Last_Crse" text, "Enrl_Unt_Calc" text, "Descr" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_components"[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "ccat_components" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Primary_Component" text, "Enrol_Component" text, "Final_Exam" text, "Sect_Size" text, "Contact" text, "SPlus_Templates_Reqd" text, "Component" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_offerings"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "ccat_offerings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Acad_Group" text, "Subject" text, "Catalogue" text, "Approved" text, "Campus" text, "Sch_Print" text, "Cat_Print" text, "Print" text, "Acad_Org" text, "Career" text, "Schedule_Course" text, "Band_ID" text, "Rq_Group" text, "Discp_Grp_Cd" text, "Field_of_Ed_Cd" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_owners"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "ccat_owners" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Offering_Acad_Org" text, "Owner_Acad_Org" text, "Pct_Owned" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_publications"[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "ccat_publications" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Contact_Hours_YN" text, "Contact_Hours" text, "Restriction_YN" text, "Restriction" text, "Avail_NAWD" text, "Quota_YN" text, "Quota" text, "Pre-Requisite_YN" text, "Pre-Requisite" text, "Co-Requisite_YN" text, "Co-Requisite" text, "Assumed_Knowl_YN" text, "Assumed_Knowl" text, "Incompatible_YN" text, "Incompatible" text, "Assessment_YN" text, "Assessment" text, "Biennial_Course_YN" text, "Biennial_Course" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_schedulings"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "ccat_schedulings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "TTble_for_SPlus" text, "Est_Enrol_Total" text, "Enrol_Component" text, "Summer_Semester" text, "Semester_1" text, "Winter_Semester" text, "Semester_2" text, "Trimester_1" text, "Trimester_2" text, "Trimester_3" text, "Quadmester_1" text, "Quadmester_2" text, "Quadmester_3" text, "Quadmester_4" text, "PCE_1" text, "PCE_2" text, "PCE_3" text, "Summer_Crse_Coordinator" text, "Sem1_Crse_Coordinator" text, "Winter_Crse_Coordinator" text, "Sem2_Crse_Coordinator" text, "Tri1_Crse_Coordinator" text, "Tri2_Crse_Coordinator" text, "Tri3_Crse_Coordinator" text, "Quad1_Crse_Coordinator" text, "Quad2_Crse_Coordinator" text, "Quad3_Crse_Coordinator" text, "Quad4_Crse_Coordinator" text, "PCE1_Crse_Coordinator" text, "PCE2_Crse_Coordinator" text, "PCE3_Crse_Coordinator" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_topics"[0m
+  [1m[35m (8.4ms)[0m  [1m[35mCREATE TABLE "ccat_topics" ("Subject" text, "Catalogue" text, "Eff_Date" text, "Course_ID" text, "Topic_ID" text, "Descr" text, "Short_Desc" text, "Repeatable" text, "Allowd_Unt" text, "Allow_Comp" text, "FormalDesc" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "full_enrolments"[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "full_enrolments" ("ID" text, "Term" text, "Class_Nbr" text, "Status" text, "Reason" text, "Acad_Prog" text, "Add_Dt" text, "Drop_Dt" text, "Unit_Taken" text, "Progress" text, "Grade" text, "Grade_In" text, "Grade_Dt" text, "Sdt_Positn" text, "Grd_Points" text, "Note_ID" text, "Rpt_Candidat" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_templates"[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "sp_activity_templates" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_types"[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "sp_activity_types" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activitys"[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "sp_activitys" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "studentset" text, "sametime" text, "activity_template" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "scheduled" text, "scheduled_time" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "allocated_staff" text, "allocated_location" text, "allocated_studentset" text, "allocated_module" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "preset_module" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "scheduled_week_pattern" text, "scheduled_day_pattern" text, "scheduled_time_pattern" text, "class" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_departments"[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "sp_departments" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_locations"[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "sp_locations" ("hostkey" text, "name" text, "description" text, "department" text, "size" text, "weeks" text, "unavailable" text, "usertext1" text, "usertext4" text, "sharewith" text, "avoidconcurrency" text, "suitability" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_modules"[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "sp_modules" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "planned_size" text, "weeks" text, "named_availability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "programme" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_suitabilitys"[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "sp_suitabilitys" ("hostkey" text, "name" text, "description" text, "department" text, "location" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210817051600)[0m
+  [1m[35m (5.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210817023031);
+
+[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-08-17 05:47:01.028600"], ["updated_at", "2021-08-17 05:47:01.028600"]]
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (1.0ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2021-08-17 05:47:01.038485"], ["key", "environment"]]
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "04f55496d60701f0c44e1496e85c7dce46619717"], ["created_at", "2021-08-17 05:47:01.052489"], ["updated_at", "2021-08-17 05:47:01.052489"]]
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_orgs"[0m
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "acad_orgs" ("Acad_Org" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "FormalDesc" text, "Institution" text, "Campus" text, "MgrID" text, "Instr_Edit" text, "Campus_Edit" text, "Subject_Edit" text, "Course_Edit" text, "AOU_Code" text, "DeptID" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_plans"[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "acad_plans" ("Acad_Group" text, "Acad_Prog" text, "Prog_Eff_Date" text, "Acad_Plan" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "Plan_Owner" text, "Pct_Owned" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_progs"[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "acad_progs" ("Acad_Prog" text, "Descr" text, "Acad_Org" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "activities"[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "activities" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "class_name" text, "class_code" text, "colour" text, "description" text, "weeks" text, "hours" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "days" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "all_classes"[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "all_classes" ("Term" text, "Course_ID" text, "Offer_Nbr" text, "Class_Nbr" text, "Section" text, "Enrl_Stat" text, "Class_Stat" text, "Assoc" text, "Session" text, "Auto_Enrol" text, "Auto_Enr_2" text, "Class_Type" text, "Cap_Enrl" text, "Tot_Enrl" text, "Comb_Sects_ID" text, "Combined_Sect_Cap_Enrl" text, "Combined_Sect_Tot_Enrl" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_catalogs"[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "ccat_catalogs" ("Eff_Date" text, "Course_ID" text, "Status" text, "Short_Title" text, "Long_Title" text, "Min_Units" text, "Max_Units" text, "Prgrss_Unt" text, "Grading" text, "Last_Crse" text, "Enrl_Unt_Calc" text, "Descr" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_components"[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "ccat_components" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Primary_Component" text, "Enrol_Component" text, "Final_Exam" text, "Sect_Size" text, "Contact" text, "SPlus_Templates_Reqd" text, "Component" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_offerings"[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "ccat_offerings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Acad_Group" text, "Subject" text, "Catalogue" text, "Approved" text, "Campus" text, "Sch_Print" text, "Cat_Print" text, "Print" text, "Acad_Org" text, "Career" text, "Schedule_Course" text, "Band_ID" text, "Rq_Group" text, "Discp_Grp_Cd" text, "Field_of_Ed_Cd" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_owners"[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "ccat_owners" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Offering_Acad_Org" text, "Owner_Acad_Org" text, "Pct_Owned" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_publications"[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "ccat_publications" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Contact_Hours_YN" text, "Contact_Hours" text, "Restriction_YN" text, "Restriction" text, "Avail_NAWD" text, "Quota_YN" text, "Quota" text, "Pre-Requisite_YN" text, "Pre-Requisite" text, "Co-Requisite_YN" text, "Co-Requisite" text, "Assumed_Knowl_YN" text, "Assumed_Knowl" text, "Incompatible_YN" text, "Incompatible" text, "Assessment_YN" text, "Assessment" text, "Biennial_Course_YN" text, "Biennial_Course" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_schedulings"[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "ccat_schedulings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "TTble_for_SPlus" text, "Est_Enrol_Total" text, "Enrol_Component" text, "Summer_Semester" text, "Semester_1" text, "Winter_Semester" text, "Semester_2" text, "Trimester_1" text, "Trimester_2" text, "Trimester_3" text, "Quadmester_1" text, "Quadmester_2" text, "Quadmester_3" text, "Quadmester_4" text, "PCE_1" text, "PCE_2" text, "PCE_3" text, "Summer_Crse_Coordinator" text, "Sem1_Crse_Coordinator" text, "Winter_Crse_Coordinator" text, "Sem2_Crse_Coordinator" text, "Tri1_Crse_Coordinator" text, "Tri2_Crse_Coordinator" text, "Tri3_Crse_Coordinator" text, "Quad1_Crse_Coordinator" text, "Quad2_Crse_Coordinator" text, "Quad3_Crse_Coordinator" text, "Quad4_Crse_Coordinator" text, "PCE1_Crse_Coordinator" text, "PCE2_Crse_Coordinator" text, "PCE3_Crse_Coordinator" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_topics"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "ccat_topics" ("Subject" text, "Catalogue" text, "Eff_Date" text, "Course_ID" text, "Topic_ID" text, "Descr" text, "Short_Desc" text, "Repeatable" text, "Allowd_Unt" text, "Allow_Comp" text, "FormalDesc" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "full_enrolments"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "full_enrolments" ("ID" text, "Term" text, "Class_Nbr" text, "Status" text, "Reason" text, "Acad_Prog" text, "Add_Dt" text, "Drop_Dt" text, "Unit_Taken" text, "Progress" text, "Grade" text, "Grade_In" text, "Grade_Dt" text, "Sdt_Positn" text, "Grd_Points" text, "Note_ID" text, "Rpt_Candidat" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_templates"[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "sp_activity_templates" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_types"[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "sp_activity_types" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activitys"[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "sp_activitys" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "studentset" text, "sametime" text, "activity_template" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "scheduled" text, "scheduled_time" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "allocated_staff" text, "allocated_location" text, "allocated_studentset" text, "allocated_module" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "preset_module" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "scheduled_week_pattern" text, "scheduled_day_pattern" text, "scheduled_time_pattern" text, "class" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_departments"[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "sp_departments" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_locations"[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "sp_locations" ("hostkey" text, "name" text, "description" text, "department" text, "size" text, "weeks" text, "unavailable" text, "usertext1" text, "usertext4" text, "sharewith" text, "avoidconcurrency" text, "suitability" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_modules"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "sp_modules" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "planned_size" text, "weeks" text, "named_availability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "programme" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_suitabilitys"[0m
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE TABLE "sp_suitabilitys" ("hostkey" text, "name" text, "description" text, "department" text, "location" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (7.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210817051600)[0m
+  [1m[35m (7.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210817023031);
+
+[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-08-17 05:53:31.289896"], ["updated_at", "2021-08-17 05:53:31.289896"]]
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "04f55496d60701f0c44e1496e85c7dce46619717"], ["created_at", "2021-08-17 05:53:31.302306"], ["updated_at", "2021-08-17 05:53:31.302306"]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_orgs"[0m
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "acad_orgs" ("Acad_Org" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "FormalDesc" text, "Institution" text, "Campus" text, "MgrID" text, "Instr_Edit" text, "Campus_Edit" text, "Subject_Edit" text, "Course_Edit" text, "AOU_Code" text, "DeptID" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_plans"[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "acad_plans" ("Acad_Group" text, "Acad_Prog" text, "Prog_Eff_Date" text, "Acad_Plan" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "Plan_Owner" text, "Pct_Owned" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_progs"[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "acad_progs" ("Acad_Prog" text, "Descr" text, "Acad_Org" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "activities"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "activities" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "class_name" text, "class_code" text, "colour" text, "description" text, "weeks" text, "hours" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "days" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "all_classes"[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "all_classes" ("Term" text, "Course_ID" text, "Offer_Nbr" text, "Class_Nbr" text, "Section" text, "Enrl_Stat" text, "Class_Stat" text, "Assoc" text, "Session" text, "Auto_Enrol" text, "Auto_Enr_2" text, "Class_Type" text, "Cap_Enrl" text, "Tot_Enrl" text, "Comb_Sects_ID" text, "Combined_Sect_Cap_Enrl" text, "Combined_Sect_Tot_Enrl" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_catalogs"[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "ccat_catalogs" ("Eff_Date" text, "Course_ID" text, "Status" text, "Short_Title" text, "Long_Title" text, "Min_Units" text, "Max_Units" text, "Prgrss_Unt" text, "Grading" text, "Last_Crse" text, "Enrl_Unt_Calc" text, "Descr" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_components"[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "ccat_components" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Primary_Component" text, "Enrol_Component" text, "Final_Exam" text, "Sect_Size" text, "Contact" text, "SPlus_Templates_Reqd" text, "Component" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_offerings"[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "ccat_offerings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Acad_Group" text, "Subject" text, "Catalogue" text, "Approved" text, "Campus" text, "Sch_Print" text, "Cat_Print" text, "Print" text, "Acad_Org" text, "Career" text, "Schedule_Course" text, "Band_ID" text, "Rq_Group" text, "Discp_Grp_Cd" text, "Field_of_Ed_Cd" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_owners"[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "ccat_owners" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Offering_Acad_Org" text, "Owner_Acad_Org" text, "Pct_Owned" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_publications"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "ccat_publications" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Contact_Hours_YN" text, "Contact_Hours" text, "Restriction_YN" text, "Restriction" text, "Avail_NAWD" text, "Quota_YN" text, "Quota" text, "Pre-Requisite_YN" text, "Pre-Requisite" text, "Co-Requisite_YN" text, "Co-Requisite" text, "Assumed_Knowl_YN" text, "Assumed_Knowl" text, "Incompatible_YN" text, "Incompatible" text, "Assessment_YN" text, "Assessment" text, "Biennial_Course_YN" text, "Biennial_Course" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_schedulings"[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "ccat_schedulings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "TTble_for_SPlus" text, "Est_Enrol_Total" text, "Enrol_Component" text, "Summer_Semester" text, "Semester_1" text, "Winter_Semester" text, "Semester_2" text, "Trimester_1" text, "Trimester_2" text, "Trimester_3" text, "Quadmester_1" text, "Quadmester_2" text, "Quadmester_3" text, "Quadmester_4" text, "PCE_1" text, "PCE_2" text, "PCE_3" text, "Summer_Crse_Coordinator" text, "Sem1_Crse_Coordinator" text, "Winter_Crse_Coordinator" text, "Sem2_Crse_Coordinator" text, "Tri1_Crse_Coordinator" text, "Tri2_Crse_Coordinator" text, "Tri3_Crse_Coordinator" text, "Quad1_Crse_Coordinator" text, "Quad2_Crse_Coordinator" text, "Quad3_Crse_Coordinator" text, "Quad4_Crse_Coordinator" text, "PCE1_Crse_Coordinator" text, "PCE2_Crse_Coordinator" text, "PCE3_Crse_Coordinator" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_topics"[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "ccat_topics" ("Subject" text, "Catalogue" text, "Eff_Date" text, "Course_ID" text, "Topic_ID" text, "Descr" text, "Short_Desc" text, "Repeatable" text, "Allowd_Unt" text, "Allow_Comp" text, "FormalDesc" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "full_enrolments"[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "full_enrolments" ("ID" text, "Term" text, "Class_Nbr" text, "Status" text, "Reason" text, "Acad_Prog" text, "Add_Dt" text, "Drop_Dt" text, "Unit_Taken" text, "Progress" text, "Grade" text, "Grade_In" text, "Grade_Dt" text, "Sdt_Positn" text, "Grd_Points" text, "Note_ID" text, "Rpt_Candidat" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_templates"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "sp_activity_templates" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_types"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "sp_activity_types" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activitys"[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "sp_activitys" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "studentset" text, "sametime" text, "activity_template" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "scheduled" text, "scheduled_time" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "allocated_staff" text, "allocated_location" text, "allocated_studentset" text, "allocated_module" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "preset_module" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "scheduled_week_pattern" text, "scheduled_day_pattern" text, "scheduled_time_pattern" text, "class" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_departments"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "sp_departments" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_locations"[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "sp_locations" ("hostkey" text, "name" text, "description" text, "department" text, "size" text, "weeks" text, "unavailable" text, "usertext1" text, "usertext4" text, "sharewith" text, "avoidconcurrency" text, "suitability" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_modules"[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "sp_modules" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "planned_size" text, "weeks" text, "named_availability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "programme" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_suitabilitys"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "sp_suitabilitys" ("hostkey" text, "name" text, "description" text, "department" text, "location" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210817051600)[0m
+  [1m[35m (6.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210817023031);
+
+[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-08-17 05:53:31.511205"], ["updated_at", "2021-08-17 05:53:31.511205"]]
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (1.0ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2021-08-17 05:53:31.521149"], ["key", "environment"]]
+  [1m[36mTRANSACTION (8.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "04f55496d60701f0c44e1496e85c7dce46619717"], ["created_at", "2021-08-17 05:53:31.534856"], ["updated_at", "2021-08-17 05:53:31.534856"]]
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_orgs"[0m
+  [1m[35m (10.1ms)[0m  [1m[35mCREATE TABLE "acad_orgs" ("Acad_Org" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "FormalDesc" text, "Institution" text, "Campus" text, "MgrID" text, "Instr_Edit" text, "Campus_Edit" text, "Subject_Edit" text, "Course_Edit" text, "AOU_Code" text, "DeptID" text)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_plans"[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "acad_plans" ("Acad_Group" text, "Acad_Prog" text, "Prog_Eff_Date" text, "Acad_Plan" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "Plan_Owner" text, "Pct_Owned" text)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_progs"[0m
+  [1m[35m (8.8ms)[0m  [1m[35mCREATE TABLE "acad_progs" ("Acad_Prog" text, "Descr" text, "Acad_Org" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "activities"[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "activities" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "class_name" text, "class_code" text, "colour" text, "description" text, "weeks" text, "hours" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "days" text)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "all_classes"[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "all_classes" ("Term" text, "Course_ID" text, "Offer_Nbr" text, "Class_Nbr" text, "Section" text, "Enrl_Stat" text, "Class_Stat" text, "Assoc" text, "Session" text, "Auto_Enrol" text, "Auto_Enr_2" text, "Class_Type" text, "Cap_Enrl" text, "Tot_Enrl" text, "Comb_Sects_ID" text, "Combined_Sect_Cap_Enrl" text, "Combined_Sect_Tot_Enrl" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_catalogs"[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "ccat_catalogs" ("Eff_Date" text, "Course_ID" text, "Status" text, "Short_Title" text, "Long_Title" text, "Min_Units" text, "Max_Units" text, "Prgrss_Unt" text, "Grading" text, "Last_Crse" text, "Enrl_Unt_Calc" text, "Descr" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_components"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "ccat_components" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Primary_Component" text, "Enrol_Component" text, "Final_Exam" text, "Sect_Size" text, "Contact" text, "SPlus_Templates_Reqd" text, "Component" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_offerings"[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "ccat_offerings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Acad_Group" text, "Subject" text, "Catalogue" text, "Approved" text, "Campus" text, "Sch_Print" text, "Cat_Print" text, "Print" text, "Acad_Org" text, "Career" text, "Schedule_Course" text, "Band_ID" text, "Rq_Group" text, "Discp_Grp_Cd" text, "Field_of_Ed_Cd" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_owners"[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "ccat_owners" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Offering_Acad_Org" text, "Owner_Acad_Org" text, "Pct_Owned" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_publications"[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "ccat_publications" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Contact_Hours_YN" text, "Contact_Hours" text, "Restriction_YN" text, "Restriction" text, "Avail_NAWD" text, "Quota_YN" text, "Quota" text, "Pre-Requisite_YN" text, "Pre-Requisite" text, "Co-Requisite_YN" text, "Co-Requisite" text, "Assumed_Knowl_YN" text, "Assumed_Knowl" text, "Incompatible_YN" text, "Incompatible" text, "Assessment_YN" text, "Assessment" text, "Biennial_Course_YN" text, "Biennial_Course" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_schedulings"[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "ccat_schedulings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "TTble_for_SPlus" text, "Est_Enrol_Total" text, "Enrol_Component" text, "Summer_Semester" text, "Semester_1" text, "Winter_Semester" text, "Semester_2" text, "Trimester_1" text, "Trimester_2" text, "Trimester_3" text, "Quadmester_1" text, "Quadmester_2" text, "Quadmester_3" text, "Quadmester_4" text, "PCE_1" text, "PCE_2" text, "PCE_3" text, "Summer_Crse_Coordinator" text, "Sem1_Crse_Coordinator" text, "Winter_Crse_Coordinator" text, "Sem2_Crse_Coordinator" text, "Tri1_Crse_Coordinator" text, "Tri2_Crse_Coordinator" text, "Tri3_Crse_Coordinator" text, "Quad1_Crse_Coordinator" text, "Quad2_Crse_Coordinator" text, "Quad3_Crse_Coordinator" text, "Quad4_Crse_Coordinator" text, "PCE1_Crse_Coordinator" text, "PCE2_Crse_Coordinator" text, "PCE3_Crse_Coordinator" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_topics"[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "ccat_topics" ("Subject" text, "Catalogue" text, "Eff_Date" text, "Course_ID" text, "Topic_ID" text, "Descr" text, "Short_Desc" text, "Repeatable" text, "Allowd_Unt" text, "Allow_Comp" text, "FormalDesc" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "full_enrolments"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "full_enrolments" ("ID" text, "Term" text, "Class_Nbr" text, "Status" text, "Reason" text, "Acad_Prog" text, "Add_Dt" text, "Drop_Dt" text, "Unit_Taken" text, "Progress" text, "Grade" text, "Grade_In" text, "Grade_Dt" text, "Sdt_Positn" text, "Grd_Points" text, "Note_ID" text, "Rpt_Candidat" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_templates"[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "sp_activity_templates" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_types"[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "sp_activity_types" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activitys"[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "sp_activitys" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "studentset" text, "sametime" text, "activity_template" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "scheduled" text, "scheduled_time" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "allocated_staff" text, "allocated_location" text, "allocated_studentset" text, "allocated_module" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "preset_module" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "scheduled_week_pattern" text, "scheduled_day_pattern" text, "scheduled_time_pattern" text, "class" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_departments"[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "sp_departments" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_locations"[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "sp_locations" ("hostkey" text, "name" text, "description" text, "department" text, "size" text, "weeks" text, "unavailable" text, "usertext1" text, "usertext4" text, "sharewith" text, "avoidconcurrency" text, "suitability" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_modules"[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "sp_modules" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "planned_size" text, "weeks" text, "named_availability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "programme" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_suitabilitys"[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "sp_suitabilitys" ("hostkey" text, "name" text, "description" text, "department" text, "location" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210817051600)[0m
+  [1m[35m (5.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210817023031);
+
+[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-08-17 05:58:33.266875"], ["updated_at", "2021-08-17 05:58:33.266875"]]
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "04f55496d60701f0c44e1496e85c7dce46619717"], ["created_at", "2021-08-17 05:58:33.278808"], ["updated_at", "2021-08-17 05:58:33.278808"]]
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_orgs"[0m
+  [1m[35m (9.0ms)[0m  [1m[35mCREATE TABLE "acad_orgs" ("Acad_Org" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "FormalDesc" text, "Institution" text, "Campus" text, "MgrID" text, "Instr_Edit" text, "Campus_Edit" text, "Subject_Edit" text, "Course_Edit" text, "AOU_Code" text, "DeptID" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_plans"[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "acad_plans" ("Acad_Group" text, "Acad_Prog" text, "Prog_Eff_Date" text, "Acad_Plan" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "Plan_Owner" text, "Pct_Owned" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_progs"[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "acad_progs" ("Acad_Prog" text, "Descr" text, "Acad_Org" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "activities"[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "activities" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "class_name" text, "class_code" text, "colour" text, "description" text, "weeks" text, "hours" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "days" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "all_classes"[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "all_classes" ("Term" text, "Course_ID" text, "Offer_Nbr" text, "Class_Nbr" text, "Section" text, "Enrl_Stat" text, "Class_Stat" text, "Assoc" text, "Session" text, "Auto_Enrol" text, "Auto_Enr_2" text, "Class_Type" text, "Cap_Enrl" text, "Tot_Enrl" text, "Comb_Sects_ID" text, "Combined_Sect_Cap_Enrl" text, "Combined_Sect_Tot_Enrl" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_catalogs"[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "ccat_catalogs" ("Eff_Date" text, "Course_ID" text, "Status" text, "Short_Title" text, "Long_Title" text, "Min_Units" text, "Max_Units" text, "Prgrss_Unt" text, "Grading" text, "Last_Crse" text, "Enrl_Unt_Calc" text, "Descr" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_components"[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "ccat_components" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Primary_Component" text, "Enrol_Component" text, "Final_Exam" text, "Sect_Size" text, "Contact" text, "SPlus_Templates_Reqd" text, "Component" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_offerings"[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "ccat_offerings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Acad_Group" text, "Subject" text, "Catalogue" text, "Approved" text, "Campus" text, "Sch_Print" text, "Cat_Print" text, "Print" text, "Acad_Org" text, "Career" text, "Schedule_Course" text, "Band_ID" text, "Rq_Group" text, "Discp_Grp_Cd" text, "Field_of_Ed_Cd" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_owners"[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "ccat_owners" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Offering_Acad_Org" text, "Owner_Acad_Org" text, "Pct_Owned" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_publications"[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "ccat_publications" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Contact_Hours_YN" text, "Contact_Hours" text, "Restriction_YN" text, "Restriction" text, "Avail_NAWD" text, "Quota_YN" text, "Quota" text, "Pre-Requisite_YN" text, "Pre-Requisite" text, "Co-Requisite_YN" text, "Co-Requisite" text, "Assumed_Knowl_YN" text, "Assumed_Knowl" text, "Incompatible_YN" text, "Incompatible" text, "Assessment_YN" text, "Assessment" text, "Biennial_Course_YN" text, "Biennial_Course" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_schedulings"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "ccat_schedulings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "TTble_for_SPlus" text, "Est_Enrol_Total" text, "Enrol_Component" text, "Summer_Semester" text, "Semester_1" text, "Winter_Semester" text, "Semester_2" text, "Trimester_1" text, "Trimester_2" text, "Trimester_3" text, "Quadmester_1" text, "Quadmester_2" text, "Quadmester_3" text, "Quadmester_4" text, "PCE_1" text, "PCE_2" text, "PCE_3" text, "Summer_Crse_Coordinator" text, "Sem1_Crse_Coordinator" text, "Winter_Crse_Coordinator" text, "Sem2_Crse_Coordinator" text, "Tri1_Crse_Coordinator" text, "Tri2_Crse_Coordinator" text, "Tri3_Crse_Coordinator" text, "Quad1_Crse_Coordinator" text, "Quad2_Crse_Coordinator" text, "Quad3_Crse_Coordinator" text, "Quad4_Crse_Coordinator" text, "PCE1_Crse_Coordinator" text, "PCE2_Crse_Coordinator" text, "PCE3_Crse_Coordinator" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_topics"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "ccat_topics" ("Subject" text, "Catalogue" text, "Eff_Date" text, "Course_ID" text, "Topic_ID" text, "Descr" text, "Short_Desc" text, "Repeatable" text, "Allowd_Unt" text, "Allow_Comp" text, "FormalDesc" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "full_enrolments"[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "full_enrolments" ("ID" text, "Term" text, "Class_Nbr" text, "Status" text, "Reason" text, "Acad_Prog" text, "Add_Dt" text, "Drop_Dt" text, "Unit_Taken" text, "Progress" text, "Grade" text, "Grade_In" text, "Grade_Dt" text, "Sdt_Positn" text, "Grd_Points" text, "Note_ID" text, "Rpt_Candidat" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_templates"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "sp_activity_templates" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_types"[0m
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "sp_activity_types" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activitys"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "sp_activitys" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "studentset" text, "sametime" text, "activity_template" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "scheduled" text, "scheduled_time" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "allocated_staff" text, "allocated_location" text, "allocated_studentset" text, "allocated_module" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "preset_module" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "scheduled_week_pattern" text, "scheduled_day_pattern" text, "scheduled_time_pattern" text, "class" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_departments"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "sp_departments" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_locations"[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "sp_locations" ("hostkey" text, "name" text, "description" text, "department" text, "size" text, "weeks" text, "unavailable" text, "usertext1" text, "usertext4" text, "sharewith" text, "avoidconcurrency" text, "suitability" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_modules"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "sp_modules" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "planned_size" text, "weeks" text, "named_availability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "programme" text)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_suitabilitys"[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "sp_suitabilitys" ("hostkey" text, "name" text, "description" text, "department" text, "location" text, "usertext1" text, "usertext4" text)[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (6.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210817051600)[0m
+  [1m[35m (5.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210817023031);
+
+[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-08-17 05:58:33.490991"], ["updated_at", "2021-08-17 05:58:33.490991"]]
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (1.0ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2021-08-17 05:58:33.500288"], ["key", "environment"]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "04f55496d60701f0c44e1496e85c7dce46619717"], ["created_at", "2021-08-17 05:58:33.510367"], ["updated_at", "2021-08-17 05:58:33.510367"]]
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateActivities (20210817023031)
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateActivities (20210817023031)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "activities" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "class_name" text, "class_code" text, "colour" text, "description" text, "weeks" text, "days" text, "hours" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210817023031"]]
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-08-17 06:04:38.319973"], ["updated_at", "2021-08-17 06:04:38.319973"]]
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-08-17 15:39:58 +0930
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
   Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1214)
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 339)
 [Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 89.8ms | Allocations: 7056)
-Completed 200 OK in 130ms (Views: 101.2ms | ActiveRecord: 0.0ms | Allocations: 9669)
+  Rendered layout layouts/application.html.erb (Duration: 65.1ms | Allocations: 8516)
+Completed 200 OK in 86ms (Views: 70.2ms | ActiveRecord: 0.0ms | Allocations: 11119)
 
 
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:07:21 +0930
-Processing by TableviewerController#index as HTML
+Started GET "/activities" for 127.0.0.1 at 2021-08-17 15:40:04 +0930
+Processing by ActivitiesController#index as HTML
   Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1091)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 58.1ms | Allocations: 4426)
-Completed 200 OK in 72ms (Views: 68.2ms | ActiveRecord: 0.0ms | Allocations: 7437)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:07:33 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1094)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 42.2ms | Allocations: 4459)
-Completed 200 OK in 52ms (Views: 48.6ms | ActiveRecord: 0.0ms | Allocations: 7468)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:07:40 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1090)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 34.7ms | Allocations: 4431)
-Completed 200 OK in 44ms (Views: 41.8ms | ActiveRecord: 0.0ms | Allocations: 5518)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:07:53 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 779)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 62.0ms | Allocations: 3926)
-Completed 200 OK in 68ms (Views: 65.8ms | ActiveRecord: 0.0ms | Allocations: 4306)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:08:47 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1099)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 31.1ms | Allocations: 4415)
-Completed 200 OK in 40ms (Views: 36.9ms | ActiveRecord: 0.0ms | Allocations: 5500)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:08:52 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1096)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 42.0ms | Allocations: 4459)
-Completed 200 OK in 52ms (Views: 48.2ms | ActiveRecord: 0.0ms | Allocations: 5539)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:09:18 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1096)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 50.3ms | Allocations: 4414)
-Completed 200 OK in 62ms (Views: 58.4ms | ActiveRecord: 0.0ms | Allocations: 7418)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:09:35 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1096)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 81.6ms | Allocations: 4413)
-Completed 200 OK in 98ms (Views: 93.2ms | ActiveRecord: 0.0ms | Allocations: 5493)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:09:40 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1096)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 65.4ms | Allocations: 4531)
-Completed 200 OK in 79ms (Views: 73.3ms | ActiveRecord: 0.0ms | Allocations: 7533)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:10:10 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 733)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 31.3ms | Allocations: 4084)
-Completed 200 OK in 41ms (Views: 37.7ms | ActiveRecord: 0.0ms | Allocations: 7086)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:10:58 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 676)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 62.5ms | Allocations: 4047)
-Completed 200 OK in 75ms (Views: 71.0ms | ActiveRecord: 0.0ms | Allocations: 5134)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:11:07 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 657)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 158.3ms | Allocations: 4378)
-Completed 200 OK in 185ms (Views: 176.1ms | ActiveRecord: 0.0ms | Allocations: 7380)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:11:17 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 658)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 57.5ms | Allocations: 4288)
-Completed 200 OK in 66ms (Views: 62.5ms | ActiveRecord: 0.0ms | Allocations: 7291)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:11:30 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 659)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 48.3ms | Allocations: 3974)
-Completed 200 OK in 62ms (Views: 58.2ms | ActiveRecord: 0.0ms | Allocations: 6980)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:11:34 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 658)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 103.0ms | Allocations: 4695)
-Completed 200 OK in 117ms (Views: 114.8ms | ActiveRecord: 0.0ms | Allocations: 5775)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:11:42 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 658)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 60.7ms | Allocations: 4034)
-Completed 200 OK in 74ms (Views: 68.7ms | ActiveRecord: 0.0ms | Allocations: 7036)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:11:49 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 658)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 34.0ms | Allocations: 3973)
-Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 0.0ms | Allocations: 6975)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:13:34 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 661)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 28.1ms | Allocations: 3992)
-Completed 200 OK in 37ms (Views: 34.1ms | Allocations: 7001)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:14:03 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 660)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 75.6ms | Allocations: 4103)
-Completed 200 OK in 97ms (Views: 91.2ms | Allocations: 7112)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:14:21 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 664)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 85.4ms | Allocations: 4042)
-Completed 200 OK in 103ms (Views: 97.3ms | Allocations: 7045)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:14:37 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 658)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 59.5ms | Allocations: 4187)
-Completed 200 OK in 70ms (Views: 66.3ms | Allocations: 7193)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:15:07 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 663)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 53.1ms | Allocations: 3990)
-Completed 200 OK in 62ms (Views: 59.1ms | Allocations: 5070)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:15:42 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 664)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 47.6ms | Allocations: 4067)
-Completed 200 OK in 56ms (Views: 52.9ms | Allocations: 5150)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:15:46 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 669)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 622.5ms | Allocations: 6663)
-Completed 200 OK in 631ms (Views: 628.8ms | Allocations: 9672)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:15:57 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 666)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 42.7ms | Allocations: 3997)
-Completed 200 OK in 53ms (Views: 49.2ms | Allocations: 7006)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:16:02 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 665)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 153.6ms | Allocations: 4924)
-Completed 200 OK in 163ms (Views: 160.4ms | Allocations: 7926)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:16:07 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 669)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 39.7ms | Allocations: 4084)
-Completed 200 OK in 47ms (Views: 44.9ms | Allocations: 5165)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:16:14 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 672)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 3989)
-Completed 200 OK in 31ms (Views: 29.7ms | Allocations: 6998)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:16:30 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 673)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 40.5ms | Allocations: 3988)
-Completed 200 OK in 48ms (Views: 45.7ms | Allocations: 5068)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:16:44 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 677)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 31.0ms | Allocations: 4008)
-Completed 200 OK in 43ms (Views: 39.6ms | Allocations: 7013)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:16:54 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 679)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 74.8ms | Allocations: 4082)
-Completed 200 OK in 100ms (Views: 94.2ms | Allocations: 7091)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:17:00 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 679)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 32.2ms | Allocations: 3996)
-Completed 200 OK in 42ms (Views: 38.1ms | Allocations: 6998)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:17:09 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 679)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 92.7ms | Allocations: 4008)
-Completed 200 OK in 110ms (Views: 104.4ms | Allocations: 7016)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:17:13 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 678)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 86.9ms | Allocations: 4510)
-Completed 200 OK in 93ms (Views: 91.5ms | Allocations: 7513)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:17:22 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 678)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 4003)
-Completed 200 OK in 33ms (Views: 31.0ms | Allocations: 5087)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:17:41 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 677)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 58.0ms | Allocations: 4008)
-Completed 200 OK in 71ms (Views: 66.2ms | Allocations: 7011)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:18:18 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 682)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 85.4ms | Allocations: 4048)
-Completed 200 OK in 100ms (Views: 95.8ms | Allocations: 5134)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:18:26 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 673)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 75.2ms | Allocations: 4252)
-Completed 200 OK in 84ms (Views: 81.8ms | Allocations: 5333)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:18:34 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 669)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 37.5ms | Allocations: 3986)
-Completed 200 OK in 45ms (Views: 42.6ms | Allocations: 6989)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:18:38 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 665)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 45.8ms | Allocations: 3990)
-Completed 200 OK in 60ms (Views: 56.2ms | Allocations: 6998)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:18:41 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 665)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 218.8ms | Allocations: 5379)
-Completed 200 OK in 226ms (Views: 224.2ms | Allocations: 8382)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:19:01 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 683)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 76.4ms | Allocations: 4025)
-Completed 200 OK in 94ms (Views: 89.7ms | Allocations: 5112)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:19:05 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 672)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 278.1ms | Allocations: 5433)
-Completed 200 OK in 294ms (Views: 290.6ms | Allocations: 8436)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:19:19 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 673)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 66.7ms | Allocations: 4008)
-Completed 200 OK in 81ms (Views: 76.3ms | Allocations: 5095)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:19:24 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 672)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 143.9ms | Allocations: 4682)
-Completed 200 OK in 153ms (Views: 150.7ms | Allocations: 7684)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:19:39 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 673)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 86.1ms | Allocations: 4143)
-Completed 200 OK in 100ms (Views: 95.5ms | Allocations: 5229)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:20:25 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 683)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 87.7ms | Allocations: 4031)
-Completed 200 OK in 104ms (Views: 99.0ms | Allocations: 5118)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:20:40 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 678)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 73.6ms | Allocations: 4011)
-Completed 200 OK in 87ms (Views: 83.9ms | Allocations: 5091)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:21:29 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 687)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 76.5ms | Allocations: 4024)
-Completed 200 OK in 96ms (Views: 90.2ms | Allocations: 5111)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:23:25 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 739)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 64.3ms | Allocations: 4058)
-Completed 200 OK in 79ms (Views: 73.9ms | Allocations: 5138)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:23:36 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 739)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 118.3ms | Allocations: 4150)
-Completed 200 OK in 138ms (Views: 132.0ms | Allocations: 7160)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:23:46 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 735)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 47.4ms | Allocations: 4052)
-Completed 200 OK in 57ms (Views: 53.6ms | Allocations: 7054)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:23:52 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 66.8ms | Allocations: 4849)
-  Rendered layout layouts/application.html.erb (Duration: 69.3ms | Allocations: 4913)
-Completed 500 Internal Server Error in 83ms (Allocations: 7891)
+  Rendering activities/index.html.erb within layouts/application
+  [1m[36mActivity Load (0.6ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/activities/index.html.erb:19
+  Rendered activities/index.html.erb within layouts/application (Duration: 81.6ms | Allocations: 10362)
+  Rendered layout layouts/application.html.erb (Duration: 82.6ms | Allocations: 10861)
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 5.1ms | Allocations: 12266)
 
 
   
-ActionView::Template::Error (undefined method `mod' for 2:Integer):
-    60:               <% if i/2 < 12 %>
-    61:                 <%= i/2 %>
-    62:               <% else %>
-    63:                 <%= i/2.mod(12) %>
-    64:               <% end %>
-    65:               :00
-    66:               <% if i < 24  %>
+ActionView::Template::Error (undefined method `calss_name' for #<Activity:0x00007f77ac084898>
+Did you mean?  class_name
+               class_name?
+               class_name=):
+    18:   <tbody>
+    19:     <% @activities.each do |activity| %>
+    20:       <tr>
+    21:         <td><%= activity.calss_name %></td>
+    22:         <td><%= activity.class_code %></td>
+    23:         <td><%= activity.colour %></td>
+    24:         <td><%= activity.description %></td>
   
-app/views/tableviewer/index.html.erb:63
-app/views/tableviewer/index.html.erb:56
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:24:38 +0930
-Processing by TableviewerController#index as HTML
+app/views/activities/index.html.erb:21
+app/views/activities/index.html.erb:19
+Started GET "/activities" for 127.0.0.1 at 2021-08-17 15:40:40 +0930
+Processing by ActivitiesController#index as HTML
   Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 735)
+  Rendering activities/index.html.erb within layouts/application
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/activities/index.html.erb:19
+  Rendered activities/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1525)
 [Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 67.6ms | Allocations: 4203)
-Completed 200 OK in 83ms (Views: 78.2ms | Allocations: 5383)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 5221)
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 0.3ms | Allocations: 6451)
 
 
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:24:50 +0930
-Processing by TableviewerController#index as HTML
+Started GET "/activities" for 127.0.0.1 at 2021-08-17 15:41:33 +0930
+Processing by ActivitiesController#index as HTML
   Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 738)
+  Rendering activities/index.html.erb within layouts/application
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/activities/index.html.erb:19
+  Rendered activities/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1371)
 [Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 37.3ms | Allocations: 4067)
-Completed 200 OK in 47ms (Views: 44.1ms | Allocations: 5154)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 4807)
+Completed 200 OK in 33ms (Views: 30.2ms | ActiveRecord: 0.4ms | Allocations: 5913)
 
 
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:24:58 +0930
-Processing by TableviewerController#index as HTML
+Started GET "/activities" for 127.0.0.1 at 2021-08-17 15:41:50 +0930
+Processing by ActivitiesController#index as HTML
   Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 735)
+  Rendering activities/index.html.erb within layouts/application
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/activities/index.html.erb:20
+  Rendered activities/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1369)
 [Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 4050)
-Completed 200 OK in 30ms (Views: 28.6ms | Allocations: 5130)
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 5131)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.4ms | Allocations: 6231)
 
 
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:25:04 +0930
-Processing by TableviewerController#index as HTML
+Started GET "/activities" for 127.0.0.1 at 2021-08-17 15:42:02 +0930
+Processing by ActivitiesController#index as HTML
   Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 735)
+  Rendering activities/index.html.erb within layouts/application
+  [1m[36mActivity Load (0.7ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/activities/index.html.erb:20
+  Rendered activities/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1377)
 [Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 30.8ms | Allocations: 4050)
-Completed 200 OK in 38ms (Views: 36.0ms | Allocations: 5130)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:25:08 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 735)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 48.0ms | Allocations: 4052)
-Completed 200 OK in 60ms (Views: 55.7ms | Allocations: 7054)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:25:12 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1496)
-  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 1560)
-Completed 500 Internal Server Error in 27ms (Allocations: 4539)
-
-
-  
-ActionView::Template::Error (divided by 0):
-    60:               <% if (i/2) < 12 %>
-    61:                 <%= i/2 %>
-    62:               <% else %>
-    63:                 <%= i/2.modulo(2) %>
-    64:               <% end %>
-    65:               :00
-    66:               <% if i < 24  %>
-  
-app/views/tableviewer/index.html.erb:63:in `/'
-app/views/tableviewer/index.html.erb:63
-app/views/tableviewer/index.html.erb:56
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:25:21 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 735)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 83.0ms | Allocations: 4082)
-Completed 200 OK in 100ms (Views: 94.8ms | Allocations: 5168)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:25:28 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 736)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 47.6ms | Allocations: 4073)
-Completed 200 OK in 59ms (Views: 54.8ms | Allocations: 7075)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:25:39 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 736)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 46.6ms | Allocations: 4061)
-Completed 200 OK in 55ms (Views: 52.4ms | Allocations: 5141)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:25:45 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 735)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 4052)
-Completed 200 OK in 31ms (Views: 29.5ms | Allocations: 5132)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:25:50 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 735)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 53.0ms | Allocations: 4082)
-Completed 200 OK in 66ms (Views: 61.6ms | Allocations: 7084)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:26:44 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 727)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 47.1ms | Allocations: 4058)
-Completed 200 OK in 56ms (Views: 53.5ms | Allocations: 5145)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:26:54 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 721)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 64.5ms | Allocations: 4042)
-Completed 200 OK in 80ms (Views: 74.8ms | Allocations: 7045)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:26:59 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 720)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 72.5ms | Allocations: 4054)
-Completed 200 OK in 88ms (Views: 83.8ms | Allocations: 5140)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:27:04 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 721)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 55.6ms | Allocations: 4048)
-Completed 200 OK in 64ms (Views: 61.2ms | Allocations: 5128)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:27:21 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 722)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 62.2ms | Allocations: 4051)
-Completed 200 OK in 74ms (Views: 69.8ms | Allocations: 5131)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:27:27 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 721)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 47.2ms | Allocations: 4038)
-Completed 200 OK in 55ms (Views: 52.6ms | Allocations: 5118)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:28:45 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 686)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 60.7ms | Allocations: 4084)
-Completed 200 OK in 71ms (Views: 67.6ms | Allocations: 7087)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:28:50 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 726)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 63.2ms | Allocations: 4059)
-Completed 200 OK in 76ms (Views: 72.3ms | Allocations: 5146)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:31:53 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 723)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 44.0ms | Allocations: 4057)
-Completed 200 OK in 54ms (Views: 50.4ms | Allocations: 5141)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:32:33 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 715)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 76.7ms | Allocations: 4048)
-Completed 200 OK in 92ms (Views: 88.1ms | Allocations: 5133)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:32:57 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 716)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 75.8ms | Allocations: 4041)
-Completed 200 OK in 90ms (Views: 85.8ms | Allocations: 5121)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:32:58 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 341)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 58.6ms | Allocations: 3499)
-Completed 200 OK in 63ms (Views: 60.8ms | Allocations: 3874)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:33:01 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 720)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 4035)
-Completed 200 OK in 33ms (Views: 31.3ms | Allocations: 5116)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:33:08 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 723)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 54.5ms | Allocations: 4067)
-Completed 200 OK in 70ms (Views: 64.4ms | Allocations: 7075)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:33:17 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 721)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 50.1ms | Allocations: 4064)
-Completed 200 OK in 59ms (Views: 56.3ms | Allocations: 7072)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:33:37 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 2311)
-  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 2378)
-Completed 500 Internal Server Error in 25ms (Allocations: 3431)
-
-
-  
-ActionView::Template::Error (undefined method `rstrip' for 2:Integer):
-    58:           <td>
-    59:             <% if i.modulo(2) == 0  %>
-    60:               <% if (i/2) <= 12 %>
-    61:                 <%= i/2.rstrip %>
-    62:               <% else %>
-    63:                 <%= (i/2).modulo(13) + 1 %>
-    64:               <% end %>
-  
-app/views/tableviewer/index.html.erb:61
-app/views/tableviewer/index.html.erb:56
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:34:12 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 720)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 85.9ms | Allocations: 4067)
-Completed 200 OK in 100ms (Views: 96.1ms | Allocations: 5154)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:34:30 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 684)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 87.7ms | Allocations: 4029)
-Completed 200 OK in 107ms (Views: 100.9ms | Allocations: 7036)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:34:59 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 722)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 57.1ms | Allocations: 4133)
-Completed 200 OK in 71ms (Views: 67.9ms | Allocations: 7135)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:35:07 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 341)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 68.0ms | Allocations: 3483)
-Completed 200 OK in 73ms (Views: 71.2ms | Allocations: 3858)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:35:37 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 662)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 3977)
-Completed 200 OK in 32ms (Views: 30.2ms | Allocations: 5057)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:36:53 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 663)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 72.6ms | Allocations: 3983)
-Completed 200 OK in 93ms (Views: 86.8ms | Allocations: 6985)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:36:56 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 662)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 64.3ms | Allocations: 3989)
-Completed 200 OK in 79ms (Views: 74.4ms | Allocations: 5070)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:36:59 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 666)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 39.4ms | Allocations: 4318)
-Completed 200 OK in 49ms (Views: 47.0ms | Allocations: 7004)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:38:12 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 664)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 64.1ms | Allocations: 3987)
-Completed 200 OK in 78ms (Views: 73.2ms | Allocations: 5072)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:38:29 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 663)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 75.5ms | Allocations: 3988)
-Completed 200 OK in 93ms (Views: 87.9ms | Allocations: 5068)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:38:32 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 281)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 30.8ms | Allocations: 3425)
-Completed 200 OK in 35ms (Views: 33.9ms | Allocations: 3800)
-
-
-Started GET "/" for 127.0.0.1 at 2021-08-19 17:38:37 +0930
-Processing by TableviewerController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering tableviewer/index.html.erb within layouts/application
-  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 281)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 113.4ms | Allocations: 3491)
-Completed 200 OK in 118ms (Views: 116.3ms | Allocations: 3865)
+  Rendered layout layouts/application.html.erb (Duration: 70.7ms | Allocations: 6029)
+Completed 200 OK in 79ms (Views: 74.2ms | ActiveRecord: 0.7ms | Allocations: 7142)
 
 

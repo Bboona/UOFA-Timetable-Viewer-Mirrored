@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  root "tableviewer#index"
+  resources :activities
+  root "articles#index"
 end
