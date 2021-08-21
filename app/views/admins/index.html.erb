@@ -1,28 +1,62 @@
-<style type="text/css">
-    .logo{
-        margin-top: 50px;
-        margin-left: 0px;
-        width: 30px;
-        height: 10px;
-    }
 
-</style>
+<%#= @level_object[:level_current] %>
 
-<div>
-  <div class = "logo">
-    <a href="https://ibb.co/LQgDnV0"><img src="https://i.ibb.co/LQgDnV0/Wechat-IMG16.jpg" alt="Wechat-IMG16" border="0"></a>
+<div class="container">
+  <h1>ADMIN</h1>
+
+  <div class="card">
+    <div class="card-body bg-warning sagov-warning" role="alert">
+      Click <a href="<%=@SAGov_restrictions_website %>" target="_blank"><strong>here</strong></a> to view the SA Government Activity restriction levels in a new tab
+    </div>
   </div>
-  <form method="get" style="text-align:center">
-    <h1>Admin Log in page</h1>
-    <p>User_name:</p> <input type="text" name="user_name" />
-    <p>Password:</p> <input type="text" name="password" />
-    <br>
-    <br>
-    <br>
-    <input type="submit" value="Submit" />
-  </form>
+</div>
 
-  <%= link_to root_path do %>
-    <button>back</button>
+
+
+<!--<div class="btn bg-primary">-->
+  <%#= fa_icon "camera" %>
+<!--</div>-->
+
+<h2 style="text-align: center;">
+  Covid Restriction Level Descriptions:
+</h2>
+
+<div class="container" style="margin-bottom: 2em;">
+  <%= form_for("level") do |f| %>
+    <% @all_levels.each do |level, description| %>
+
+        <% if level[0] == @level_current %>
+          <span class="btn bg-primary">
+          <%= f.radio_button :level, level, :checked => true %>
+        <% else %>
+          <span class="btn">
+          <%= f.radio_button :level, level %>
+        <% end %>
+        <%= label :level, level[0] %>
+      </span>
+    <% end %>
+    <%= f.submit 'Update', :class => 'btn btn-primary', :style => 'margin-top: 1em;' %>
   <% end %>
+</div>
+
+<div class="container">
+  <%# i = 0 %>
+  <% @all_levels.each do |level, description| %>
+    <% if level[0] == @level_current %>
+      <div class="card bg-primary restrictions_container">
+    <% else %>
+      <div class="card restrictions_container">
+    <% end %>
+      <div class="card-body">
+        <h2 class="card-title">Level <%=level%></h2>
+
+          <ul>
+          <% description.each do |dot_point| %>
+            <li class="card-text"><%= dot_point %></li>
+          <% end %>
+          </ul>
+      </div>
+    </div>
+  <% end %>
+  </div>
 </div>
