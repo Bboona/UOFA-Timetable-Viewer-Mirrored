@@ -6637,3 +6637,453 @@ Processing by AdminsController#index as HTML
 Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 0.1ms | Allocations: 10995)
 
 
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRestrictionLevels (20210816104632)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "restriction_levels" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "level_current" integer, "level_name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210816104632"]]
+  [1m[36mTRANSACTION (15.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-08-21 12:34:23 +0930
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 897)
+  Rendered layout layouts/application.html.erb (Duration: 134.4ms | Allocations: 21277)
+Completed 500 Internal Server Error in 166ms (ActiveRecord: 0.0ms | Allocations: 27537)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: bootstrap-icons/font/bootstrap-icons.
+        on line 2:1 of app/assets/stylesheets/custom.scss
+>> @import "bootstrap-icons/font/bootstrap-icons";
+
+   ^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/custom.scss:2
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2021-08-21 12:37:05 +0930
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 791)
+  Rendered layout layouts/application.html.erb (Duration: 77.3ms | Allocations: 16312)
+Completed 500 Internal Server Error in 88ms (ActiveRecord: 0.0ms | Allocations: 21546)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: bootstrap-icons/font/bootstrap-icons.
+        on line 2:1 of app/assets/stylesheets/custom.scss
+>> @import "bootstrap-icons/font/bootstrap-icons";
+
+   ^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/custom.scss:2
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2021-08-21 12:37:06 +0930
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 282)
+  Rendered layout layouts/application.html.erb (Duration: 60.3ms | Allocations: 14614)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.0ms | Allocations: 17641)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: bootstrap-icons/font/bootstrap-icons.
+        on line 2:1 of app/assets/stylesheets/custom.scss
+>> @import "bootstrap-icons/font/bootstrap-icons";
+
+   ^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/custom.scss:2
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2021-08-21 12:37:41 +0930
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 282)
+  Rendered layout layouts/application.html.erb (Duration: 58.1ms | Allocations: 14482)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.0ms | Allocations: 17422)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: bootstrap-icons/font/bootstrap-icons.
+        on line 2:1 of app/assets/stylesheets/custom.scss
+>> @import "bootstrap-icons/font/bootstrap-icons";
+
+   ^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/custom.scss:2
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2021-08-21 12:37:43 +0930
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 282)
+  Rendered layout layouts/application.html.erb (Duration: 62.1ms | Allocations: 14482)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.0ms | Allocations: 17422)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: bootstrap-icons/font/bootstrap-icons.
+        on line 2:1 of app/assets/stylesheets/custom.scss
+>> @import "bootstrap-icons/font/bootstrap-icons";
+
+   ^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/custom.scss:2
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2021-08-21 12:38:07 +0930
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 282)
+  Rendered layout layouts/application.html.erb (Duration: 62.1ms | Allocations: 14480)
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 0.0ms | Allocations: 17415)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: bootstrap-icons/font/bootstrap-icons.
+        on line 2:1 of app/assets/stylesheets/custom.scss
+>> @import "bootstrap-icons/font/bootstrap-icons";
+
+   ^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/custom.scss:2
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2021-08-21 12:38:08 +0930
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 282)
+  Rendered layout layouts/application.html.erb (Duration: 56.5ms | Allocations: 14480)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms | Allocations: 17415)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: bootstrap-icons/font/bootstrap-icons.
+        on line 2:1 of app/assets/stylesheets/custom.scss
+>> @import "bootstrap-icons/font/bootstrap-icons";
+
+   ^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/custom.scss:2
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2021-08-21 12:43:18 +0930
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 282)
+Started GET "/" for 127.0.0.1 at 2021-08-21 12:43:18 +0930
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 282)
+[Webpacker] Compiling...
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+ReferenceError: envronment is not defined
+    at Object.<anonymous> (/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/config/webpack/environment.js:4:1)
+    at Module._compile (/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1112:10)
+    at Module.load (node:internal/modules/cjs/loader:948:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:789:14)
+    at Module.require (node:internal/modules/cjs/loader:972:19)
+    at require (/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/config/webpack/development.js:3:21)
+    at Module._compile (/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1112:10)
+    at Module.load (node:internal/modules/cjs/loader:948:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:789:14)
+    at Module.require (node:internal/modules/cjs/loader:972:19)
+    at require (/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at /home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/webpack-cli/bin/cli.js:71:45
+    at Object.parse (/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/yargs/yargs.js:576:18)
+    at /home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (node:internal/modules/cjs/loader:1083:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1112:10)
+    at Module.load (node:internal/modules/cjs/loader:948:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:789:14)
+    at Module.require (node:internal/modules/cjs/loader:972:19)
+    at require (node:internal/modules/cjs/helpers:88:18)
+    at Object.<anonymous> (/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/webpack/bin/webpack.js:156:2)
+
+  Rendered layout layouts/application.html.erb (Duration: 6078.5ms | Allocations: 278515)
+Completed 200 OK in 6083ms (Views: 6080.7ms | Allocations: 281488)
+
+
+[Webpacker] Compilation failed:
+/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+ReferenceError: envronment is not defined
+    at Object.<anonymous> (/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/config/webpack/environment.js:4:1)
+    at Module._compile (/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1112:10)
+    at Module.load (node:internal/modules/cjs/loader:948:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:789:14)
+    at Module.require (node:internal/modules/cjs/loader:972:19)
+    at require (/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/config/webpack/development.js:3:21)
+    at Module._compile (/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1112:10)
+    at Module.load (node:internal/modules/cjs/loader:948:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:789:14)
+    at Module.require (node:internal/modules/cjs/loader:972:19)
+    at require (/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at /home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/webpack-cli/bin/cli.js:71:45
+    at Object.parse (/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/yargs/yargs.js:576:18)
+    at /home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (node:internal/modules/cjs/loader:1083:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1112:10)
+    at Module.load (node:internal/modules/cjs/loader:948:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:789:14)
+    at Module.require (node:internal/modules/cjs/loader:972:19)
+    at require (node:internal/modules/cjs/helpers:88:18)
+    at Object.<anonymous> (/home/damian/Documents/Uni/21-2/group project/Timetabling/ESaS2-Group1-TimetableViewer/master-test/ESaS2-Group1-TimetableViewer/node_modules/webpack/bin/webpack.js:156:2)
+
+  Rendered layout layouts/application.html.erb (Duration: 6215.6ms | Allocations: 198789)
+Completed 200 OK in 6220ms (Views: 6217.0ms | Allocations: 201752)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-21 12:43:47 +0930
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 791)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.3ms | Allocations: 20466)
+Completed 200 OK in 46ms (Views: 40.4ms | ActiveRecord: 0.0ms | Allocations: 23147)
+
+
+Started GET "/admin" for 127.0.0.1 at 2021-08-21 12:43:50 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/admin"):
+  
+Started GET "/admins" for 127.0.0.1 at 2021-08-21 12:43:53 +0930
+Processing by AdminsController#index as HTML
+  [1m[36mRestrictionLevel Load (0.2ms)[0m  [1m[34mSELECT "restriction_levels".* FROM "restriction_levels" ORDER BY "restriction_levels"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/admins_controller.rb:9:in `index'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.5ms | Allocations: 2656)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/admins_controller.rb:10:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestrictionLevel Create (0.3ms)[0m  [1m[32mINSERT INTO "restriction_levels" ("level_current", "level_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["level_current", 0], ["level_name", "0"], ["created_at", "2021-08-21 03:20:25.705150"], ["updated_at", "2021-08-21 03:20:25.705150"]]
+  [1m[36mTRANSACTION (7.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/admins" for 127.0.0.1 at 2021-08-21 12:50:31 +0930
+Processing by AdminsController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/admins_controller.rb:9:in `index'
+  [1m[36mRestrictionLevel Load (0.2ms)[0m  [1m[34mSELECT "restriction_levels".* FROM "restriction_levels" ORDER BY "restriction_levels"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/admins_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering admins/index.html.erb within layouts/application
+  Rendered admins/index.html.erb within layouts/application (Duration: 16.4ms | Allocations: 6721)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.3ms | Allocations: 14639)
+Completed 200 OK in 38ms (Views: 29.4ms | ActiveRecord: 0.9ms | Allocations: 19785)
+
+
+Started POST "/admins" for 127.0.0.1 at 2021-08-21 12:50:34 +0930
+Processing by AdminsController#set_restriction_level as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>{"level"=>"2: Low restrictions"}, "commit"=>"Update"}
+  [1m[36mRestrictionLevel Load (0.2ms)[0m  [1m[34mSELECT "restriction_levels".* FROM "restriction_levels" ORDER BY "restriction_levels"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/admins_controller.rb:24:in `set_restriction_level'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins_controller.rb:25:in `set_restriction_level'
+  [1m[36mRestrictionLevel Update (0.3ms)[0m  [1m[33mUPDATE "restriction_levels" SET "level_current" = ?, "level_name" = ?, "updated_at" = ? WHERE "restriction_levels"."id" = ?[0m  [["level_current", 2], ["level_name", "2: Low restrictions"], ["updated_at", "2021-08-21 03:20:34.515121"], ["id", 1]]
+  ↳ app/controllers/admins_controller.rb:25:in `set_restriction_level'
+  [1m[36mTRANSACTION (9.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins_controller.rb:25:in `set_restriction_level'
+Redirected to http://127.0.0.1:3000/admins
+Completed 302 Found in 25ms (ActiveRecord: 10.0ms | Allocations: 6146)
+
+
+Started GET "/admins" for 127.0.0.1 at 2021-08-21 12:50:34 +0930
+Processing by AdminsController#index as HTML
+  [1m[36mRestrictionLevel Load (0.1ms)[0m  [1m[34mSELECT "restriction_levels".* FROM "restriction_levels" ORDER BY "restriction_levels"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/admins_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering admins/index.html.erb within layouts/application
+  Rendered admins/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 906)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 8706)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.1ms | Allocations: 9792)
+
+
+Started POST "/admins" for 127.0.0.1 at 2021-08-21 12:50:36 +0930
+Processing by AdminsController#set_restriction_level as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>{"level"=>"4: High restrictions"}, "commit"=>"Update"}
+  [1m[36mRestrictionLevel Load (0.2ms)[0m  [1m[34mSELECT "restriction_levels".* FROM "restriction_levels" ORDER BY "restriction_levels"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/admins_controller.rb:24:in `set_restriction_level'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins_controller.rb:25:in `set_restriction_level'
+  [1m[36mRestrictionLevel Update (2.7ms)[0m  [1m[33mUPDATE "restriction_levels" SET "level_current" = ?, "level_name" = ?, "updated_at" = ? WHERE "restriction_levels"."id" = ?[0m  [["level_current", 4], ["level_name", "4: High restrictions"], ["updated_at", "2021-08-21 03:20:36.563683"], ["id", 1]]
+  ↳ app/controllers/admins_controller.rb:25:in `set_restriction_level'
+  [1m[36mTRANSACTION (10.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins_controller.rb:25:in `set_restriction_level'
+Redirected to http://127.0.0.1:3000/admins
+Completed 302 Found in 24ms (ActiveRecord: 12.9ms | Allocations: 5669)
+
+
+Started GET "/admins" for 127.0.0.1 at 2021-08-21 12:50:36 +0930
+Processing by AdminsController#index as HTML
+  [1m[36mRestrictionLevel Load (0.1ms)[0m  [1m[34mSELECT "restriction_levels".* FROM "restriction_levels" ORDER BY "restriction_levels"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/admins_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering admins/index.html.erb within layouts/application
+  Rendered admins/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 906)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 8705)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.1ms | Allocations: 9789)
+
+
+Started POST "/admins" for 127.0.0.1 at 2021-08-21 12:50:38 +0930
+Processing by AdminsController#set_restriction_level as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "level"=>{"level"=>"1: Watch and assess"}, "commit"=>"Update"}
+  [1m[36mRestrictionLevel Load (0.3ms)[0m  [1m[34mSELECT "restriction_levels".* FROM "restriction_levels" ORDER BY "restriction_levels"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/admins_controller.rb:24:in `set_restriction_level'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins_controller.rb:25:in `set_restriction_level'
+  [1m[36mRestrictionLevel Update (0.4ms)[0m  [1m[33mUPDATE "restriction_levels" SET "level_current" = ?, "level_name" = ?, "updated_at" = ? WHERE "restriction_levels"."id" = ?[0m  [["level_current", 1], ["level_name", "1: Watch and assess"], ["updated_at", "2021-08-21 03:20:38.277684"], ["id", 1]]
+  ↳ app/controllers/admins_controller.rb:25:in `set_restriction_level'
+  [1m[36mTRANSACTION (9.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins_controller.rb:25:in `set_restriction_level'
+Redirected to http://127.0.0.1:3000/admins
+Completed 302 Found in 24ms (ActiveRecord: 10.7ms | Allocations: 5685)
+
+
+Started GET "/admins" for 127.0.0.1 at 2021-08-21 12:50:38 +0930
+Processing by AdminsController#index as HTML
+  [1m[36mRestrictionLevel Load (0.2ms)[0m  [1m[34mSELECT "restriction_levels".* FROM "restriction_levels" ORDER BY "restriction_levels"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/admins_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering admins/index.html.erb within layouts/application
+  Rendered admins/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 906)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 8705)
+Completed 200 OK in 16ms (Views: 11.8ms | ActiveRecord: 0.2ms | Allocations: 9789)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-21 12:50:40 +0930
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 282)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 8085)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 8460)
+
+
+Started GET "/student" for 127.0.0.1 at 2021-08-21 12:51:05 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/student"):
+  
+Started GET "/students" for 127.0.0.1 at 2021-08-21 12:51:07 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/students"):
+  
+Started GET "/teachers" for 127.0.0.1 at 2021-08-21 12:51:09 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/teachers"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-21 12:51:11 +0930
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 664)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 8734)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 9822)
+
+

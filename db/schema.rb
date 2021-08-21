@@ -235,6 +235,13 @@ ActiveRecord::Schema.define(version: 2021_08_17_023031) do
     t.text "Rpt_Candidat"
   end
 
+  create_table "restriction_levels", force: :cascade do |t|
+    t.integer "level_current"
+    t.string "level_name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "sp_activity_templates", id: false, force: :cascade do |t|
     t.text "hostkey"
     t.text "name"
