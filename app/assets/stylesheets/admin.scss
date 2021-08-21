@@ -1,0 +1,32 @@
+// Place all the styles related to the Admin controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+body{
+  padding: 2em;
+}
+
+.restrictions_container {
+  padding: 15px;
+  //width: 50em;
+  margin: auto;
+  margin-bottom: 2em;
+  background-color: #EFEFEF;
+  border-radius: 5px;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.sagov-warning{
+  padding: 15px;
+  border-radius: 5px;
+  border-color: #8a6d3b;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.alert {
+  width: 50em;
+  margin: auto;
+}
