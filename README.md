@@ -1,24 +1,9 @@
-# README
+# Timetable Viewer
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Get Started
+* run `rails db:seed`
+* You may need to run `bundle install`
+* To resolve "SassC::SyntaxError in Tableviewer#index", run `yarn install`
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Run
+* Use `rails server` to start the server
