@@ -19,13 +19,26 @@
       th, td {
           padding: 0.3em 0.8em;
       }
+
+      #current-week {
+          text-align: center;
+      }
+
+      #current-week h3 {
+          display: inline-block;
+      }
   </style>
 </head>
 <body>
 
   <div>
     <h2>TIMETABLE: WEEKLY VIEW</h2>
-    <h3>2 - 8 August 2021</h3>
+
+    <div id="current-week">
+      <button id="week-back" type="button">Back</button>
+      <h3>2 - 8 August 2021</h3>
+      <button id="week-forward" type="button">Forward</button>
+    </div>
   </div>
 
   <div style="float: left">
@@ -43,7 +56,7 @@
 
   <div>
     <table>
-      <tr>
+      <tr id="day-headers">
         <th>Time</th>
         <th>Monday</th>
         <th>Tuesday</th>
@@ -74,6 +87,51 @@
       <% end %>
     </table>
   </div>
+
+
+
+  <script>
+      function setWeekDayHeaders(direction) {
+          // Create a Date object for the Monday at the start of the week
+          var weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+          // Set the header for each day in the table, e.g 'Wednesday 25/8'
+          for (let i = 0; i < 7; i++) {
+              var d = new Date();
+              d.setDate(weekStartDate.getDate() + i);
+              var dayHeader = document.getElementById("day-headers").children[i+1];
+              dayHeader.innerText = weekDays[i] + " " + d.getDate()+ "/" + (d.getMonth() + 1);
+          }
+      }
+
+
+    // Get Information about current day
+    var currentDate = new Date();
+    var day = currentDate.getDay();
+    var date = currentDate.getDate();
+    var month = currentDate.getMonth();
+
+    // Highlight the current day in the week
+    document.getElementById("day-headers").children[day].style.backgroundColor = "grey";
+
+    var weekStartDate = new Date();
+
+    weekStartDate.setDate(date - day + 1);
+    setWeekDayHeaders();
+
+
+
+    document.getElementById("week-back").onclick = function() {
+        weekStartDate.setDate(weekStartDate.getDate() - 7);
+        setWeekDayHeaders();
+    }
+
+    document.getElementById("week-forward").onclick = function() {
+          weekStartDate.setDate(weekStartDate.getDate() + 7);
+          setWeekDayHeaders();
+      }
+
+  </script>
 
 
 </body>
