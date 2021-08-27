@@ -2,8 +2,8 @@
 
 one:
   level_current: 1
-  level_description: MyText
+  level_name: MyText
 
 two:
   level_current: 1
-  level_description: MyText
+  level_name: MyText
