@@ -1,0 +1,45 @@
+<% provide(:title, 'CLASHES LIST') %>
+
+<div class="text-center">
+  <h2>TIMETABLE: VIEW CLASHES</h2>
+  <h3>2 - 8 August 2021</h3>
+</div>
+
+<div class="row">
+
+
+  <a class="btn btn-success" href="<%= root_path %>" role="button">Return to Timetable</a>
+  <a class="btn btn-primary" href="#" role="button">Manage Meetings</a>
+
+
+  <!--  <button type="button" class="btn btn-outline-secondary" href="<%#= root_url %>">Primary</button>-->
+
+  <div class="col">
+    <% if !@clashes.nil? %>
+      <div class="bg-danger alert">
+        There are <%= @clashes.count %> clashes that need attention!
+      </div>
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>Course name</th>
+          <th>Course code</th>
+          <th>Class type</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Student ID</th>
+        </tr>
+        </thead>
+        <tbody>
+          <%= render partial: 'clash', collection: @clashes %>
+        </tbody>
+      </table>
+    <% else %>
+    <div class="col">
+      <h3>
+        There are no clashes to display.
+      </h3>
+    </div>
+    <% end %>
+  </div>
+</div>
