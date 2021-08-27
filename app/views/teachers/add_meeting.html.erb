@@ -1,0 +1,23 @@
+<h1>Add meeting</h1>
+<form style="text-align:center" >
+  <span>Date: </span>
+<input type="date" id="date"  name="date"required>
+<br>
+<div>
+  <span>From:</span> <input type="time" id="start_time" name="start_time"
+       min="09:00" max="18:00" required>
+  <span>To: </span>  <input type="time" id="end_time" name="end_time"
+          min="09:00" max="18:00" required>
+  <br>
+  <span>Type of meeting:</span><input id="meeting_type" name="meeting_type">
+  <br>
+  <span>Location:</span><input id="meeting_location" name="meeting_location">
+  <br>
+  <span>Description:</span><input id="meeting_description" name="meeting_description">
+  <br>
+  <%= link_to teachers_index_path do %>
+    <button>back</button>
+  <% end %>
+  <input type="submit" value="Submit" />
+</div>
+</form>

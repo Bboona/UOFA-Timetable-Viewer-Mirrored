@@ -1,0 +1,67 @@
+<style type="text/css">
+    .body{
+        margin: 0;padding: 0;
+    }
+    .nav{
+        height: 50px;
+        width: 100%;
+        background: #97959B;
+        position: fixed;
+        top: 0;
+    }
+    .content{
+        margin-top: 50px;
+    }
+    .logo{
+        margin-top: 50px;
+        margin-left: 0px;
+        width: 30px;
+        height: 10px;
+    }
+
+    .login_buttons{
+        text-align:center;
+        margin-top: 200px;
+
+    }
+    .login_button{
+        background-color: aqua;
+    }
+    .login_logo{
+        width: 3%;
+        height: 3%;
+    }
+</style>
+
+<body class="body">
+<div class="nav">
+  <h2></h2>
+</div>
+<div class = "logo">
+  <a href="https://ibb.co/LQgDnV0"><img src="https://i.ibb.co/LQgDnV0/Wechat-IMG16.jpg" alt="Wechat-IMG16" border="0"></a>
+</div>
+
+<div class="login_buttons">
+  <%= link_to "students/login" do %>
+    <img class = "login_logo" src="https://i.ibb.co/jMJyCzp/push.png" alt="push" border="0"></a>
+    <button class="login_button">Log in as a Student</button>
+  <% end %>
+
+  <br>
+  <br>
+  <br>
+
+  <%= link_to "teachers/login" do %>
+    <img class = "login_logo" src="https://i.ibb.co/jMJyCzp/push.png" alt="push" border="0"></a>
+    <button class="login_button">Log in as a Teacher</button>
+  <% end %>
+  <br>
+  <br>
+  <br>
+  <%= link_to "admins/login" do %>
+    <img class = "login_logo" src="https://i.ibb.co/jMJyCzp/push.png" alt="push" border="0"></a>
+    <button class="login_button">Log in as an Admin</button>
+  <% end %>
+
+</div>
+</body>
