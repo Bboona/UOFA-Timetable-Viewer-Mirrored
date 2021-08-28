@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get 'students/index'
   get 'admins/index'
   get 'teachers/index'
+  get 'teachers/add_meeting'
 end

@@ -7370,3 +7370,137 @@ Processing by TeachersController#index as HTML
 Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 9148)
 
 
+Started GET "/teachers/index?user_name=xiangyu&password=[FILTERED]" for 127.0.0.1 at 2021-08-28 14:15:28 +0930
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TeachersController#index as HTML
+  Parameters: {"user_name"=>"xiangyu", "password"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering teachers/index.html.erb within layouts/application
+  Rendered teachers/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 353)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 164.7ms | Allocations: 20990)
+Completed 200 OK in 197ms (Views: 170.5ms | ActiveRecord: 0.0ms | Allocations: 23707)
+
+
+Started GET "/teachers/index?user_name=xiangyu&password=" for 127.0.0.1 at 2021-08-28 14:15:32 +0930
+Processing by TeachersController#index as HTML
+  Parameters: {"user_name"=>"xiangyu", "password"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering teachers/index.html.erb within layouts/application
+  Rendered teachers/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 76)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 8127)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 8507)
+
+
+Started GET "/teachers/index?user_name=xiangyu&password=[FILTERED]" for 127.0.0.1 at 2021-08-28 14:15:36 +0930
+Processing by TeachersController#index as HTML
+  Parameters: {"user_name"=>"xiangyu", "password"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering teachers/index.html.erb within layouts/application
+  Rendered teachers/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 71)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 8146)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 8520)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-28 14:15:42 +0930
+Processing by LoginsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering logins/index.html.erb within layouts/application
+  Rendered logins/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 328)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 8374)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.0ms | Allocations: 9287)
+
+
+Started GET "/?user_name=xiangyu&password=[FILTERED]" for 127.0.0.1 at 2021-08-28 14:15:49 +0930
+Processing by LoginsController#index as HTML
+  Parameters: {"user_name"=>"xiangyu", "password"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering logins/index.html.erb within layouts/application
+  Rendered logins/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 8117)
+Completed 200 OK in 16ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 8522)
+
+
+Started GET "/?user_name=21&password=[FILTERED]" for 127.0.0.1 at 2021-08-28 14:15:53 +0930
+Processing by LoginsController#index as HTML
+  Parameters: {"user_name"=>"21", "password"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering logins/index.html.erb within layouts/application
+  Rendered logins/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 8117)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.0ms | Allocations: 8521)
+
+
+Started GET "/?user_name=ad&password=[FILTERED]" for 127.0.0.1 at 2021-08-28 14:15:59 +0930
+Processing by LoginsController#index as HTML
+  Parameters: {"user_name"=>"ad", "password"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering logins/index.html.erb within layouts/application
+  Rendered logins/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 8115)
+Completed 200 OK in 25ms (Views: 24.9ms | ActiveRecord: 0.0ms | Allocations: 8514)
+
+
+Started GET "/?user_name=ad&password=[FILTERED]" for 127.0.0.1 at 2021-08-28 14:17:14 +0930
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LoginsController#index as HTML
+  Parameters: {"user_name"=>"ad", "password"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering logins/index.html.erb within layouts/application
+  Rendered logins/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 462)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 205.7ms | Allocations: 21099)
+Completed 200 OK in 231ms (Views: 218.7ms | ActiveRecord: 0.0ms | Allocations: 24247)
+
+
+Started GET "/?user_name=xiangyu&password=[FILTERED]" for 127.0.0.1 at 2021-08-28 14:17:17 +0930
+Processing by LoginsController#index as HTML
+  Parameters: {"user_name"=>"xiangyu", "password"=>"[FILTERED]"}
+Redirected to http://127.0.0.1:3000/teachers/index?name=xiangyu
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started GET "/teachers/index?name=xiangyu" for 127.0.0.1 at 2021-08-28 14:17:17 +0930
+Processing by TeachersController#index as HTML
+  Parameters: {"name"=>"xiangyu"}
+  Rendering layout layouts/application.html.erb
+  Rendering teachers/index.html.erb within layouts/application
+  Rendered teachers/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 167)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 8221)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 9098)
+
+
+Started GET "/teachers/add_meeting" for 127.0.0.1 at 2021-08-28 14:17:19 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/teachers/add_meeting"):
+  
+Started GET "/teachers/add_meeting" for 127.0.0.1 at 2021-08-28 14:17:33 +0930
+Processing by TeachersController#add_meeting as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teachers/add_meeting.html.erb within layouts/application
+  Rendered teachers/add_meeting.html.erb within layouts/application (Duration: 1.1ms | Allocations: 227)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 8413)
+Completed 200 OK in 17ms (Views: 16.1ms | Allocations: 9082)
+
+
+Started GET "/teachers/add_meeting?date=2021-08-27&start_time=14%3A19&end_time=14%3A18&meeting_type=ad&meeting_location=adad&meeting_description=" for 127.0.0.1 at 2021-08-28 14:17:44 +0930
+Processing by TeachersController#add_meeting as HTML
+  Parameters: {"date"=>"2021-08-27", "start_time"=>"14:19", "end_time"=>"14:18", "meeting_type"=>"ad", "meeting_location"=>"adad", "meeting_description"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering teachers/add_meeting.html.erb within layouts/application
+  Rendered teachers/add_meeting.html.erb within layouts/application (Duration: 0.2ms | Allocations: 73)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 8255)
+Completed 200 OK in 17ms (Views: 15.9ms | Allocations: 8633)
+
+
