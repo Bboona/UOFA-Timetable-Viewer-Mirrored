@@ -7087,3 +7087,286 @@ Processing by TableviewerController#index as HTML
 Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 9822)
 
 
+Started GET "/" for 127.0.0.1 at 2021-08-27 10:58:25 +0930
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 986)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/xiangyushi/Desktop/SEASII/ESaS2-Group1-TimetableViewer/public/packs
+[Webpacker] warning ../../../package.json: No license field
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: 197e3ec7602442d093aa
+Version: webpack 4.46.0
+Time: 3096ms
+Built at: 08/27/2021 10:58:33 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-972fa830210d960ae149.js    317 KiB  application  [emitted] [immutable]  application
+js/application-972fa830210d960ae149.js.map    351 KiB  application  [emitted] [dev]        application
+                             manifest.json  612 bytes               [emitted]              
+ media/fonts/bootstrap-icons-94eeade1.woff    118 KiB               [emitted]              
+media/fonts/bootstrap-icons-dfd0ea12.woff2   88.4 KiB               [emitted]              
+Entrypoint application = js/application-972fa830210d960ae149.js js/application-972fa830210d960ae149.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 543 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 10 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8095.0ms | Allocations: 175392)
+Completed 200 OK in 8150ms (Views: 8107.2ms | ActiveRecord: 0.0ms | Allocations: 181724)
+
+
+Started GET "/teachers/login" for 127.0.0.1 at 2021-08-27 10:58:45 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/teachers/login"):
+  
+Started GET "/" for 127.0.0.1 at 2021-08-28 13:45:43 +0930
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 878)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 135.6ms | Allocations: 21100)
+Completed 200 OK in 165ms (Views: 141.1ms | ActiveRecord: 0.0ms | Allocations: 26648)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-28 14:01:12 +0930
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LoginsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering logins/index.html.erb within layouts/application
+  Rendered logins/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 460)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1081.4ms | Allocations: 167444)
+Completed 200 OK in 1108ms (Views: 1091.2ms | ActiveRecord: 0.0ms | Allocations: 170155)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-28 14:01:22 +0930
+Processing by LoginsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering logins/index.html.erb within layouts/application
+  Rendered logins/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 319)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 8520)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 9532)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-28 14:01:23 +0930
+Processing by LoginsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering logins/index.html.erb within layouts/application
+  Rendered logins/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 79)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 8107)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.0ms | Allocations: 8483)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-28 14:01:33 +0930
+Processing by LoginsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering logins/index.html.erb within layouts/application
+  Rendered logins/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 315)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 8515)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 9516)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-28 14:01:34 +0930
+Processing by LoginsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering logins/index.html.erb within layouts/application
+  Rendered logins/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 79)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 8105)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 8482)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-28 14:01:49 +0930
+Processing by LoginsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering logins/index.html.erb within layouts/application
+  Rendered logins/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 318)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 8626)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms | Allocations: 9633)
+
+
+Started GET "/?user_name=xiangyu&password=[FILTERED]" for 127.0.0.1 at 2021-08-28 14:02:34 +0930
+Processing by LoginsController#index as HTML
+  Parameters: {"user_name"=>"xiangyu", "password"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 8ms (Allocations: 2785)
+
+
+  
+NoMethodError (undefined method `students_index_path' for #<LoginsController:0x00000000009880>):
+  
+app/controllers/logins_controller.rb:9:in `index'
+Started GET "/" for 127.0.0.1 at 2021-08-28 14:03:49 +0930
+Processing by LoginsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering logins/index.html.erb within layouts/application
+  Rendered logins/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 102)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 8363)
+Completed 200 OK in 20ms (Views: 19.2ms | Allocations: 8983)
+
+
+Started GET "/?user_name=xiangyu&password=[FILTERED]" for 127.0.0.1 at 2021-08-28 14:03:51 +0930
+Processing by LoginsController#index as HTML
+  Parameters: {"user_name"=>"xiangyu", "password"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 18ms (Allocations: 2880)
+
+
+  
+NoMethodError (undefined method `students_index_path' for #<LoginsController:0x0000000000ab18>
+Did you mean?  students_path):
+  
+app/controllers/logins_controller.rb:9:in `index'
+Started GET "/" for 127.0.0.1 at 2021-08-28 14:04:18 +0930
+Processing by LoginsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering logins/index.html.erb within layouts/application
+  Rendered logins/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 80)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 8233)
+Completed 200 OK in 16ms (Views: 15.1ms | Allocations: 8766)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-28 14:04:19 +0930
+Processing by LoginsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering logins/index.html.erb within layouts/application
+  Rendered logins/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 8115)
+Completed 200 OK in 18ms (Views: 17.5ms | Allocations: 8518)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-28 14:04:19 +0930
+Processing by LoginsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering logins/index.html.erb within layouts/application
+  Rendered logins/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 8117)
+Completed 200 OK in 14ms (Views: 13.3ms | Allocations: 8525)
+
+
+Started GET "/?user_name=xiangyu&password=[FILTERED]" for 127.0.0.1 at 2021-08-28 14:04:25 +0930
+Processing by LoginsController#index as HTML
+  Parameters: {"user_name"=>"xiangyu", "password"=>"[FILTERED]"}
+Redirected to http://127.0.0.1:3000/students/index?name=xiangyu
+Completed 302 Found in 1ms (Allocations: 294)
+
+
+Started GET "/students/index?name=xiangyu" for 127.0.0.1 at 2021-08-28 14:04:25 +0930
+Processing by StudentsController#index as HTML
+  Parameters: {"name"=>"xiangyu"}
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 211)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 8217)
+Completed 200 OK in 19ms (Views: 17.5ms | Allocations: 9088)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-28 14:05:59 +0930
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LoginsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering logins/index.html.erb within layouts/application
+  Rendered logins/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 462)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 160.6ms | Allocations: 21099)
+Completed 200 OK in 181ms (Views: 172.1ms | ActiveRecord: 0.0ms | Allocations: 24269)
+
+
+Started GET "/?user_name=xiangyu&password=[FILTERED]" for 127.0.0.1 at 2021-08-28 14:06:03 +0930
+Processing by LoginsController#index as HTML
+  Parameters: {"user_name"=>"xiangyu", "password"=>"[FILTERED]"}
+Redirected to http://127.0.0.1:3000/teachers/index?name=xiangyu
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started GET "/teachers/index?name=xiangyu" for 127.0.0.1 at 2021-08-28 14:06:03 +0930
+Processing by TeachersController#index as HTML
+  Parameters: {"name"=>"xiangyu"}
+  Rendering layout layouts/application.html.erb
+  Rendering teachers/index.html.erb within layouts/application
+  Rendered teachers/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 217)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 8271)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 9148)
+
+
