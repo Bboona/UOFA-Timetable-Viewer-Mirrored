@@ -1,4 +1,5 @@
 class TableviewerController < ApplicationController
-  def index
-  end
+    def index
+      @activities = Activity.all
+    end
 end
