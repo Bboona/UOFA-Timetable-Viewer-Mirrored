@@ -1,2 +1,2 @@
-class AcadProg < PsoftDbBase
+class AcadProgs < PsoftDbBase
 end
