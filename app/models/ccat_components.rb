@@ -1,2 +1,2 @@
-class CcatComponent < PsoftDbBase
+class CcatComponents < PsoftDbBase
 end

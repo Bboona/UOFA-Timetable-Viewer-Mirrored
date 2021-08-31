@@ -1,2 +1,2 @@
-class AcadPlan < PsoftDbBase
+class AcadPlans < PsoftDbBase
 end

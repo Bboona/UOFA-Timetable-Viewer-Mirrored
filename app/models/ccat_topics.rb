@@ -1,2 +1,2 @@
-class CcatTopic < PsoftDbBase
+class CcatTopics < PsoftDbBase
 end

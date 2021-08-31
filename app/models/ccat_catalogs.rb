@@ -1,2 +1,2 @@
-class CcatCatalog < PsoftDbBase
+class CcatCatalogs < PsoftDbBase
 end
