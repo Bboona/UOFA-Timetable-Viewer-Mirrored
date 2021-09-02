@@ -1,0 +1,3 @@
+class Activity < PsoftDbBase
+
+end
