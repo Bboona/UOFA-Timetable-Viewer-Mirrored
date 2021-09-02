@@ -1,2 +1,2 @@
-class CcatPublication < PsoftDbBase
+class CcatPublications < PsoftDbBase
 end

@@ -1,2 +1,2 @@
-class CcatOwner < PsoftDbBase
+class CcatOwners < PsoftDbBase
 end
