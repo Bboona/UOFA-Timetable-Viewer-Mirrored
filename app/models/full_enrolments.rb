@@ -1,2 +1,2 @@
-class FullEnrolment < PsoftDbBase
+class FullEnrolments < PsoftDbBase
 end
