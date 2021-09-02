@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Class name:</strong>
+  <%= @activity.class_name %>
+</p>
+
+<p>
+  <strong>Class code:</strong>
+  <%= @activity.class_code %>
+</p>
+
+<p>
+  <strong>Colour:</strong>
+  <%= @activity.colour %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @activity.description %>
+</p>
+
+<p>
+  <strong>Weeks:</strong>
+  <%= @activity.weeks %>
+</p>
+
+<p>
+  <strong>Days:</strong>
+  <%= @activity.days %>
+</p>
+
+<p>
+  <strong>Hours:</strong>
+  <%= @activity.hours %>
+</p>
+
+<%= link_to 'Edit', edit_activity_path(@activity) %> |
+<%= link_to 'Back', activities_path %>

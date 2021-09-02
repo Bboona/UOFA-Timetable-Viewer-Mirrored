@@ -1,0 +1,197 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Week:</strong>
+  <%= @weekly.week %>
+</p>
+
+<p>
+  <strong>Activity:</strong>
+</p>
+
+<% @this_week.each do |activity| %>
+  <tr>
+    <td><%= activity.class_name %></td>
+    <td><%= activity.class_code %></td>
+    <td><%= activity.colour %></td>
+    <td><%= activity.days %></td>
+    <td><%= activity.hours %></td>
+  </tr>
+  </br>
+<% end %>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+      h2, h3 {
+          text-align: center;
+      }
+
+      table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+      }
+
+      table {
+          float: right;
+      }
+
+      th, td {
+          padding: 0.3em 0.8em;
+      }
+
+      #current-week {
+          text-align: center;
+      }
+
+      #current-week h3 {
+          display: inline-block;
+      }
+  </style>
+</head>
+<body>
+
+<div>
+  <h2>TIMETABLE: WEEKLY VIEW</h2>
+
+  <div id="current-week">
+    <button id="week-back" type="button">Back</button>
+    <h3></h3>
+    <button id="week-forward" type="button">Forward</button>
+  </div>
+</div>
+
+<div style="float: left">
+  <a href="https://www.adelaide.edu.au/ask-adelaide/">Ask ADEL</a>
+  <p>Find answers to frequently asked questions</p>
+  <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Online Chat</a>
+  <p>Chat with a sevice agent</p>
+  <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Phone Us</a>
+  <p>+61 8 83135208</p>
+  <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Enquire</a>
+  <p>Submit your question to a service agent</p>
+  <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Visit Us</a>
+  <p>Level 3 Hub Central North Terrace</p>
+</div>
+
+<div>
+  <table>
+    <tr id="day-headers">
+      <th>Time</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+    </tr>
+    <% @hours.each_with_index do |i,index| %>
+      <tr>
+        <td>
+          <% if [65536,262144,1048576,4194304,16777216,67108864,268435456,1073741824].include? i  %>
+            <% if ((index+18)/2) <= 12 %>
+              <%= (index+18)/2 %>:00
+            <% else %>
+              <%= ((index+18)/2).modulo(13) + 1 %>:00
+            <% end %>
+            <% if index+18 < 24  %>am<% else %>pm<% end %>
+          <% else %>
+            &nbsp;
+          <% end %>
+        </td>
+        <% for j in [1,2,4,8,16,32,64]%>
+          <% @this_week.each do |activity| %>
+            <% if activity.days.to_i & j == j && activity.hours.to_i & i == i%>
+              <%@class=1 %>
+              <%@using_class=activity %>
+            <% else %>
+              <%@class=0 %>
+            <% end %>
+          <% end %>
+          <% if @class==1 %>
+            <td valign="top" rowspan="<%=@using_class.Hamming_Weight%>" style="background-color:<%=@using_class.colour%>">
+              <%= @using_class.class_name%>
+            </td>
+          <% else %>
+            <td></td>
+          <% end %>
+        <% end %>
+      </tr>
+    <% end %>
+  </table>
+</div>
+
+
+<script>
+    // Get Information about current day
+    var currentDate = new Date();
+    var day = currentDate.getDay();
+    var date = currentDate.getDate();
+    var month = currentDate.getMonth();
+
+    // Arrays for days of week and months of year
+    var weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+    // Create date for the start of the week
+    var weekStartDate = new Date();
+    weekStartDate.setDate(date - day + 1);
+
+    // Create date object for the end of the week
+    var weekEndDate = new Date;
+    weekEndDate.setDate(weekStartDate.getDate() + 6);
+
+    // Update the week day headers
+    setWeekDayHeaders();
+
+    // Function to update the headers of the timetable with the days and dates of the week
+    function setWeekDayHeaders() {
+        // Set the header for each day in the table, e.g 'Wednesday 25/8'
+        for (let i = 0; i < 7; i++) {
+            // Create date for the i'th day of the week
+            var d = new Date(weekStartDate);
+            d.setDate(weekStartDate.getDate() + i);
+
+            // Get the DOM for the i'th column header
+            var dayHeader = document.getElementById("day-headers").children[i+1];
+
+            // Set the date in the column header
+            dayHeader.innerText = weekDays[i] + " " + d.getDate()+ "/" + (d.getMonth() + 1);
+        }
+
+        // Write the start and end of the week dates in the timetable header
+        var weekHeader = document.getElementById("current-week").children[1];
+        weekHeader.innerText = weekStartDate.getDate() + " " + months[weekStartDate.getMonth()] + " - " + weekEndDate.getDate() + " " + months[weekEndDate.getMonth()];
+
+        // Highlight the current day in the week
+        if (date >= weekStartDate.getDate() && date <= weekEndDate.getDate()) {
+            document.getElementById("day-headers").children[day].style.backgroundColor = "grey";
+        } else {
+            // Remove highlighting
+            document.getElementById("day-headers").children[day].style.backgroundColor = "white";
+
+        }
+    }
+
+    // If press back one week
+    document.getElementById("week-back").onclick = function() {
+        weekStartDate.setDate(weekStartDate.getDate() - 7);
+        weekEndDate.setDate(weekEndDate.getDate() - 7);
+        setWeekDayHeaders();
+    }
+
+    // If click forward one week
+    document.getElementById("week-forward").onclick = function() {
+        weekStartDate.setDate(weekStartDate.getDate() + 7);
+        weekEndDate.setDate(weekEndDate.getDate() + 7);
+        setWeekDayHeaders();
+    }
+
+</script>
+
+
+</body>
+</html>
