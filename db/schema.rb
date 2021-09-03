@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_31_052509) do
+ActiveRecord::Schema.define(version: 2021_08_31_142131) do
 
   create_table "acad_orgs", id: false, force: :cascade do |t|
     t.text "Acad_Org"
@@ -57,9 +57,9 @@ ActiveRecord::Schema.define(version: 2021_08_31_052509) do
     t.text "weeks"
     t.text "days"
     t.text "hours"
-    t.text "hamming_weight"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "Hamming_Weight"
   end
 
   create_table "all_classes", id: false, force: :cascade do |t|
