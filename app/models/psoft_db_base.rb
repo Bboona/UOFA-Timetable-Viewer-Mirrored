@@ -4,7 +4,4 @@
 class PsoftDbBase < ActiveRecord::Base
   self.abstract_class = true
   establish_connection PSOFT_DB
-  def readonly?
-    true
-  end
 end

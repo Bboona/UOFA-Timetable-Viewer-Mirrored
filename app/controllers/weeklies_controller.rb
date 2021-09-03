@@ -19,7 +19,6 @@ class WeekliesController < ApplicationController
       end
     end
   end
-
   # GET /weeklies/new
   def new
     @weekly = Weekly.new
