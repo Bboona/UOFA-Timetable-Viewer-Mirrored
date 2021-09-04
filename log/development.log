@@ -16772,3 +16772,2889 @@ Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 202
   
 ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
   
+Started GET "/" for 127.0.0.1 at 2021-09-03 09:16:55 +0930
+  [1m[35m (13.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 26.5ms | Allocations: 878)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 820.0ms | Allocations: 19701)
+Completed 200 OK in 954ms (Views: 856.9ms | ActiveRecord: 0.0ms | Allocations: 23410)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 09:16:56 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/1" for 127.0.0.1 at 2021-09-03 09:17:31 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/weeklies_controller.rb:72:in `set_weekly'
+  [1m[36mWeekly Load (0.2ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:72:in `set_weekly'
+  [1m[36mActivity Load (0.5ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 27.1ms | Allocations: 925)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 61.1ms | Allocations: 9555)
+Completed 200 OK in 123ms (Views: 65.6ms | ActiveRecord: 4.9ms | Allocations: 20583)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 09:17:32 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies" for 127.0.0.1 at 2021-09-03 09:37:20 +0930
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WeekliesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/weeklies/index.html.erb:14
+  [1m[36mWeekly Load (0.2ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies"[0m
+  ↳ app/views/weeklies/index.html.erb:14
+  Rendered weeklies/index.html.erb within layouts/application (Duration: 23.9ms | Allocations: 3781)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.2ms | Allocations: 11080)
+Completed 200 OK in 57ms (Views: 49.6ms | ActiveRecord: 1.9ms | Allocations: 12664)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 09:37:21 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/activities" for 127.0.0.1 at 2021-09-03 09:41:45 +0930
+Processing by ActivitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering activities/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/activities/index.html.erb:20
+  [1m[36mActivity Load (0.6ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/activities/index.html.erb:20
+  Rendered activities/index.html.erb within layouts/application (Duration: 30.7ms | Allocations: 6793)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.8ms | Allocations: 13902)
+Completed 200 OK in 58ms (Views: 54.2ms | Allocations: 15256)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 09:41:45 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/1" for 127.0.0.1 at 2021-09-03 10:03:53 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mWeekly Load (0.2ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.6ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 41.9ms | Allocations: 901)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 162.8ms | Allocations: 8013)
+Completed 200 OK in 199ms (Views: 163.8ms | Allocations: 12647)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:03:53 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+  [1m[35m (10.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestrictionLevel Create (2.5ms)[0m  [1m[32mINSERT INTO "restriction_levels" ("level_current", "level_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["level_current", 0], ["level_name", "0"], ["created_at", "2021-09-03 01:01:19.522891"], ["updated_at", "2021-09-03 01:01:19.522891"]]
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestrictionLevel Create (2.7ms)[0m  [1m[32mINSERT INTO "restriction_levels" ("level_current", "level_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["level_current", 0], ["level_name", "0"], ["created_at", "2021-09-03 01:04:37.465528"], ["updated_at", "2021-09-03 01:04:37.465528"]]
+  [1m[36mTRANSACTION (6.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (9.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestrictionLevel Create (1.2ms)[0m  [1m[32mINSERT INTO "restriction_levels" ("level_current", "level_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["level_current", 0], ["level_name", "0"], ["created_at", "2021-09-03 01:05:58.651460"], ["updated_at", "2021-09-03 01:05:58.651460"]]
+  [1m[36mTRANSACTION (7.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestrictionLevel Create (1.3ms)[0m  [1m[32mINSERT INTO "restriction_levels" ("level_current", "level_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["level_current", 0], ["level_name", "0"], ["created_at", "2021-09-03 01:06:23.731240"], ["updated_at", "2021-09-03 01:06:23.731240"]]
+  [1m[36mTRANSACTION (7.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestrictionLevel Create (13.2ms)[0m  [1m[32mINSERT INTO "restriction_levels" ("level_current", "level_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["level_current", 0], ["level_name", "0"], ["created_at", "2021-09-03 01:06:41.030808"], ["updated_at", "2021-09-03 01:06:41.030808"]]
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.0ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "256"], ["created_at", "2021-09-03 01:06:41.063646"], ["updated_at", "2021-09-03 01:06:41.063646"]]
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.1ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "512"], ["created_at", "2021-09-03 01:06:41.072948"], ["updated_at", "2021-09-03 01:06:41.072948"]]
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.1ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "1024"], ["created_at", "2021-09-03 01:06:41.082509"], ["updated_at", "2021-09-03 01:06:41.082509"]]
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.2ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "2048"], ["created_at", "2021-09-03 01:06:41.092739"], ["updated_at", "2021-09-03 01:06:41.092739"]]
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.1ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "4096"], ["created_at", "2021-09-03 01:06:41.102414"], ["updated_at", "2021-09-03 01:06:41.102414"]]
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.0ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "8192"], ["created_at", "2021-09-03 01:06:41.112349"], ["updated_at", "2021-09-03 01:06:41.112349"]]
+  [1m[36mTRANSACTION (7.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.1ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "16384"], ["created_at", "2021-09-03 01:06:41.123257"], ["updated_at", "2021-09-03 01:06:41.123257"]]
+  [1m[36mTRANSACTION (7.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.1ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "32768"], ["created_at", "2021-09-03 01:06:41.134536"], ["updated_at", "2021-09-03 01:06:41.134536"]]
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (0.9ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "65536"], ["created_at", "2021-09-03 01:06:41.144343"], ["updated_at", "2021-09-03 01:06:41.144343"]]
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.0ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "131072"], ["created_at", "2021-09-03 01:06:41.153769"], ["updated_at", "2021-09-03 01:06:41.153769"]]
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (0.9ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "262144"], ["created_at", "2021-09-03 01:06:41.162768"], ["updated_at", "2021-09-03 01:06:41.162768"]]
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.5ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "524288"], ["created_at", "2021-09-03 01:06:41.171245"], ["updated_at", "2021-09-03 01:06:41.171245"]]
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.0ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "1048576"], ["created_at", "2021-09-03 01:06:41.182078"], ["updated_at", "2021-09-03 01:06:41.182078"]]
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.0ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "2097152"], ["created_at", "2021-09-03 01:06:41.190975"], ["updated_at", "2021-09-03 01:06:41.190975"]]
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.1ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "4194304"], ["created_at", "2021-09-03 01:06:41.199629"], ["updated_at", "2021-09-03 01:06:41.199629"]]
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.8ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "8388608"], ["created_at", "2021-09-03 01:06:41.208811"], ["updated_at", "2021-09-03 01:06:41.208811"]]
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.1ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "16777216"], ["created_at", "2021-09-03 01:06:41.225317"], ["updated_at", "2021-09-03 01:06:41.225317"]]
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.0ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "33554432"], ["created_at", "2021-09-03 01:06:41.234577"], ["updated_at", "2021-09-03 01:06:41.234577"]]
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.1ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "67108864"], ["created_at", "2021-09-03 01:06:41.244364"], ["updated_at", "2021-09-03 01:06:41.244364"]]
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.0ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "134217728"], ["created_at", "2021-09-03 01:06:41.254262"], ["updated_at", "2021-09-03 01:06:41.254262"]]
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.1ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "268435456"], ["created_at", "2021-09-03 01:06:41.263761"], ["updated_at", "2021-09-03 01:06:41.263761"]]
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.2ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "536870912"], ["created_at", "2021-09-03 01:06:41.273325"], ["updated_at", "2021-09-03 01:06:41.273325"]]
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.0ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "1073741824"], ["created_at", "2021-09-03 01:06:41.282830"], ["updated_at", "2021-09-03 01:06:41.282830"]]
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.0ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "2147483648"], ["created_at", "2021-09-03 01:06:41.291853"], ["updated_at", "2021-09-03 01:06:41.291853"]]
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.1ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "4294967296"], ["created_at", "2021-09-03 01:06:41.300771"], ["updated_at", "2021-09-03 01:06:41.300771"]]
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.3ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "8589934592"], ["created_at", "2021-09-03 01:06:41.310645"], ["updated_at", "2021-09-03 01:06:41.310645"]]
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.4ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "17179869184"], ["created_at", "2021-09-03 01:06:41.319778"], ["updated_at", "2021-09-03 01:06:41.319778"]]
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.2ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "34359738368"], ["created_at", "2021-09-03 01:06:41.329427"], ["updated_at", "2021-09-03 01:06:41.329427"]]
+  [1m[36mTRANSACTION (6.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.2ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "68719476736"], ["created_at", "2021-09-03 01:06:41.339774"], ["updated_at", "2021-09-03 01:06:41.339774"]]
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.3ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "137438953472"], ["created_at", "2021-09-03 01:06:41.350110"], ["updated_at", "2021-09-03 01:06:41.350110"]]
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.1ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "274877906944"], ["created_at", "2021-09-03 01:06:41.358826"], ["updated_at", "2021-09-03 01:06:41.358826"]]
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.6ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "549755813888"], ["created_at", "2021-09-03 01:06:41.368119"], ["updated_at", "2021-09-03 01:06:41.368119"]]
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.2ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "1099511627776"], ["created_at", "2021-09-03 01:06:41.378554"], ["updated_at", "2021-09-03 01:06:41.378554"]]
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.5ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "2199023255552"], ["created_at", "2021-09-03 01:06:41.387646"], ["updated_at", "2021-09-03 01:06:41.387646"]]
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (0.9ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "4398046511104"], ["created_at", "2021-09-03 01:06:41.397125"], ["updated_at", "2021-09-03 01:06:41.397125"]]
+  [1m[36mTRANSACTION (6.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.1ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "8796093022208"], ["created_at", "2021-09-03 01:06:41.407217"], ["updated_at", "2021-09-03 01:06:41.407217"]]
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.0ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "17592186044416"], ["created_at", "2021-09-03 01:06:41.416695"], ["updated_at", "2021-09-03 01:06:41.416695"]]
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.0ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "35184372088832"], ["created_at", "2021-09-03 01:06:41.425494"], ["updated_at", "2021-09-03 01:06:41.425494"]]
+  [1m[36mTRANSACTION (6.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.2ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "70368744177664"], ["created_at", "2021-09-03 01:06:41.435714"], ["updated_at", "2021-09-03 01:06:41.435714"]]
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.1ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "140737488355328"], ["created_at", "2021-09-03 01:06:41.445931"], ["updated_at", "2021-09-03 01:06:41.445931"]]
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.7ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "281474976710656"], ["created_at", "2021-09-03 01:06:41.455347"], ["updated_at", "2021-09-03 01:06:41.455347"]]
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.2ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "562949953421312"], ["created_at", "2021-09-03 01:06:41.466079"], ["updated_at", "2021-09-03 01:06:41.466079"]]
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.2ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "1125899906842624"], ["created_at", "2021-09-03 01:06:41.476439"], ["updated_at", "2021-09-03 01:06:41.476439"]]
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.0ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "2251799813685248"], ["created_at", "2021-09-03 01:06:41.486939"], ["updated_at", "2021-09-03 01:06:41.486939"]]
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWeekly Create (1.0ms)[0m  [1m[32mINSERT INTO "weeklies" ("week", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["week", "4503599627370496"], ["created_at", "2021-09-03 01:06:41.495710"], ["updated_at", "2021-09-03 01:06:41.495710"]]
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/weeklies" for 127.0.0.1 at 2021-09-03 10:36:49 +0930
+Processing by WeekliesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/weeklies/index.html.erb:14
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies"[0m
+  ↳ app/views/weeklies/index.html.erb:14
+  Rendered weeklies/index.html.erb within layouts/application (Duration: 12.4ms | Allocations: 7983)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.5ms | Allocations: 15090)
+Completed 200 OK in 37ms (Views: 34.5ms | Allocations: 16056)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:36:50 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/1" for 127.0.0.1 at 2021-09-03 10:37:06 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWeekly Load (0.4ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 137)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 7367)
+Completed 200 OK in 49ms (Views: 22.8ms | Allocations: 13708)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:37:06 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies" for 127.0.0.1 at 2021-09-03 10:37:08 +0930
+Processing by WeekliesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/index.html.erb within layouts/application
+  [1m[36mWeekly Load (0.4ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies"[0m
+  ↳ app/views/weeklies/index.html.erb:14
+  Rendered weeklies/index.html.erb within layouts/application (Duration: 17.7ms | Allocations: 5258)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.7ms | Allocations: 12383)
+Completed 200 OK in 44ms (Views: 43.5ms | Allocations: 12776)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:37:08 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/46" for 127.0.0.1 at 2021-09-03 10:37:20 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"46"}
+  [1m[36mWeekly Load (0.5ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 102)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.4ms | Allocations: 7702)
+Completed 200 OK in 38ms (Views: 31.2ms | Allocations: 9223)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:37:20 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies" for 127.0.0.1 at 2021-09-03 10:37:41 +0930
+Processing by WeekliesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/index.html.erb within layouts/application
+  [1m[36mWeekly Load (0.5ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies"[0m
+  ↳ app/views/weeklies/index.html.erb:14
+  Rendered weeklies/index.html.erb within layouts/application (Duration: 14.9ms | Allocations: 5258)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.1ms | Allocations: 12383)
+Completed 200 OK in 45ms (Views: 44.2ms | Allocations: 12776)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:37:41 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/2" for 127.0.0.1 at 2021-09-03 10:37:52 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWeekly Load (0.9ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 131)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.7ms | Allocations: 7923)
+Completed 200 OK in 48ms (Views: 38.6ms | Allocations: 9444)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:37:52 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies" for 127.0.0.1 at 2021-09-03 10:37:57 +0930
+Processing by WeekliesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/index.html.erb within layouts/application
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies"[0m
+  ↳ app/views/weeklies/index.html.erb:14
+  Rendered weeklies/index.html.erb within layouts/application (Duration: 11.3ms | Allocations: 5257)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.7ms | Allocations: 12648)
+Completed 200 OK in 36ms (Views: 35.4ms | Allocations: 13040)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:37:57 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/3" for 127.0.0.1 at 2021-09-03 10:37:58 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 131)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 7291)
+Completed 200 OK in 30ms (Views: 24.8ms | Allocations: 8811)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:37:58 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies" for 127.0.0.1 at 2021-09-03 10:38:02 +0930
+Processing by WeekliesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/index.html.erb within layouts/application
+  [1m[36mWeekly Load (0.7ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies"[0m
+  ↳ app/views/weeklies/index.html.erb:14
+  Rendered weeklies/index.html.erb within layouts/application (Duration: 23.8ms | Allocations: 5257)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 81.4ms | Allocations: 13143)
+Completed 200 OK in 84ms (Views: 82.8ms | Allocations: 13536)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:38:03 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/8" for 127.0.0.1 at 2021-09-03 10:38:13 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (1.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 102)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 7464)
+Completed 200 OK in 44ms (Views: 27.6ms | Allocations: 8985)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:38:13 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies" for 127.0.0.1 at 2021-09-03 10:38:34 +0930
+Processing by WeekliesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/index.html.erb within layouts/application
+  [1m[36mWeekly Load (1.0ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies"[0m
+  ↳ app/views/weeklies/index.html.erb:14
+  Rendered weeklies/index.html.erb within layouts/application (Duration: 14.6ms | Allocations: 5257)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.0ms | Allocations: 12414)
+Completed 200 OK in 41ms (Views: 40.0ms | Allocations: 12807)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:38:34 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/3" for 127.0.0.1 at 2021-09-03 10:38:35 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWeekly Load (0.8ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 131)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.0ms | Allocations: 7283)
+Completed 200 OK in 60ms (Views: 45.4ms | Allocations: 8804)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:38:35 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/3" for 127.0.0.1 at 2021-09-03 10:39:54 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWeekly Load (1.0ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 896)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 69.9ms | Allocations: 10786)
+Completed 200 OK in 86ms (Views: 76.2ms | Allocations: 13028)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:39:54 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/3" for 127.0.0.1 at 2021-09-03 10:40:13 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWeekly Load (0.7ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 895)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.4ms | Allocations: 8513)
+Completed 200 OK in 43ms (Views: 35.9ms | Allocations: 10750)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:40:13 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/3" for 127.0.0.1 at 2021-09-03 10:43:44 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1759)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1824)
+Completed 500 Internal Server Error in 9ms (Allocations: 4042)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Week:</strong>
+  <%= @weekly.week %>
+</p>
+
+<p>
+  <strong>Activity:</strong>
+</p>
+
+<% @this_week.each do |activity| %>
+  <tr>
+    <td><%= activity.class_name %></td>
+    <td><%= activity.class_code %></td>
+    <td><%= activity.colour %></td>
+    <td><%= activity.days %></td>
+    <td><%= activity.hours %></td>
+  </tr>
+  </br>
+<% end %>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+      h2, h3 {
+          text-align: center;
+      }
+
+      table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+      }
+
+      table {
+          float: right;
+      }
+
+      th, td {
+          padding: 0.3em 0.8em;
+      }
+
+      #current-week {
+          text-align: center;
+      }
+
+      #current-week h3 {
+          display: inline-block;
+      }
+  </style>
+</head>
+<body>
+
+<div>
+  <h2>TIMETABLE: WEEKLY VIEW</h2>
+
+  <div id="current-week">
+    <button id="week-back" type="button">Back</button>
+    <h3></h3>
+    <button id="week-forward" type="button" >Forward</button>
+  </div>
+  <div id="current-week">
+    <% link_to @weekly(@weekly.id - 1) %>
+  </div>
+</div>
+
+<div style="float: left">
+  <a href="https://www.adelaide.edu.au/ask-adelaide/">Ask ADEL</a>
+  <p>Find answers to frequently asked questions</p>
+  <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Online Chat</a>
+  <p>Chat with a sevice agent</p>
+  <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Phone Us</a>
+  <p>+61 8 83135208</p>
+  <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Enquire</a>
+  <p>Submit your question to a service agent</p>
+  <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Visit Us</a>
+  <p>Level 3 Hub Central North Terrace</p>
+</div>
+
+<div>
+  <table>
+    <tr id="day-headers">
+      <th>Time</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+    </tr>
+    <% @hours.each_with_index do |i,index| %>
+      <tr>
+        <td>
+          <% if [65536,262144,1048576,4194304,16777216,67108864,268435456,1073741824].include? i  %>
+            <% if ((index+18)/2) <= 12 %>
+              <%= (index+18)/2 %>:00
+            <% else %>
+              <%= ((index+18)/2).modulo(13) + 1 %>:00
+            <% end %>
+            <% if index+18 < 24  %>am<% else %>pm<% end %>
+          <% else %>
+            &nbsp;
+          <% end %>
+        </td>
+        <% for j in [1,2,4,8,16,32,64]%>
+          <% @this_week.each do |activity| %>
+            <% if activity.days.to_i & j == j && activity.hours.to_i & i == i%>
+              <%@class=1 %>
+              <%@using_class=activity %>
+            <% else %>
+              <%@class=0 %>
+            <% end %>
+          <% end %>
+          <% if @class==1 %>
+            <td valign="top" rowspan="<%=@using_class.Hamming_Weight%>" style="background-color:<%=@using_class.colour%>">
+              <%= @using_class.class_name%>
+            </td>
+          <% else %>
+            <td></td>
+          <% end %>
+        <% end %>
+      </tr>
+    <% end %>
+  </table>
+</div>
+
+
+<script>
+    // Get Information about current day
+    var currentDate = new Date();
+    var day = currentDate.getDay();
+    var date = currentDate.getDate();
+    var month = currentDate.getMonth();
+
+    // Arrays for days of week and months of year
+    var weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+    // Create date for the start of the week
+    var weekStartDate = new Date();
+    weekStartDate.setDate(date - day + 1);
+
+    // Create date object for the end of the week
+    var weekEndDate = new Date;
+    weekEndDate.setDate(weekStartDate.getDate() + 6);
+
+    // Update the week day headers
+    setWeekDayHeaders();
+
+    // Function to update the headers of the timetable with the days and dates of the week
+    function setWeekDayHeaders() {
+        // Set the header for each day in the table, e.g 'Wednesday 25/8'
+        for (let i = 0; i < 7; i++) {
+            // Create date for the i'th day of the week
+            var d = new Date(weekStartDate);
+            d.setDate(weekStartDate.getDate() + i);
+
+            // Get the DOM for the i'th column header
+            var dayHeader = document.getElementById("day-headers").children[i+1];
+
+            // Set the date in the column header
+            dayHeader.innerText = weekDays[i] + " " + d.getDate()+ "/" + (d.getMonth() + 1);
+        }
+
+        // Write the start and end of the week dates in the timetable header
+        var weekHeader = document.getElementById("current-week").children[1];
+        weekHeader.innerText = weekStartDate.getDate() + " " + months[weekStartDate.getMonth()] + " - " + weekEndDate.getDate() + " " + months[weekEndDate.getMonth()];
+
+        // Highlight the current day in the week
+        if (date >= weekStartDate.getDate() && date <= weekEndDate.getDate()) {
+            document.getElementById("day-headers").children[day].style.backgroundColor = "grey";
+        } else {
+            // Remove highlighting
+            document.getElementById("day-headers").children[day].style.backgroundColor = "white";
+
+        }
+    }
+
+    // If press back one week
+    document.getElementById("week-back").onclick = function() {
+        weekStartDate.setDate(weekStartDate.getDate() - 7);
+        weekEndDate.setDate(weekEndDate.getDate() - 7);
+        setWeekDayHeaders();
+    }
+
+    // If click forward one week
+    document.getElementById("week-forward").onclick = function() {
+        weekStartDate.setDate(weekStartDate.getDate() + 7);
+        weekEndDate.setDate(weekEndDate.getDate() + 7);
+        setWeekDayHeaders();
+    }
+
+</script>
+
+
+</body>
+</html>
+
+):
+1:    <p id="notice"><%= notice %></p>
+2:    
+3:    <p>
+4:      <strong>Week:</strong>
+5:      <%= @weekly.week %>
+6:    </p>
+7:    
+8:    <p>
+9:      <strong>Activity:</strong>
+10:    </p>
+11:    
+12:    <% @this_week.each do |activity| %>
+13:      <tr>
+14:        <td><%= activity.class_name %></td>
+15:        <td><%= activity.class_code %></td>
+16:        <td><%= activity.colour %></td>
+17:        <td><%= activity.days %></td>
+18:        <td><%= activity.hours %></td>
+19:      </tr>
+20:      </br>
+21:    <% end %>
+22:    
+23:    <!DOCTYPE html>
+24:    <html>
+25:    <head>
+26:      <style>
+27:    
+28:          h2, h3 {
+29:              text-align: center;
+30:          }
+31:    
+32:          table, th, td {
+33:              border: 1px solid black;
+34:              border-collapse: collapse;
+35:          }
+36:    
+37:          table {
+38:              float: right;
+39:          }
+40:    
+41:          th, td {
+42:              padding: 0.3em 0.8em;
+43:          }
+44:    
+45:          #current-week {
+46:              text-align: center;
+47:          }
+48:    
+49:          #current-week h3 {
+50:              display: inline-block;
+51:          }
+52:      </style>
+53:    </head>
+54:    <body>
+55:    
+56:    <div>
+57:      <h2>TIMETABLE: WEEKLY VIEW</h2>
+58:    
+59:      <div id="current-week">
+60:        <button id="week-back" type="button">Back</button>
+61:        <h3></h3>
+62:        <button id="week-forward" type="button" >Forward</button>
+63:      </div>
+64:      <div id="current-week">
+65:        <% link_to @weekly(@weekly.id - 1) %>
+66:      </div>
+67:    </div>
+68:    
+69:    <div style="float: left">
+70:      <a href="https://www.adelaide.edu.au/ask-adelaide/">Ask ADEL</a>
+71:      <p>Find answers to frequently asked questions</p>
+72:      <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Online Chat</a>
+73:      <p>Chat with a sevice agent</p>
+74:      <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Phone Us</a>
+75:      <p>+61 8 83135208</p>
+76:      <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Enquire</a>
+77:      <p>Submit your question to a service agent</p>
+78:      <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Visit Us</a>
+79:      <p>Level 3 Hub Central North Terrace</p>
+80:    </div>
+81:    
+82:    <div>
+83:      <table>
+84:        <tr id="day-headers">
+85:          <th>Time</th>
+86:          <th>Monday</th>
+87:          <th>Tuesday</th>
+88:          <th>Wednesday</th>
+89:          <th>Thursday</th>
+90:          <th>Friday</th>
+91:          <th>Saturday</th>
+92:          <th>Sunday</th>
+93:        </tr>
+94:        <% @hours.each_with_index do |i,index| %>
+95:          <tr>
+96:            <td>
+97:              <% if [65536,262144,1048576,4194304,16777216,67108864,268435456,1073741824].include? i  %>
+98:                <% if ((index+18)/2) <= 12 %>
+99:                  <%= (index+18)/2 %>:00
+100:                <% else %>
+101:                  <%= ((index+18)/2).modulo(13) + 1 %>:00
+102:                <% end %>
+103:                <% if index+18 < 24  %>am<% else %>pm<% end %>
+104:              <% else %>
+105:                &nbsp;
+106:              <% end %>
+107:            </td>
+108:            <% for j in [1,2,4,8,16,32,64]%>
+109:              <% @this_week.each do |activity| %>
+110:                <% if activity.days.to_i & j == j && activity.hours.to_i & i == i%>
+111:                  <%@class=1 %>
+112:                  <%@using_class=activity %>
+113:                <% else %>
+114:                  <%@class=0 %>
+115:                <% end %>
+116:              <% end %>
+117:              <% if @class==1 %>
+118:                <td valign="top" rowspan="<%=@using_class.Hamming_Weight%>" style="background-color:<%=@using_class.colour%>">
+119:                  <%= @using_class.class_name%>
+120:                </td>
+121:              <% else %>
+122:                <td></td>
+123:              <% end %>
+124:            <% end %>
+125:          </tr>
+126:        <% end %>
+127:      </table>
+128:    </div>
+129:    
+130:    
+131:    <script>
+132:        // Get Information about current day
+133:        var currentDate = new Date();
+134:        var day = currentDate.getDay();
+135:        var date = currentDate.getDate();
+136:        var month = currentDate.getMonth();
+137:    
+138:        // Arrays for days of week and months of year
+139:        var weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+140:        var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+141:    
+142:        // Create date for the start of the week
+143:        var weekStartDate = new Date();
+144:        weekStartDate.setDate(date - day + 1);
+145:    
+146:        // Create date object for the end of the week
+147:        var weekEndDate = new Date;
+148:        weekEndDate.setDate(weekStartDate.getDate() + 6);
+149:    
+150:        // Update the week day headers
+151:        setWeekDayHeaders();
+152:    
+153:        // Function to update the headers of the timetable with the days and dates of the week
+154:        function setWeekDayHeaders() {
+155:            // Set the header for each day in the table, e.g 'Wednesday 25/8'
+156:            for (let i = 0; i < 7; i++) {
+157:                // Create date for the i'th day of the week
+158:                var d = new Date(weekStartDate);
+159:                d.setDate(weekStartDate.getDate() + i);
+160:    
+161:                // Get the DOM for the i'th column header
+162:                var dayHeader = document.getElementById("day-headers").children[i+1];
+163:    
+164:                // Set the date in the column header
+165:                dayHeader.innerText = weekDays[i] + " " + d.getDate()+ "/" + (d.getMonth() + 1);
+166:            }
+167:    
+168:            // Write the start and end of the week dates in the timetable header
+169:            var weekHeader = document.getElementById("current-week").children[1];
+170:            weekHeader.innerText = weekStartDate.getDate() + " " + months[weekStartDate.getMonth()] + " - " + weekEndDate.getDate() + " " + months[weekEndDate.getMonth()];
+171:    
+172:            // Highlight the current day in the week
+173:            if (date >= weekStartDate.getDate() && date <= weekEndDate.getDate()) {
+174:                document.getElementById("day-headers").children[day].style.backgroundColor = "grey";
+175:            } else {
+176:                // Remove highlighting
+177:                document.getElementById("day-headers").children[day].style.backgroundColor = "white";
+178:    
+179:            }
+180:        }
+181:    
+182:        // If press back one week
+183:        document.getElementById("week-back").onclick = function() {
+184:            weekStartDate.setDate(weekStartDate.getDate() - 7);
+185:            weekEndDate.setDate(weekEndDate.getDate() - 7);
+186:            setWeekDayHeaders();
+187:        }
+188:    
+189:        // If click forward one week
+190:        document.getElementById("week-forward").onclick = function() {
+191:            weekStartDate.setDate(weekStartDate.getDate() + 7);
+192:            weekEndDate.setDate(weekEndDate.getDate() + 7);
+193:            setWeekDayHeaders();
+194:        }
+195:    
+196:    </script>
+197:    
+198:    
+199:    </body>
+200:    </html>
+  
+app/views/weeklies/show.html.erb:65: syntax error, unexpected '(', expecting `end'
+app/views/weeklies/show.html.erb:65: syntax error, unexpected ')', expecting `end'
+app/views/weeklies/show.html.erb:65: syntax error, unexpected '(', expecting `end'
+app/views/weeklies/show.html.erb:65: syntax error, unexpected ')', expecting `end'
+app/views/weeklies/show.html.erb:65: syntax error, unexpected '(', expecting `end'
+app/views/weeklies/show.html.erb:65: syntax error, unexpected ')', expecting `end'
+app/views/weeklies/show.html.erb:65: syntax error, unexpected '(', expecting `end'
+app/views/weeklies/show.html.erb:65: syntax error, unexpected ')', expecting `end'
+app/views/weeklies/show.html.erb:65: syntax error, unexpected '(', expecting `end'
+app/views/weeklies/show.html.erb:65: syntax error, unexpected ')', expecting `end'
+app/views/weeklies/show.html.erb:65: syntax error, unexpected '(', expecting `end'
+app/views/weeklies/show.html.erb:65: syntax error, unexpected ')', expecting `end'
+Started GET "/weeklies/3" for 127.0.0.1 at 2021-09-03 10:44:06 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1759)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 3451)
+Completed 500 Internal Server Error in 28ms (Allocations: 7914)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Week:</strong>
+  <%= @weekly.week %>
+</p>
+
+<p>
+  <strong>Activity:</strong>
+</p>
+
+<% @this_week.each do |activity| %>
+  <tr>
+    <td><%= activity.class_name %></td>
+    <td><%= activity.class_code %></td>
+    <td><%= activity.colour %></td>
+    <td><%= activity.days %></td>
+    <td><%= activity.hours %></td>
+  </tr>
+  </br>
+<% end %>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+      h2, h3 {
+          text-align: center;
+      }
+
+      table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+      }
+
+      table {
+          float: right;
+      }
+
+      th, td {
+          padding: 0.3em 0.8em;
+      }
+
+      #current-week {
+          text-align: center;
+      }
+
+      #current-week h3 {
+          display: inline-block;
+      }
+  </style>
+</head>
+<body>
+
+<div>
+  <h2>TIMETABLE: WEEKLY VIEW</h2>
+
+  <div id="current-week">
+    <button id="week-back" type="button">Back</button>
+    <h3></h3>
+    <button id="week-forward" type="button" >Forward</button>
+  </div>
+  <div id="current-week">
+    <%= link_to "back", @weekly(@weekly.id - 1) %>
+  </div>
+</div>
+
+<div style="float: left">
+  <a href="https://www.adelaide.edu.au/ask-adelaide/">Ask ADEL</a>
+  <p>Find answers to frequently asked questions</p>
+  <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Online Chat</a>
+  <p>Chat with a sevice agent</p>
+  <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Phone Us</a>
+  <p>+61 8 83135208</p>
+  <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Enquire</a>
+  <p>Submit your question to a service agent</p>
+  <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Visit Us</a>
+  <p>Level 3 Hub Central North Terrace</p>
+</div>
+
+<div>
+  <table>
+    <tr id="day-headers">
+      <th>Time</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+    </tr>
+    <% @hours.each_with_index do |i,index| %>
+      <tr>
+        <td>
+          <% if [65536,262144,1048576,4194304,16777216,67108864,268435456,1073741824].include? i  %>
+            <% if ((index+18)/2) <= 12 %>
+              <%= (index+18)/2 %>:00
+            <% else %>
+              <%= ((index+18)/2).modulo(13) + 1 %>:00
+            <% end %>
+            <% if index+18 < 24  %>am<% else %>pm<% end %>
+          <% else %>
+            &nbsp;
+          <% end %>
+        </td>
+        <% for j in [1,2,4,8,16,32,64]%>
+          <% @this_week.each do |activity| %>
+            <% if activity.days.to_i & j == j && activity.hours.to_i & i == i%>
+              <%@class=1 %>
+              <%@using_class=activity %>
+            <% else %>
+              <%@class=0 %>
+            <% end %>
+          <% end %>
+          <% if @class==1 %>
+            <td valign="top" rowspan="<%=@using_class.Hamming_Weight%>" style="background-color:<%=@using_class.colour%>">
+              <%= @using_class.class_name%>
+            </td>
+          <% else %>
+            <td></td>
+          <% end %>
+        <% end %>
+      </tr>
+    <% end %>
+  </table>
+</div>
+
+
+<script>
+    // Get Information about current day
+    var currentDate = new Date();
+    var day = currentDate.getDay();
+    var date = currentDate.getDate();
+    var month = currentDate.getMonth();
+
+    // Arrays for days of week and months of year
+    var weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+    // Create date for the start of the week
+    var weekStartDate = new Date();
+    weekStartDate.setDate(date - day + 1);
+
+    // Create date object for the end of the week
+    var weekEndDate = new Date;
+    weekEndDate.setDate(weekStartDate.getDate() + 6);
+
+    // Update the week day headers
+    setWeekDayHeaders();
+
+    // Function to update the headers of the timetable with the days and dates of the week
+    function setWeekDayHeaders() {
+        // Set the header for each day in the table, e.g 'Wednesday 25/8'
+        for (let i = 0; i < 7; i++) {
+            // Create date for the i'th day of the week
+            var d = new Date(weekStartDate);
+            d.setDate(weekStartDate.getDate() + i);
+
+            // Get the DOM for the i'th column header
+            var dayHeader = document.getElementById("day-headers").children[i+1];
+
+            // Set the date in the column header
+            dayHeader.innerText = weekDays[i] + " " + d.getDate()+ "/" + (d.getMonth() + 1);
+        }
+
+        // Write the start and end of the week dates in the timetable header
+        var weekHeader = document.getElementById("current-week").children[1];
+        weekHeader.innerText = weekStartDate.getDate() + " " + months[weekStartDate.getMonth()] + " - " + weekEndDate.getDate() + " " + months[weekEndDate.getMonth()];
+
+        // Highlight the current day in the week
+        if (date >= weekStartDate.getDate() && date <= weekEndDate.getDate()) {
+            document.getElementById("day-headers").children[day].style.backgroundColor = "grey";
+        } else {
+            // Remove highlighting
+            document.getElementById("day-headers").children[day].style.backgroundColor = "white";
+
+        }
+    }
+
+    // If press back one week
+    document.getElementById("week-back").onclick = function() {
+        weekStartDate.setDate(weekStartDate.getDate() - 7);
+        weekEndDate.setDate(weekEndDate.getDate() - 7);
+        setWeekDayHeaders();
+    }
+
+    // If click forward one week
+    document.getElementById("week-forward").onclick = function() {
+        weekStartDate.setDate(weekStartDate.getDate() + 7);
+        weekEndDate.setDate(weekEndDate.getDate() + 7);
+        setWeekDayHeaders();
+    }
+
+</script>
+
+
+</body>
+</html>
+
+):
+1:    <p id="notice"><%= notice %></p>
+2:    
+3:    <p>
+4:      <strong>Week:</strong>
+5:      <%= @weekly.week %>
+6:    </p>
+7:    
+8:    <p>
+9:      <strong>Activity:</strong>
+10:    </p>
+11:    
+12:    <% @this_week.each do |activity| %>
+13:      <tr>
+14:        <td><%= activity.class_name %></td>
+15:        <td><%= activity.class_code %></td>
+16:        <td><%= activity.colour %></td>
+17:        <td><%= activity.days %></td>
+18:        <td><%= activity.hours %></td>
+19:      </tr>
+20:      </br>
+21:    <% end %>
+22:    
+23:    <!DOCTYPE html>
+24:    <html>
+25:    <head>
+26:      <style>
+27:    
+28:          h2, h3 {
+29:              text-align: center;
+30:          }
+31:    
+32:          table, th, td {
+33:              border: 1px solid black;
+34:              border-collapse: collapse;
+35:          }
+36:    
+37:          table {
+38:              float: right;
+39:          }
+40:    
+41:          th, td {
+42:              padding: 0.3em 0.8em;
+43:          }
+44:    
+45:          #current-week {
+46:              text-align: center;
+47:          }
+48:    
+49:          #current-week h3 {
+50:              display: inline-block;
+51:          }
+52:      </style>
+53:    </head>
+54:    <body>
+55:    
+56:    <div>
+57:      <h2>TIMETABLE: WEEKLY VIEW</h2>
+58:    
+59:      <div id="current-week">
+60:        <button id="week-back" type="button">Back</button>
+61:        <h3></h3>
+62:        <button id="week-forward" type="button" >Forward</button>
+63:      </div>
+64:      <div id="current-week">
+65:        <%= link_to "back", @weekly(@weekly.id - 1) %>
+66:      </div>
+67:    </div>
+68:    
+69:    <div style="float: left">
+70:      <a href="https://www.adelaide.edu.au/ask-adelaide/">Ask ADEL</a>
+71:      <p>Find answers to frequently asked questions</p>
+72:      <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Online Chat</a>
+73:      <p>Chat with a sevice agent</p>
+74:      <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Phone Us</a>
+75:      <p>+61 8 83135208</p>
+76:      <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Enquire</a>
+77:      <p>Submit your question to a service agent</p>
+78:      <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Visit Us</a>
+79:      <p>Level 3 Hub Central North Terrace</p>
+80:    </div>
+81:    
+82:    <div>
+83:      <table>
+84:        <tr id="day-headers">
+85:          <th>Time</th>
+86:          <th>Monday</th>
+87:          <th>Tuesday</th>
+88:          <th>Wednesday</th>
+89:          <th>Thursday</th>
+90:          <th>Friday</th>
+91:          <th>Saturday</th>
+92:          <th>Sunday</th>
+93:        </tr>
+94:        <% @hours.each_with_index do |i,index| %>
+95:          <tr>
+96:            <td>
+97:              <% if [65536,262144,1048576,4194304,16777216,67108864,268435456,1073741824].include? i  %>
+98:                <% if ((index+18)/2) <= 12 %>
+99:                  <%= (index+18)/2 %>:00
+100:                <% else %>
+101:                  <%= ((index+18)/2).modulo(13) + 1 %>:00
+102:                <% end %>
+103:                <% if index+18 < 24  %>am<% else %>pm<% end %>
+104:              <% else %>
+105:                &nbsp;
+106:              <% end %>
+107:            </td>
+108:            <% for j in [1,2,4,8,16,32,64]%>
+109:              <% @this_week.each do |activity| %>
+110:                <% if activity.days.to_i & j == j && activity.hours.to_i & i == i%>
+111:                  <%@class=1 %>
+112:                  <%@using_class=activity %>
+113:                <% else %>
+114:                  <%@class=0 %>
+115:                <% end %>
+116:              <% end %>
+117:              <% if @class==1 %>
+118:                <td valign="top" rowspan="<%=@using_class.Hamming_Weight%>" style="background-color:<%=@using_class.colour%>">
+119:                  <%= @using_class.class_name%>
+120:                </td>
+121:              <% else %>
+122:                <td></td>
+123:              <% end %>
+124:            <% end %>
+125:          </tr>
+126:        <% end %>
+127:      </table>
+128:    </div>
+129:    
+130:    
+131:    <script>
+132:        // Get Information about current day
+133:        var currentDate = new Date();
+134:        var day = currentDate.getDay();
+135:        var date = currentDate.getDate();
+136:        var month = currentDate.getMonth();
+137:    
+138:        // Arrays for days of week and months of year
+139:        var weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+140:        var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+141:    
+142:        // Create date for the start of the week
+143:        var weekStartDate = new Date();
+144:        weekStartDate.setDate(date - day + 1);
+145:    
+146:        // Create date object for the end of the week
+147:        var weekEndDate = new Date;
+148:        weekEndDate.setDate(weekStartDate.getDate() + 6);
+149:    
+150:        // Update the week day headers
+151:        setWeekDayHeaders();
+152:    
+153:        // Function to update the headers of the timetable with the days and dates of the week
+154:        function setWeekDayHeaders() {
+155:            // Set the header for each day in the table, e.g 'Wednesday 25/8'
+156:            for (let i = 0; i < 7; i++) {
+157:                // Create date for the i'th day of the week
+158:                var d = new Date(weekStartDate);
+159:                d.setDate(weekStartDate.getDate() + i);
+160:    
+161:                // Get the DOM for the i'th column header
+162:                var dayHeader = document.getElementById("day-headers").children[i+1];
+163:    
+164:                // Set the date in the column header
+165:                dayHeader.innerText = weekDays[i] + " " + d.getDate()+ "/" + (d.getMonth() + 1);
+166:            }
+167:    
+168:            // Write the start and end of the week dates in the timetable header
+169:            var weekHeader = document.getElementById("current-week").children[1];
+170:            weekHeader.innerText = weekStartDate.getDate() + " " + months[weekStartDate.getMonth()] + " - " + weekEndDate.getDate() + " " + months[weekEndDate.getMonth()];
+171:    
+172:            // Highlight the current day in the week
+173:            if (date >= weekStartDate.getDate() && date <= weekEndDate.getDate()) {
+174:                document.getElementById("day-headers").children[day].style.backgroundColor = "grey";
+175:            } else {
+176:                // Remove highlighting
+177:                document.getElementById("day-headers").children[day].style.backgroundColor = "white";
+178:    
+179:            }
+180:        }
+181:    
+182:        // If press back one week
+183:        document.getElementById("week-back").onclick = function() {
+184:            weekStartDate.setDate(weekStartDate.getDate() - 7);
+185:            weekEndDate.setDate(weekEndDate.getDate() - 7);
+186:            setWeekDayHeaders();
+187:        }
+188:    
+189:        // If click forward one week
+190:        document.getElementById("week-forward").onclick = function() {
+191:            weekStartDate.setDate(weekStartDate.getDate() + 7);
+192:            weekEndDate.setDate(weekEndDate.getDate() + 7);
+193:            setWeekDayHeaders();
+194:        }
+195:    
+196:    </script>
+197:    
+198:    
+199:    </body>
+200:    </html>
+  
+app/views/weeklies/show.html.erb:65: syntax error, unexpected '(', expecting ')'
+app/views/weeklies/show.html.erb:65: syntax error, unexpected ')', expecting `end'
+app/views/weeklies/show.html.erb:65: syntax error, unexpected '(', expecting ')'
+app/views/weeklies/show.html.erb:65: syntax error, unexpected ')', expecting `end'
+app/views/weeklies/show.html.erb:65: syntax error, unexpected '(', expecting ')'
+app/views/weeklies/show.html.erb:65: syntax error, unexpected ')', expecting `end'
+app/views/weeklies/show.html.erb:65: syntax error, unexpected '(', expecting ')'
+app/views/weeklies/show.html.erb:65: syntax error, unexpected ')', expecting `end'
+app/views/weeklies/show.html.erb:65: syntax error, unexpected '(', expecting ')'
+app/views/weeklies/show.html.erb:65: syntax error, unexpected ')', expecting `end'
+app/views/weeklies/show.html.erb:65: syntax error, unexpected '(', expecting ')'
+app/views/weeklies/show.html.erb:65: syntax error, unexpected ')', expecting `end'
+Started GET "/weeklies/3" for 127.0.0.1 at 2021-09-03 10:45:17 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mWeekly Load (0.2ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 964)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.9ms | Allocations: 8263)
+Completed 200 OK in 58ms (Views: 34.4ms | Allocations: 18278)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:45:17 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/2" for 127.0.0.1 at 2021-09-03 10:45:21 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWeekly Load (1.8ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 167)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 7394)
+Completed 200 OK in 41ms (Views: 30.2ms | Allocations: 8917)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:45:22 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/2" for 127.0.0.1 at 2021-09-03 10:45:25 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 161)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.0ms | Allocations: 7872)
+Completed 200 OK in 45ms (Views: 37.2ms | Allocations: 9392)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:45:25 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/1" for 127.0.0.1 at 2021-09-03 10:45:31 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 162)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 7645)
+Completed 200 OK in 39ms (Views: 31.2ms | Allocations: 9165)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:45:31 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/1" for 127.0.0.1 at 2021-09-03 10:46:17 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWeekly Load (0.4ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 957)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.8ms | Allocations: 8311)
+Completed 200 OK in 58ms (Views: 48.6ms | Allocations: 10551)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:46:17 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/1" for 127.0.0.1 at 2021-09-03 10:46:30 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 953)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.3ms | Allocations: 8484)
+Completed 200 OK in 117ms (Views: 106.5ms | Allocations: 10718)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:46:30 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/1" for 127.0.0.1 at 2021-09-03 10:46:53 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWeekly Load (0.4ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 987)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.7ms | Allocations: 8557)
+Completed 200 OK in 48ms (Views: 41.8ms | Allocations: 10797)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:46:53 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/2" for 127.0.0.1 at 2021-09-03 10:46:56 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 187)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 7352)
+Completed 200 OK in 29ms (Views: 23.4ms | Allocations: 8872)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:46:57 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/3" for 127.0.0.1 at 2021-09-03 10:46:57 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWeekly Load (0.4ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.5ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 7439)
+Completed 200 OK in 41ms (Views: 30.9ms | Allocations: 8959)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:46:57 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/2" for 127.0.0.1 at 2021-09-03 10:46:59 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.3ms | Allocations: 7388)
+Completed 200 OK in 38ms (Views: 31.9ms | Allocations: 8907)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:46:59 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/1" for 127.0.0.1 at 2021-09-03 10:47:00 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 182)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.3ms | Allocations: 7565)
+Completed 200 OK in 41ms (Views: 35.2ms | Allocations: 9084)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:47:00 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/0" for 127.0.0.1 at 2021-09-03 10:47:02 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"0"}
+  [1m[36mWeekly Load (0.6ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+Completed 404 Not Found in 5ms (Allocations: 1087)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Weekly with 'id'=0):
+  
+app/controllers/weeklies_controller.rb:71:in `set_weekly'
+Started GET "/weeklies/1" for 127.0.0.1 at 2021-09-03 10:47:04 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mWeekly Load (0.4ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 196)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 7393)
+Completed 200 OK in 63ms (Views: 28.1ms | Allocations: 16808)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:47:04 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/2" for 127.0.0.1 at 2021-09-03 10:47:07 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWeekly Load (0.5ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.7ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.8ms | Allocations: 8322)
+Completed 200 OK in 54ms (Views: 43.7ms | Allocations: 9844)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:47:07 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/3" for 127.0.0.1 at 2021-09-03 10:47:08 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWeekly Load (0.7ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (1.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.0ms | Allocations: 7646)
+Completed 200 OK in 39ms (Views: 29.9ms | Allocations: 9166)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:47:08 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/4" for 127.0.0.1 at 2021-09-03 10:47:10 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.7ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 7338)
+Completed 200 OK in 35ms (Views: 25.2ms | Allocations: 8857)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:47:10 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/5" for 127.0.0.1 at 2021-09-03 10:47:14 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.5ms | Allocations: 8046)
+Completed 200 OK in 51ms (Views: 45.7ms | Allocations: 9566)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:47:14 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/6" for 127.0.0.1 at 2021-09-03 10:47:14 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mWeekly Load (0.5ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.1ms | Allocations: 7936)
+Completed 200 OK in 47ms (Views: 39.5ms | Allocations: 9456)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:47:15 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/7" for 127.0.0.1 at 2021-09-03 10:47:15 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.8ms | Allocations: 7344)
+Completed 200 OK in 46ms (Views: 40.9ms | Allocations: 8863)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:47:16 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/8" for 127.0.0.1 at 2021-09-03 10:47:16 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mWeekly Load (0.8ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 152)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.8ms | Allocations: 8189)
+Completed 200 OK in 49ms (Views: 42.7ms | Allocations: 9709)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:47:16 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/8" for 127.0.0.1 at 2021-09-03 10:47:39 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mWeekly Load (0.4ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.9ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 152)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 7379)
+Completed 200 OK in 45ms (Views: 32.9ms | Allocations: 8899)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:47:39 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/9" for 127.0.0.1 at 2021-09-03 10:47:41 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 152)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.6ms | Allocations: 7311)
+Completed 200 OK in 59ms (Views: 45.3ms | Allocations: 8831)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:47:41 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/8" for 127.0.0.1 at 2021-09-03 10:47:43 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 152)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.2ms | Allocations: 7487)
+Completed 200 OK in 50ms (Views: 45.0ms | Allocations: 9007)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:47:43 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/7" for 127.0.0.1 at 2021-09-03 10:47:43 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mWeekly Load (0.4ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.9ms | Allocations: 8116)
+Completed 200 OK in 43ms (Views: 37.6ms | Allocations: 9636)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-03 10:47:43 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-09-04 12:21:42 +0930
+  [1m[35m (14.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TableviewerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tableviewer/index.html.erb within layouts/application
+  Rendered tableviewer/index.html.erb within layouts/application (Duration: 26.8ms | Allocations: 876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 976.5ms | Allocations: 23182)
+Completed 200 OK in 1108ms (Views: 1011.1ms | ActiveRecord: 0.0ms | Allocations: 26319)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 12:21:44 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/admin/set_restriction_level" for 127.0.0.1 at 2021-09-04 12:21:58 +0930
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/admin/set_restriction_level"):
+  
+Started GET "/admin" for 127.0.0.1 at 2021-09-04 12:22:03 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/admin"):
+  
+Started GET "/admin/s" for 127.0.0.1 at 2021-09-04 12:22:07 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/admin/s"):
+  
+Started GET "/admins" for 127.0.0.1 at 2021-09-04 12:22:10 +0930
+Processing by AdminsController#index as HTML
+  [1m[36mRestrictionLevel Load (0.5ms)[0m  [1m[34mSELECT "restriction_levels".* FROM "restriction_levels" ORDER BY "restriction_levels"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/admins_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering admins/index.html.erb within layouts/application
+  Rendered admins/index.html.erb within layouts/application (Duration: 184.6ms | Allocations: 4635)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 416.7ms | Allocations: 24133)
+Completed 200 OK in 464ms (Views: 419.5ms | ActiveRecord: 2.1ms | Allocations: 30442)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 12:22:11 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/admins/set_restriction_level" for 127.0.0.1 at 2021-09-04 12:22:28 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/admins/set_restriction_level"):
+  
+Started GET "/admins" for 127.0.0.1 at 2021-09-04 12:22:31 +0930
+Processing by AdminsController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/admins_controller.rb:9:in `index'
+  [1m[36mRestrictionLevel Load (0.3ms)[0m  [1m[34mSELECT "restriction_levels".* FROM "restriction_levels" ORDER BY "restriction_levels"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/admins_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering admins/index.html.erb within layouts/application
+  Rendered admins/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1887)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.0ms | Allocations: 10323)
+Completed 200 OK in 80ms (Views: 57.5ms | ActiveRecord: 3.2ms | Allocations: 15568)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 12:22:31 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/teachers" for 127.0.0.1 at 2021-09-04 12:23:23 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/teachers"):
+  
+Started GET "/clashes" for 127.0.0.1 at 2021-09-04 12:24:00 +0930
+Processing by ClashesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clashes/index.html.erb within layouts/application
+  Rendered collection of clashes/_clash.html.erb [6 times] (Duration: 6.2ms | Allocations: 592)
+  Rendered clashes/index.html.erb within layouts/application (Duration: 19.8ms | Allocations: 2065)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.8ms | Allocations: 9926)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.0ms | Allocations: 11688)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 12:24:00 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/teachers" for 127.0.0.1 at 2021-09-04 12:28:30 +0930
+Processing by TeachersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teachers/index.html.erb within layouts/application
+  Rendered teachers/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 239)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.1ms | Allocations: 8466)
+Completed 200 OK in 50ms (Views: 48.3ms | Allocations: 9642)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 12:28:30 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/activities" for 127.0.0.1 at 2021-09-04 12:29:49 +0930
+Processing by ActivitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering activities/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/activities/index.html.erb:20
+  [1m[36mActivity Load (0.6ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/activities/index.html.erb:20
+  Rendered activities/index.html.erb within layouts/application (Duration: 36.5ms | Allocations: 8729)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 61.4ms | Allocations: 15930)
+Completed 200 OK in 71ms (Views: 64.4ms | Allocations: 17561)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 12:29:49 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/activities/new" for 127.0.0.1 at 2021-09-04 12:29:51 +0930
+Processing by ActivitiesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/activities_controller.rb:15:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering activities/new.html.erb within layouts/application
+  Rendered activities/_form.html.erb (Duration: 30.0ms | Allocations: 3371)
+  Rendered activities/new.html.erb within layouts/application (Duration: 42.2ms | Allocations: 4149)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 70.0ms | Allocations: 12086)
+Completed 200 OK in 93ms (Views: 73.0ms | Allocations: 19443)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 12:29:51 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/activities" for 127.0.0.1 at 2021-09-04 12:29:53 +0930
+Processing by ActivitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering activities/index.html.erb within layouts/application
+  [1m[36mActivity Load (2.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/views/activities/index.html.erb:20
+  Rendered activities/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1314)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.7ms | Allocations: 9359)
+Completed 200 OK in 46ms (Views: 45.0ms | Allocations: 10492)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 12:29:53 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/teachers" for 127.0.0.1 at 2021-09-04 12:29:55 +0930
+Processing by TeachersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teachers/index.html.erb within layouts/application
+  Rendered teachers/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 220)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.7ms | Allocations: 8980)
+Completed 200 OK in 70ms (Views: 67.9ms | Allocations: 9852)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 12:29:55 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/teachers/weekly" for 127.0.0.1 at 2021-09-04 12:33:03 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/teachers/weekly"):
+  
+Started GET "/teachers/weeklies" for 127.0.0.1 at 2021-09-04 12:33:11 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/teachers/weeklies"):
+  
+Started GET "/teachers/weekly" for 127.0.0.1 at 2021-09-04 12:33:34 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/teachers/weekly"):
+  
+Started GET "/teachers/weekly" for 127.0.0.1 at 2021-09-04 12:36:10 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/teachers/weekly"):
+  
+Started GET "/teachers/weekly" for 127.0.0.1 at 2021-09-04 12:37:14 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/teachers/weekly"):
+  
+Started GET "/teachers/weekly" for 127.0.0.1 at 2021-09-04 12:39:20 +0930
+Processing by TeachersController#weekly as HTML
+Completed 500 Internal Server Error in 2ms (Allocations: 1159)
+
+
+  
+ActionView::MissingTemplate (Missing template shared/error_messages with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/mnt/c/Users/Borna/RubymineProjects/ESaS2-Group1-TimetableViewer-last-one/app/views"
+  * "/usr/local/rvm/gems/ruby-2.7.2/gems/actiontext-6.1.4/app/views"
+  * "/usr/local/rvm/gems/ruby-2.7.2/gems/actionmailbox-6.1.4/app/views"
+):
+  
+app/controllers/teachers_controller.rb:7:in `weekly'
+Started GET "/teachers/weekly" for 127.0.0.1 at 2021-09-04 12:39:39 +0930
+Processing by TeachersController#weekly as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teachers/weekly.html.erb within layouts/application
+  Rendered teachers/weekly.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2317)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2381)
+Completed 500 Internal Server Error in 6ms (Allocations: 3418)
+
+
+  
+ActionView::Template::Error (undefined method `week' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>Week:</strong>
+    5:   <%= @weekly.week %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/teachers/weekly.html.erb:5
+Started GET "/teachers/weekly" for 127.0.0.1 at 2021-09-04 12:39:57 +0930
+Processing by TeachersController#weekly as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 1033)
+
+
+  
+NoMethodError (undefined method `week' for nil:NilClass):
+  
+app/controllers/teachers_controller.rb:7:in `weekly'
+Started GET "/teachers/weekly" for 127.0.0.1 at 2021-09-04 12:52:38 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/teachers/weekly"):
+  
+Started GET "/teachers/weekly/1" for 127.0.0.1 at 2021-09-04 12:52:49 +0930
+Processing by TeachersController#weekly as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/teachers_controller.rb:7:in `weekly'
+  [1m[36mWeekly Load (0.6ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? /* loading for inspect */ LIMIT ?[0m  [["id", 1], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 60ms (Allocations: 6655)
+
+
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? /* loading for inspect */ LIMIT ?[0m  [["id", 1], ["LIMIT", 11]]
+  
+NoMethodError (undefined method `week' for #<Weekly::ActiveRecord_Relation:0x00007f868c54a578>):
+  
+app/controllers/teachers_controller.rb:8:in `weekly'
+Started GET "/teachers/weekly/1" for 127.0.0.1 at 2021-09-04 12:53:05 +0930
+Processing by TeachersController#weekly as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 4ms (Allocations: 2633)
+
+
+  
+NameError (uninitialized constant TeachersController::Weeklies
+Did you mean?  WeekliesHelper):
+  
+app/controllers/teachers_controller.rb:7:in `weekly'
+Started GET "/teachers/weekly/1" for 127.0.0.1 at 2021-09-04 12:53:16 +0930
+Processing by TeachersController#weekly as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/teachers_controller.rb:7:in `weekly'
+  [1m[36mWeekly Load (0.2ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? /* loading for inspect */ LIMIT ?[0m  [["id", nil], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 11ms (Allocations: 4598)
+
+
+  [1m[36mWeekly Load (0.2ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? /* loading for inspect */ LIMIT ?[0m  [["id", nil], ["LIMIT", 11]]
+  
+NoMethodError (undefined method `week' for #<ActiveRecord::Relation []>):
+  
+app/controllers/teachers_controller.rb:8:in `weekly'
+Started PUT "/__web_console/repl_sessions/c68224aab89640c7e2a5f54084a99425" for 127.0.0.1 at 2021-09-04 12:53:30 +0930
+Started PUT "/__web_console/repl_sessions/c68224aab89640c7e2a5f54084a99425" for 127.0.0.1 at 2021-09-04 12:53:34 +0930
+Started PUT "/__web_console/repl_sessions/c68224aab89640c7e2a5f54084a99425" for 127.0.0.1 at 2021-09-04 12:53:41 +0930
+Started PUT "/__web_console/repl_sessions/c68224aab89640c7e2a5f54084a99425" for 127.0.0.1 at 2021-09-04 12:53:44 +0930
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? /* loading for inspect */ LIMIT ?[0m  [["id", nil], ["LIMIT", 11]]
+Started GET "/teachers/weekly/1" for 127.0.0.1 at 2021-09-04 12:54:28 +0930
+Processing by TeachersController#weekly as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/teachers_controller.rb:8:in `weekly'
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? /* loading for inspect */ LIMIT ?[0m  [["id", 1], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 18ms (Allocations: 6660)
+
+
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? /* loading for inspect */ LIMIT ?[0m  [["id", 1], ["LIMIT", 11]]
+  
+NoMethodError (undefined method `week' for #<Weekly::ActiveRecord_Relation:0x00007fffd6316720>):
+  
+app/controllers/teachers_controller.rb:9:in `weekly'
+Started PUT "/__web_console/repl_sessions/1c2032323bbbd1868bfc22e36171c1ab" for 127.0.0.1 at 2021-09-04 12:54:30 +0930
+Started PUT "/__web_console/repl_sessions/1c2032323bbbd1868bfc22e36171c1ab" for 127.0.0.1 at 2021-09-04 12:54:31 +0930
+  [1m[36mWeekly Load (0.4ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/teachers/weekly/1" for 127.0.0.1 at 2021-09-04 13:01:46 +0930
+Processing by TeachersController#weekly as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/teachers_controller.rb:8:in `weekly'
+  [1m[36mWeekly Load (0.2ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? /* loading for inspect */ LIMIT ?[0m  [["id", 1], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 14ms (Allocations: 6263)
+
+
+  [1m[36mWeekly Load (0.2ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? /* loading for inspect */ LIMIT ?[0m  [["id", 1], ["LIMIT", 11]]
+  
+NoMethodError (undefined method `week' for #<Weekly::ActiveRecord_Relation:0x00007f8678399238>):
+  
+app/controllers/teachers_controller.rb:9:in `weekly'
+Started GET "/teachers/weekly/1" for 127.0.0.1 at 2021-09-04 13:02:06 +0930
+Processing by TeachersController#weekly as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/teachers_controller.rb:8:in `weekly'
+  [1m[36mWeekly Load (0.2ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? ORDER BY "weeklies"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teachers_controller.rb:8:in `weekly'
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/teachers_controller.rb:13:in `weekly'
+  Rendering layout layouts/application.html.erb
+  Rendering teachers/weekly.html.erb within layouts/application
+  Rendered teachers/weekly.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1029)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 8369)
+Completed 200 OK in 55ms (Views: 29.1ms | Allocations: 18514)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:02:06 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/2" for 127.0.0.1 at 2021-09-04 13:02:43 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 35.0ms | Allocations: 996)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.8ms | Allocations: 9485)
+Completed 200 OK in 97ms (Views: 69.4ms | Allocations: 19296)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:02:44 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/3" for 127.0.0.1 at 2021-09-04 13:02:46 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWeekly Load (0.6ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 982)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 8408)
+Completed 200 OK in 46ms (Views: 34.8ms | Allocations: 10650)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:02:46 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/4" for 127.0.0.1 at 2021-09-04 13:02:47 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mWeekly Load (0.5ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 187)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.5ms | Allocations: 7374)
+Completed 200 OK in 45ms (Views: 34.9ms | Allocations: 8895)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:02:47 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/5" for 127.0.0.1 at 2021-09-04 13:02:48 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mWeekly Load (0.4ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.5ms | Allocations: 7721)
+Completed 200 OK in 46ms (Views: 41.0ms | Allocations: 9241)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:02:48 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/6" for 127.0.0.1 at 2021-09-04 13:02:48 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mWeekly Load (0.2ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.9ms | Allocations: 8570)
+Completed 200 OK in 60ms (Views: 54.8ms | Allocations: 10090)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:02:48 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/7" for 127.0.0.1 at 2021-09-04 13:02:49 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mWeekly Load (0.4ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.7ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.8ms | Allocations: 7684)
+Completed 200 OK in 38ms (Views: 29.9ms | Allocations: 9218)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:02:49 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/8" for 127.0.0.1 at 2021-09-04 13:02:50 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mWeekly Load (0.4ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 152)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.3ms | Allocations: 7243)
+Completed 200 OK in 34ms (Views: 29.0ms | Allocations: 8776)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:02:50 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/9" for 127.0.0.1 at 2021-09-04 13:02:53 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 961)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.7ms | Allocations: 8633)
+Completed 200 OK in 42ms (Views: 34.9ms | Allocations: 11043)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:02:53 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/10" for 127.0.0.1 at 2021-09-04 13:02:54 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 7556)
+Completed 200 OK in 34ms (Views: 27.8ms | Allocations: 9076)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:02:54 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/9" for 127.0.0.1 at 2021-09-04 13:02:56 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mWeekly Load (0.4ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.9ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 152)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 7415)
+Completed 200 OK in 38ms (Views: 29.4ms | Allocations: 8935)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:02:56 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/8" for 127.0.0.1 at 2021-09-04 13:02:57 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 152)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.1ms | Allocations: 7235)
+Completed 200 OK in 44ms (Views: 37.1ms | Allocations: 8756)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:02:57 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/7" for 127.0.0.1 at 2021-09-04 13:02:58 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mWeekly Load (0.4ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.5ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.4ms | Allocations: 7924)
+Completed 200 OK in 57ms (Views: 49.4ms | Allocations: 9444)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:02:58 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/8" for 127.0.0.1 at 2021-09-04 13:03:00 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mWeekly Load (0.4ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 152)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 83.0ms | Allocations: 10386)
+Completed 200 OK in 96ms (Views: 83.8ms | Allocations: 11906)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:00 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/9" for 127.0.0.1 at 2021-09-04 13:03:01 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mWeekly Load (0.2ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 152)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.7ms | Allocations: 7393)
+Completed 200 OK in 36ms (Views: 32.2ms | Allocations: 8912)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:01 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/10" for 127.0.0.1 at 2021-09-04 13:03:02 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mWeekly Load (0.4ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.2ms | Allocations: 7326)
+Completed 200 OK in 54ms (Views: 46.2ms | Allocations: 8847)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:02 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/11" for 127.0.0.1 at 2021-09-04 13:03:06 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 7266)
+Completed 200 OK in 30ms (Views: 25.1ms | Allocations: 8786)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:06 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/12" for 127.0.0.1 at 2021-09-04 13:03:09 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.5ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 187)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.6ms | Allocations: 7361)
+Completed 200 OK in 50ms (Views: 40.9ms | Allocations: 8883)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:09 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/13" for 127.0.0.1 at 2021-09-04 13:03:09 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mWeekly Load (0.4ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.2ms | Allocations: 7572)
+Completed 200 OK in 46ms (Views: 39.2ms | Allocations: 9093)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:09 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/14" for 127.0.0.1 at 2021-09-04 13:03:10 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mWeekly Load (0.9ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.0ms | Allocations: 8245)
+Completed 200 OK in 58ms (Views: 48.8ms | Allocations: 9765)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:10 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/15" for 127.0.0.1 at 2021-09-04 13:03:11 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.1ms | Allocations: 7796)
+Completed 200 OK in 55ms (Views: 50.0ms | Allocations: 9317)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:11 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/16" for 127.0.0.1 at 2021-09-04 13:03:12 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mWeekly Load (0.5ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.1ms | Allocations: 7528)
+Completed 200 OK in 71ms (Views: 61.9ms | Allocations: 9051)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:12 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/17" for 127.0.0.1 at 2021-09-04 13:03:12 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 152)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.3ms | Allocations: 8674)
+Completed 200 OK in 66ms (Views: 57.3ms | Allocations: 10196)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:12 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/16" for 127.0.0.1 at 2021-09-04 13:03:20 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mWeekly Load (0.4ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.5ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.4ms | Allocations: 7359)
+Completed 200 OK in 39ms (Views: 31.1ms | Allocations: 8881)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:20 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/15" for 127.0.0.1 at 2021-09-04 13:03:21 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mWeekly Load (0.8ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.0ms | Allocations: 7609)
+Completed 200 OK in 54ms (Views: 45.9ms | Allocations: 9131)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:21 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/14" for 127.0.0.1 at 2021-09-04 13:03:22 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mWeekly Load (0.5ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.0ms | Allocations: 7260)
+Completed 200 OK in 41ms (Views: 29.6ms | Allocations: 8780)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:22 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/13" for 127.0.0.1 at 2021-09-04 13:03:23 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mWeekly Load (0.6ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.8ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 107.8ms | Allocations: 8085)
+Completed 200 OK in 131ms (Views: 111.1ms | Allocations: 9607)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:23 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/12" for 127.0.0.1 at 2021-09-04 13:03:24 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mWeekly Load (0.4ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 61.5ms | Allocations: 8079)
+Completed 200 OK in 70ms (Views: 62.6ms | Allocations: 9601)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:24 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/11" for 127.0.0.1 at 2021-09-04 13:03:26 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mWeekly Load (0.4ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.1ms | Allocations: 7355)
+Completed 200 OK in 54ms (Views: 47.0ms | Allocations: 8877)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:26 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/10" for 127.0.0.1 at 2021-09-04 13:03:27 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mWeekly Load (0.9ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 7413)
+Completed 200 OK in 38ms (Views: 30.5ms | Allocations: 8935)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:27 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/9" for 127.0.0.1 at 2021-09-04 13:03:27 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mWeekly Load (0.2ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 152)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.4ms | Allocations: 7304)
+Completed 200 OK in 35ms (Views: 31.2ms | Allocations: 8826)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:27 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/8" for 127.0.0.1 at 2021-09-04 13:03:29 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mWeekly Load (0.5ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 152)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.9ms | Allocations: 7374)
+Completed 200 OK in 41ms (Views: 32.8ms | Allocations: 8896)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:29 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/7" for 127.0.0.1 at 2021-09-04 13:03:30 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.4ms | Allocations: 7404)
+Completed 200 OK in 56ms (Views: 49.9ms | Allocations: 8926)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:30 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/6" for 127.0.0.1 at 2021-09-04 13:03:36 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.0ms | Allocations: 7699)
+Completed 200 OK in 54ms (Views: 46.1ms | Allocations: 9221)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:36 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/5" for 127.0.0.1 at 2021-09-04 13:03:40 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (1.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.9ms | Allocations: 7284)
+Completed 200 OK in 40ms (Views: 29.7ms | Allocations: 8805)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:40 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/4" for 127.0.0.1 at 2021-09-04 13:03:42 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (1.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 84.2ms | Allocations: 9655)
+Completed 200 OK in 94ms (Views: 85.4ms | Allocations: 11176)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:42 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/3" for 127.0.0.1 at 2021-09-04 13:03:43 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWeekly Load (0.5ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.6ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.3ms | Allocations: 7428)
+Completed 200 OK in 59ms (Views: 49.4ms | Allocations: 8949)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:43 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/2" for 127.0.0.1 at 2021-09-04 13:03:43 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWeekly Load (0.3ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.5ms | Allocations: 7420)
+Completed 200 OK in 34ms (Views: 28.9ms | Allocations: 8941)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:44 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
+Started GET "/weeklies/1" for 127.0.0.1 at 2021-09-04 13:03:44 +0930
+Processing by WeekliesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWeekly Load (1.0ms)[0m  [1m[34mSELECT "weeklies".* FROM "weeklies" WHERE "weeklies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weeklies_controller.rb:71:in `set_weekly'
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/weeklies_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering weeklies/show.html.erb within layouts/application
+  Rendered weeklies/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 182)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.0ms | Allocations: 8391)
+Completed 200 OK in 56ms (Views: 48.6ms | Allocations: 9912)
+
+
+Started GET "/packs/js/application-2a25b72f5f7689faa15b.js" for 127.0.0.1 at 2021-09-04 13:03:44 +0930
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-2a25b72f5f7689faa15b.js"):
+  
