@@ -57,8 +57,15 @@
   <h2>TIMETABLE: WEEKLY VIEW</h2>
 
   <div id="current-week">
-    <button id="week-back" type="button">
-      <%= link_to "back", weekly_path(@weekly.id - 1) %></button>
+    <% if @weekly.id > 1 %>
+      <button id="week-back" type="button">
+          <%= link_to "back", weekly_path(@weekly.id - 1) %>
+      </button>
+    <% else %>
+      <button id="week-back" type="button" disabled>
+        -
+      </button>
+    <% end %>
     <h3></h3>
     <button id="week-forward" type="button" >
       <%= link_to "forward", weekly_path(@weekly.id + 1) %></button>
