@@ -55,13 +55,12 @@
 
 <div>
   <h2>TIMETABLE: WEEKLY VIEW</h2>
-
   <div id="current-week">
     <button id="week-back" type="button">
-      <%= link_to "back", weekly_path(@weekly.id - 1) %></button>
+      <%= link_to "back", "/teachers/weekly/#{params[:id].to_i-1}" %></button>
     <h3></h3>
     <button id="week-forward" type="button" >
-      <%= link_to "forward", weekly_path(@weekly.id + 1) %></button>
+      <%= link_to "forward", "/teachers/weekly/#{params[:id].to_i+1}" %></button>
   </div>
 </div>
 
@@ -69,7 +68,7 @@
   <a href="https://www.adelaide.edu.au/ask-adelaide/">Ask ADEL</a>
   <p>Find answers to frequently asked questions</p>
   <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Online Chat</a>
-  <p>Chat with a sevice agent</p>
+  <p>Chat with a service agent</p>
   <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Phone Us</a>
   <p>+61 8 83135208</p>
   <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Enquire</a>
@@ -93,8 +92,8 @@
     <% @hours.each_with_index do |i,index| %>
       <tr>
         <td>
-          <% if [65536,262144,1048576,4194304,16777216,67108864,268435456,1073741824].include? i  %>
-            <% if ((index+18)/2) <= 12 %>
+          <% if index.modulo(2)==0  %>
+            <% if index <= 6 %>
               <%= (index+18)/2 %>:00
             <% else %>
               <%= ((index+18)/2).modulo(13) + 1 %>:00

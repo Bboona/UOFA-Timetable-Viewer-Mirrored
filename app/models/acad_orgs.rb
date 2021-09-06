@@ -1,2 +1,0 @@
-class AcadOrgs < PsoftDbBase
-end

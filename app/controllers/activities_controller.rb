@@ -20,6 +20,7 @@ class ActivitiesController < ApplicationController
   end
 
   def hamming_weight (n)
+    n = n.to_i
     bin_values = [[1,0]]
     while n > bin_values[0][0]
       bin_values.insert(0, [(bin_values[0][0] * 2),(bin_values[0][1] + 1)])
@@ -48,8 +49,7 @@ class ActivitiesController < ApplicationController
   def create
     @activity = Activity.new(activity_params)
     @hamming = hamming_weight(@activity.hours)
-    @activities.hamming_weight=@hamming
-
+    @activity.update_attribute(:Hamming_Weight, @hamming)
     respond_to do |format|
       if @activity.save
         format.html { redirect_to @activity, notice: "Activity was successfully created." }

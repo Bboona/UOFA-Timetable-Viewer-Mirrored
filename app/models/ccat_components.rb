@@ -1,2 +1,0 @@
-class CcatComponents < PsoftDbBase
-end
