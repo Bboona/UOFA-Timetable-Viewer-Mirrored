@@ -1,2 +1,0 @@
-class SpActivityTemplates < PsoftDbBase
-end

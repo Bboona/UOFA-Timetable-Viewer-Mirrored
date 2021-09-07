@@ -1,2 +1,0 @@
-class SpSuitabilitys < PsoftDbBase
-end

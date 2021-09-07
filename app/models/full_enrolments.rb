@@ -1,2 +1,0 @@
-class FullEnrolments < PsoftDbBase
-end
