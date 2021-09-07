@@ -1,0 +1,2 @@
+class Weekly < PsoftDbBase
+end

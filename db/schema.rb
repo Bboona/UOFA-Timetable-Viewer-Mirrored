@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_17_023031) do
+ActiveRecord::Schema.define(version: 2021_08_31_142131) do
 
   create_table "acad_orgs", id: false, force: :cascade do |t|
     t.text "Acad_Org"
@@ -51,7 +51,7 @@ ActiveRecord::Schema.define(version: 2021_08_17_023031) do
 
   create_table "activities", force: :cascade do |t|
     t.text "class_name"
-    t.text "class_code"
+    t.string "class_code"
     t.text "colour"
     t.text "description"
     t.text "weeks"
@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(version: 2021_08_17_023031) do
     t.text "hours"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "Hamming_Weight"
   end
 
   create_table "all_classes", id: false, force: :cascade do |t|
@@ -370,6 +371,12 @@ ActiveRecord::Schema.define(version: 2021_08_17_023031) do
     t.text "location"
     t.text "usertext1"
     t.text "usertext4"
+  end
+
+  create_table "weeklies", force: :cascade do |t|
+    t.text "week"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
 end

@@ -1,2 +1,2 @@
-class SpDepartment < PsoftDbBase
+class SpDepartments < PsoftDbBase
 end

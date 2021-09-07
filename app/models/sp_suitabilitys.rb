@@ -1,2 +1,2 @@
-class SpSuitability < PsoftDbBase
+class SpSuitabilitys < PsoftDbBase
 end

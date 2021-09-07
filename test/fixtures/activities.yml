@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  class_name: MyText
+  class_code: MyString
+  colour: MyText
+  description: MyText
+  weeks: MyText
+  days: MyText
+  hours: MyText
+
+two:
+  class_name: MyText
+  class_code: MyString
+  colour: MyText
+  description: MyText
+  weeks: MyText
+  days: MyText
+  hours: MyText
