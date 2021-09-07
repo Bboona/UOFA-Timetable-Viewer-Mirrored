@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "tableviewer#index"
+  #root "tableviewer#index"
   root "logins#index"
   get "admins" => "admins#index"
   get "admins" => "admins#index"
