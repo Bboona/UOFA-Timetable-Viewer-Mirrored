@@ -20,19 +20,17 @@ end
 #Activity.create(class_name:"Computer Systems - LECTURE",class_code:"15000",colour:"red",description:"COMP_SCI_2000",weeks:"999168",days:"1",hours:"3145728",Hamming_Weight:"2")
 
 
-
-
 activities = [
-  ["Computer Systems", "COMP SCI", "2000", "12577", "LE01", "300", "98", "FF0000", "S1", "32575", "2", "786432", "MyUni/OL/Online Class"],
-  ["Computer Systems", "COMP SCI", "2000", "12587", "WR06", "54", "3", "FF0000", "S1", "10794", "8", "50331648", "Ingkarni Wardli/B23/CAT Suite"],
-  ["Computer Systems", "COMP SCI", "2000", "12588", "WR05", "48", "8", "FF0000", "S1", "10794", "8", "12582912", "Ingkarni Wardli/B23/CAT Suite"],
-  ["Computer Systems", "COMP SCI", "2000", "12589", "WR04", "41", "0", "FF0000", "S1", "10794", "8", "3145728", "Ingkarni Wardli/B23/CAT Suite"]
+  ["Computer Systems", "COMP SCI", "2000", "12577", "LE01", "300", "98", "FF0000", "S1", "32575", "2", "786432", "MyUni/OL/Online Class", "13"]
+  ["Computer Systems", "COMP SCI", "2000", "12587", "WR06", "54", "3", "FF0000", "S1", "10794", "8", "50331648", "Ingkarni Wardli/B23/CAT Suite", "6"],
+  ["Computer Systems", "COMP SCI", "2000", "12588", "WR05", "48", "8", "FF0000", "S1", "10794", "8", "12582912", "Ingkarni Wardli/B23/CAT Suite", "6"],
+  ["Computer Systems", "COMP SCI", "2000", "12589", "WR04", "41", "0", "FF0000", "S1", "10794", "8", "3145728", "Ingkarni Wardli/B23/CAT Suite", "6"]
     ]
 
-activities.each do |class_name, subject, class_code, class_nbr, class_type, size, available, colour, term, weeks, days, hours, location|
+activities.each do |class_name, subject, class_code, class_nbr, class_type, size, available, colour, term, weeks, days, hours, location, hamming_weight|
   Activity.create(:class_name => class_name, :subject => subject, :class_code => class_code, :class_nbr => class_nbr, :class_type => class_type,
                 :size => size, :available => available, :colour => colour, :term => term, :weeks => weeks, :days => days,
-                :hours => hours, :location => location)
+                :hours => hours, :location => location, :hamming_weight => hamming_weight)
 end
 
 
