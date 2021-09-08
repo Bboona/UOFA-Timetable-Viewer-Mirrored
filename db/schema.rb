@@ -14,12 +14,18 @@ ActiveRecord::Schema.define(version: 2021_09_06_070931) do
 
   create_table "activities", force: :cascade do |t|
     t.text "class_name"
+    t.text "subject"
     t.string "class_code"
+    t.text "class_nbr"
+    t.text "class_type"
+    t.text "size"
+    t.text "available"
     t.text "colour"
-    t.text "description"
+    t.text "term"
     t.text "weeks"
     t.text "days"
     t.text "hours"
+    t.text "location"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.text "Hamming_Weight"
@@ -52,5 +58,19 @@ ActiveRecord::Schema.define(version: 2021_09_06_070931) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
+
+  create_table "students", force : :cascade do |t|
+    t.text "uni_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "activities_students", id: false, force: :cascade do |t|
+    t.integer "activity_id", null: false
+    t.integer "student_id", null: false
+    t.index ["activity_id"], name: "index_activities_students_on_activity_id"
+    t.index ["student_id"], name: "index_activities_students_on_student_id"
+  end
+
 
 end

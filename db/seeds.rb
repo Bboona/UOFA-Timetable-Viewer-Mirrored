@@ -17,10 +17,64 @@ while i <= 2**52
 end
 
 # Example Class Activity
-Activity.create(class_name:"Computer Systems - LECTURE",class_code:"15000",colour:"red",description:"COMP_SCI_2000",weeks:"999168",days:"1",hours:"3145728",Hamming_Weight:"2")
+#Activity.create(class_name:"Computer Systems - LECTURE",class_code:"15000",colour:"red",description:"COMP_SCI_2000",weeks:"999168",days:"1",hours:"3145728",Hamming_Weight:"2")
 
-# Example Teacher
-Teacher.create(uni_id:"a1674564",first_name:"Aufeef",last_name:"Chauhan")
 
-# Example Teacher - Activity join
-ActivitiesTeachers.create(teacher_id:1,activity_id:1)
+
+
+activities = [
+  ["Computer Systems", "COMP SCI", "2000", "12577", "LE01", "300", "98", "FF0000", "S1", "32575", "2", "786432", "MyUni/OL/Online Class"],
+  ["Computer Systems", "COMP SCI", "2000", "12587", "WR06", "54", "3", "FF0000", "S1", "10794", "8", "50331648", "Ingkarni Wardli/B23/CAT Suite"],
+  ["Computer Systems", "COMP SCI", "2000", "12588", "WR05", "48", "8", "FF0000", "S1", "10794", "8", "12582912", "Ingkarni Wardli/B23/CAT Suite"],
+  ["Computer Systems", "COMP SCI", "2000", "12589", "WR04", "41", "0", "FF0000", "S1", "10794", "8", "3145728", "Ingkarni Wardli/B23/CAT Suite"]
+    ]
+
+activities.each do |class_name, subject, class_code, class_nbr, class_type, size, available, colour, term, weeks, days, hours, location|
+  Activity.create(:class_name => class_name, :subject => subject, :class_code => class_code, :class_nbr => class_nbr, :class_type => class_type,
+                :size => size, :available => available, :colour => colour, :term => term, :weeks => weeks, :days => days,
+                :hours => hours, :location => location)
+end
+
+
+#--------------------------------Students START HERE--------------------------------
+student_list = [
+  ["a1231230"],["a1231231"],["a1231232"],["a1231233"],["a1231234"],["a1231235"],["a1231236"],["a1231237"],["a1231238"],["a1231239"]
+    ]
+
+student_list.each do |uni_id|
+  Student.create(:uni_id => uni_id)
+
+##SLAP ENROLMENT LIST HERE add more
+student_enrolment = [
+  [1, 1], [1,2]
+    ]
+
+student_enrolment.each do |student_id, activity_id|
+  ActivitiesStudents.create(:student_id => student_id, :activity_id => activity_id)
+end
+
+#--------------------------------Students END HERE--------------------------------
+#--------------------------------Teachers START HERE--------------------------------
+          # Example Teacher
+          #Teacher.create(uni_id:"a1674564",first_name:"Aufeef",last_name:"Chauhan")
+
+          # Example Teacher - Activity join
+          #ActivitiesTeachers.create(teacher_id:1,activity_id:1)
+
+#teacher creation
+teacher_list = [
+  ["a1674564","Aufeef","Chauhan"],["a1670000","Madonna","Croutons"],["a1670001","Kylie","Dessert"],
+  ["a1670002","Billie","Angelcake"],["a1670003","Nicki","Hickory"],["a1670004","Delta","Goodforyou"]
+    ]
+
+teacher_list.each do |uni_id, first_name, last_name|
+  Teacher.create(:uni_id => uni_id, :first_name => first_name, :last_name => last_name)
+end
+
+#teacher enrolment
+teacher_enrolment = [
+  [1,1],[1,2],[1,3],[1,4]
+    ]
+
+teacher_enrolment.each do |teacher_id
+#--------------------------------Teachers END HERE--------------------------------
