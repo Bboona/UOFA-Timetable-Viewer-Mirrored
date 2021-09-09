@@ -41,10 +41,11 @@ student_list = [
 
 student_list.each do |uni_id|
   Student.create(:uni_id => uni_id)
+end
 
 ##SLAP ENROLMENT LIST HERE add more
 student_enrolment = [
-  [1, 1], [1,2]
+  [1, 1], [1,2], [2,1], [2,3], [3,1], [3,2], [4,1]
     ]
 
 student_enrolment.each do |student_id, activity_id|
@@ -74,5 +75,7 @@ teacher_enrolment = [
   [1,1],[1,2],[1,3],[1,4]
     ]
 
-teacher_enrolment.each do |teacher_id
+teacher_enrolment.each do |teacher_id, activity_id|
+  ActivitiesTeachers.create(:teacher_id => teacher_id, :activity_id => activity_id)
+end
 #--------------------------------Teachers END HERE--------------------------------
