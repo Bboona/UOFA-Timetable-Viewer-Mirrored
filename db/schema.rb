@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_10_012259) do
+ActiveRecord::Schema.define(version: 2021_09_10_013647) do
 
   create_table "activities", force: :cascade do |t|
     t.text "class_name"
@@ -31,9 +31,11 @@ ActiveRecord::Schema.define(version: 2021_09_10_012259) do
     t.text "hamming_weight"
   end
 
-  create_table "activities_students", force: :cascade do |t|
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+  create_table "activities_students", id: false, force: :cascade do |t|
+    t.integer "activity_id", null: false
+    t.integer "student_id", null: false
+    t.index ["activity_id"], name: "index_activities_students_on_activity_id"
+    t.index ["student_id"], name: "index_activities_students_on_student_id"
   end
 
   create_table "activities_teachers", id: false, force: :cascade do |t|

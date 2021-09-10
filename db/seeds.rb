@@ -39,14 +39,14 @@ student_list = [
   ["a1231230"],["a1231231"],["a1231232"],["a1231233"],["a1231234"],["a1231235"],["a1231236"],["a1231237"],["a1231238"],["a1231239"]
     ]
 
-student_list.each do |uni_id|
+"""student_list.each do |student_id,first_name,last_name|
   Student.create(:uni_id => uni_id)
-end
+end"""
 
 ##SLAP ENROLMENT LIST HERE add more
-student_enrolment = [
+"""student_enrolment = [
   [1, 1], [1,2], [2,1], [2,3], [3,1], [3,2], [4,1]
-    ]
+    ]"""
 
 """student_enrolment.each do |student_id, activity_id|
   ActivitiesStudents.create(:student_id => student_id, :activity_id => activity_id)
