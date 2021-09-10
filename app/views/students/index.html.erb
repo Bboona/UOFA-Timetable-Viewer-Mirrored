@@ -1,27 +1,25 @@
-<style type="text/css">
-    .logo{
-        margin-top: 50px;
-        margin-left: 0px;
-        width: 30px;
-        height: 10px;
-    }
+<p id="notice"><%= notice %></p>
 
-</style>
+<h1>Students</h1>
 
-<div>
-  <div class = "logo">
-    <a href="https://ibb.co/LQgDnV0"><img src="https://i.ibb.co/LQgDnV0/Wechat-IMG16.jpg" alt="Wechat-IMG16" border="0"></a>
-  </div>
-  <form method="get" style="text-align:center">
-    <h1>Student Log in page</h1>
-    <p>User_name:</p> <input type="text" name="user_name" />
-    <p>Password:</p> <input type="text" name="password" />
-    <br>
-    <br>
-    <br>
-    <input type="submit" value="Submit" />
-  </form>
-  <%= link_to root_path do %>
-    <button>back</button>
-  <% end %>
-</div>
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @students.each do |student| %>
+      <tr>
+        <td><%= link_to 'Show', student %></td>
+        <td><%= link_to 'Edit', edit_student_path(student) %></td>
+        <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Student', new_student_path %>

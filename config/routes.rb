@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :students
+  resources :students
   resources :teachers
   resources :weeklies
   resources :activities
