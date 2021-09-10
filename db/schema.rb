@@ -10,25 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_06_070931) do
+ActiveRecord::Schema.define(version: 2021_09_10_012259) do
 
   create_table "activities", force: :cascade do |t|
     t.text "class_name"
-    t.text "subject"
     t.string "class_code"
-    t.text "class_nbr"
-    t.text "class_type"
-    t.text "size"
-    t.text "available"
     t.text "colour"
+    t.text "subject"
     t.text "term"
     t.text "weeks"
     t.text "days"
     t.text "hours"
     t.text "location"
+    t.text "size"
+    t.text "available"
+    t.text "class_nbr"
+    t.text "class_type"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.text "Hamming_Weight"
+    t.text "hamming_weight"
+  end
+
+  create_table "activities_students", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "activities_teachers", id: false, force: :cascade do |t|
@@ -41,6 +46,14 @@ ActiveRecord::Schema.define(version: 2021_09_06_070931) do
   create_table "restriction_levels", force: :cascade do |t|
     t.integer "level_current"
     t.string "level_name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "students", force: :cascade do |t|
+    t.text "student_id"
+    t.text "first_name"
+    t.text "last_name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -58,19 +71,5 @@ ActiveRecord::Schema.define(version: 2021_09_06_070931) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
-
-  create_table "students", force : :cascade do |t|
-    t.text "uni_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "activities_students", id: false, force: :cascade do |t|
-    t.integer "activity_id", null: false
-    t.integer "student_id", null: false
-    t.index ["activity_id"], name: "index_activities_students_on_activity_id"
-    t.index ["student_id"], name: "index_activities_students_on_student_id"
-  end
-
 
 end

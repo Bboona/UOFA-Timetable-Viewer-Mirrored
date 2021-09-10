@@ -21,7 +21,7 @@ end
 
 
 activities = [
-  ["Computer Systems", "COMP SCI", "2000", "12577", "LE01", "300", "98", "FF0000", "S1", "32575", "2", "786432", "MyUni/OL/Online Class", "13"]
+  ["Computer Systems", "COMP SCI", "2000", "12577", "LE01", "300", "98", "FF0000", "S1", "32575", "2", "786432", "MyUni/OL/Online Class", "13"],
   ["Computer Systems", "COMP SCI", "2000", "12587", "WR06", "54", "3", "FF0000", "S1", "10794", "8", "50331648", "Ingkarni Wardli/B23/CAT Suite", "6"],
   ["Computer Systems", "COMP SCI", "2000", "12588", "WR05", "48", "8", "FF0000", "S1", "10794", "8", "12582912", "Ingkarni Wardli/B23/CAT Suite", "6"],
   ["Computer Systems", "COMP SCI", "2000", "12589", "WR04", "41", "0", "FF0000", "S1", "10794", "8", "3145728", "Ingkarni Wardli/B23/CAT Suite", "6"]
@@ -48,9 +48,9 @@ student_enrolment = [
   [1, 1], [1,2], [2,1], [2,3], [3,1], [3,2], [4,1]
     ]
 
-student_enrolment.each do |student_id, activity_id|
+"""student_enrolment.each do |student_id, activity_id|
   ActivitiesStudents.create(:student_id => student_id, :activity_id => activity_id)
-end
+end"""
 
 #--------------------------------Students END HERE--------------------------------
 #--------------------------------Teachers START HERE--------------------------------
