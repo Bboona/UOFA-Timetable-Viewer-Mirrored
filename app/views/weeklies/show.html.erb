@@ -66,7 +66,7 @@
         -
       </button>
     <% end %>
-    <h3></h3>
+    <h3 id="week-start-end"></h3>
     <button id="week-forward" type="button" >
       <%= link_to "forward", weekly_path(@weekly.id + 1) %></button>
   </div>
@@ -187,7 +187,7 @@
         }
 
         // Write the start and end of the week dates in the timetable header
-        var weekHeader = document.getElementById("current-week").children[1];
+        var weekHeader = document.getElementById("week-start-end");
         weekHeader.innerText = weekStartDate.getDate() + " " + months[weekStartDate.getMonth()] + " - " + weekEndDate.getDate() + " " + months[weekEndDate.getMonth()];
 
         // Highlight the current day in the week
