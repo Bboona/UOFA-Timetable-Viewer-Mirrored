@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :students
-  #root "tableviewer#index"
+  resources :teachers
+  resources :weeklies
+  resources :activities
   root "logins#index"
   get "admins" => "admins#index"
   get "admins" => "admins#index"
@@ -13,4 +15,5 @@ Rails.application.routes.draw do
   get 'admins/index'
   get 'teachers/index'
   get 'teachers/add_meeting'
+  get "teachers/weekly/:id" => "teachers#weekly"
 end
