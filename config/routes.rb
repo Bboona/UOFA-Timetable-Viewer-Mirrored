@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :students
   #root "tableviewer#index"
   root "logins#index"
   get "admins" => "admins#index"

@@ -1,0 +1,2 @@
+class ActivitiesStudents < PsoftDbBase
+end
