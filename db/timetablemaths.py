@@ -37,26 +37,21 @@ def hourCalc():
     while original_start > original_end:
         if original_start > t_end and counting == False:
             hour_array.append('0')
-            print("A:0")
         elif original_start == t_end and counting == False:
             hour_array.append('1')
             counting = True
-            print("B:0")
         elif original_start > t_start and counting == True:
             hour_array.append('1')
-            print("C:1")
         elif original_start == t_start and counting == True:
             counting = False
             hour_array.append('0')
-            print("D:1")
         elif original_start < t_start and counting == False :
             hour_array.append('0')
-            print("E:0")
         original_start -= 50
-        print("original_start: " + str(original_start))
+        #print("original_start: " + str(original_start))
 
     hour_result = "".join(hour_array)
-    print("HOURS = " + str(hour_result))
+    #print("HOURS = " + str(hour_result))
     final_hour = binaryToDecimal(hour_result)
     return final_hour
 
@@ -145,7 +140,7 @@ if __name__ == '__main__':
             weeks_array.append('0')
 
     weeks_result = "".join(weeks_array)
-    print("WEEKS = " + str(weeks_result[::-1]) + " hamming_weight: " + str(hamming_weight))
+    #print("WEEKS = " + str(weeks_result[::-1]) + " hamming_weight: " + str(hamming_weight))
     final_weeks = binaryToDecimal(weeks_result[::-1])
 
     print("\nWhich days does this class run? Answer in lowercase y/n.")
@@ -174,13 +169,13 @@ if __name__ == '__main__':
             days_array.append('0')
 
     days_result = "".join(days_array)
-    print("DAYS = " + str(days_result[::-1]))
+    #print("DAYS = " + str(days_result[::-1]))
     final_days = binaryToDecimal(days_result[::-1])
 
-    print("Calculating hours here.\n")
+    #print("Calculating hours here.\n")
     hours = hourCalc()
 
-    print('["'+str(name)+'", "'+str(subject)+'", "'+str(code)+'", "'
+    print('\n["'+str(name)+'", "'+str(subject)+'", "'+str(code)+'", "'
         +str(class_nbr)+'", "'+str(class_type)+'", "'+str(size)+'", "'
         +str(available)+'", "'+str(colour)+'", "'+str(term)+'", "'
         +str(final_weeks)+'", "'+str(final_days)+'", "'+str(hours)+
