@@ -56,6 +56,7 @@ ActiveRecord::Schema.define(version: 2021_09_10_013647) do
     t.text "student_id"
     t.text "first_name"
     t.text "last_name"
+    t.text "password"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
