@@ -17,7 +17,7 @@ while i <= 2**52
 end
 
   # Example Class Activity
-  #Activity.create(class_name:"Computer Systems - LECTURE",class_code:"15000",colour:"red",description:"COMP_SCI_2000",weeks:"999168",days:"1",hours:"3145728",Hamming_Weight:"2")
+  #Activity.create(class_name:"Computer Systems - LECTURE",class_code:"15000",colour:"red",description:"COMP_SCI_2000",weeks:"999168",days:"1",hours:"3145728",hamming_weight:"2")
 
 activities = [
   # 1-7
