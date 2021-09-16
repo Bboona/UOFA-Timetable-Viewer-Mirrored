@@ -49,7 +49,7 @@ class ActivitiesController < ApplicationController
   def create
     @activity = Activity.new(activity_params)
     @hamming = hamming_weight(@activity.hours)
-    @activity.update_attribute(:Hamming_Weight, @hamming)
+    @activity.update_attribute(:hamming_weight, @hamming)
     respond_to do |format|
       if @activity.save
         format.html { redirect_to @activity, notice: "Activity was successfully created." }
