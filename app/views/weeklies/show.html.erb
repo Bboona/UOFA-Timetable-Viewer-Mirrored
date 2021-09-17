@@ -5,21 +5,6 @@
   <%= @weekly.week %>
 </p>
 
-<p>
-  <strong>Activity:</strong>
-</p>
-
-<% @this_week.each do |activity| %>
-  <tr>
-    <td><%= activity.class_name %></td>
-    <td><%= activity.class_code %></td>
-    <td><%= activity.colour %></td>
-    <td><%= activity.days %></td>
-    <td><%= activity.hours %></td>
-  </tr>
-  </br>
-<% end %>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -72,67 +57,77 @@
   </div>
 </div>
 
-<div style="float: left">
-  <a href="https://www.adelaide.edu.au/ask-adelaide/">Ask ADEL</a>
-  <p>Find answers to frequently asked questions</p>
-  <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Online Chat</a>
-  <p>Chat with a sevice agent</p>
-  <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Phone Us</a>
-  <p>+61 8 83135208</p>
-  <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Enquire</a>
-  <p>Submit your question to a service agent</p>
-  <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Visit Us</a>
-  <p>Level 3 Hub Central North Terrace</p>
-</div>
 
-<div>
-  <table>
-    <tr id="day-headers">
-      <th>Time</th>
-      <th>Monday</th>
-      <th>Tuesday</th>
-      <th>Wednesday</th>
-      <th>Thursday</th>
-      <th>Friday</th>
-      <th>Saturday</th>
-      <th>Sunday</th>
-    </tr>
-    <% @hours.each_with_index do |i,index| %>
-      <tr>
-        <td>
-          <% if [65536,262144,1048576,4194304,16777216,67108864,268435456,1073741824].include? i  %>
-            <% if ((index+18)/2) <= 12 %>
-              <%= (index+18)/2 %>:00
-            <% else %>
-              <%= ((index+18)/2).modulo(13) + 1 %>:00
-            <% end %>
-            <% if index+18 < 24  %>am<% else %>pm<% end %>
-          <% else %>
-            &nbsp;
-          <% end %>
-        </td>
-        <% for j in [1,2,4,8,16,32,64]%>
-          <% @this_week.each do |activity| %>
-            <% if activity.days.to_i & j == j && activity.hours.to_i & i == i%>
-              <%@class=1 %>
-              <%@using_class=activity %>
-            <% else %>
-              <%@class=0 %>
-            <% end %>
-          <% end %>
-          <% if @class==1 %>
-            <td valign="top" rowspan="<%=@using_class.hamming_weight%>" style="background-color:<%=@using_class.colour%>">
-              <%= @using_class.class_name%>
-            </td>
-          <% else %>
-            <td></td>
-          <% end %>
-        <% end %>
-      </tr>
-    <% end %>
-  </table>
-</div>
+<div class="contents row">
 
+  <div class="col" style="float: left">
+    <a href="https://www.adelaide.edu.au/ask-adelaide/">Ask ADEL</a>
+    <p>Find answers to frequently asked questions</p>
+    <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Online Chat</a>
+    <p>Chat with a sevice agent</p>
+    <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Phone Us</a>
+    <p>+61 8 83135208</p>
+    <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Enquire</a>
+    <p>Submit your question to a service agent</p>
+    <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Visit Us</a>
+    <p>Level 3 Hub Central North Terrace</p>
+  </div>
+
+  <div class="col col-sm-12 col-md-8">
+    <table class="table table-striped table-bordered">
+      <thead class="thead-dark">
+        <tr id="day-headers">
+          <th>Time</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+          <th>Sunday</th>
+        </tr>
+      </thead>
+      <% @hours.each_with_index do |i,index| %>
+        <tr>
+          <td>
+            <% if [65536,262144,1048576,4194304,16777216,67108864,268435456,1073741824].include? i  %>
+              <% if ((index+18)/2) <= 12 %>
+                <%= (index+18)/2 %>:00
+              <% else %>
+                <%= ((index+18)/2).modulo(13) + 1 %>:00
+              <% end %>
+              <% if index+18 < 24  %>am<% else %>pm<% end %>
+            <% else %>
+              &nbsp;
+            <% end %>
+          </td>
+          <% for j in [1,2,4,8,16,32,64]%>
+            <% @this_week.each do |activity| %>
+              <% if activity.days.to_i & j == j && activity.hours.to_i & i == i%>
+                <%@class=1 %>
+                <%@using_class=activity %>
+              <% else %>
+                <%@class=0 %>
+              <% end %>
+            <% end %>
+            <% if @class==1 %>
+              <td class="class-card" valign="top" rowspan="<%=@using_class.hamming_weight%>" style="background-color:<%=@using_class.colour%>">
+                <div class="class-card-title"><%= @using_class.class_name%></div>
+                <span class="mt-1 badge badge-pill">CLASS_TYPE</span>
+                <p>COURSE_CODE
+                <br />
+                ROOM_LOCATION</p>
+              </td>
+            <% else %>
+              <td></td>
+            <% end %>
+          <% end %>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+
+</div>
 
 <script>
     var URL = window.location.href;
