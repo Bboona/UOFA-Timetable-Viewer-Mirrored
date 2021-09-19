@@ -3,7 +3,6 @@ class CreateRestrictionLevels < ActiveRecord::Migration[6.1]
     create_table :restriction_levels do |t|
       t.integer :level_current
       t.string :level_name
-
       t.timestamps
     end
   end

@@ -249,3 +249,15 @@ teacher_enrolment.each do |teacher_id, activity_id|
   ActivitiesTeachers.create(:teacher_id => teacher_id, :activity_id => activity_id)
 end
 #--------------------------------Teachers END HERE--------------------------------
+#--------------------------------Admins START HERE--------------------------------
+#admin creation
+admin_list = [
+  ["a1000000","Sunny","Rylan","fryingpan"],["a1000001","Uladzimir","Sunita","postagestamp"],
+  ["a1000002","Melania","Hani","umbrella"],["a1000003","Lilo","Emilio","miniatureportrait"],
+  ["a1000004","Toni","Judith","streetlights"]
+    ]
+
+admin_list.each do |uni_id,first_name,last_name,password|
+  Admin.create(:uni_id => uni_id,:first_name => first_name,:last_name => last_name,:password => password)
+end
+#--------------------------------Admins END HERE--------------------------------
