@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_10_013647) do
+ActiveRecord::Schema.define(version: 2021_09_19_101503) do
 
   create_table "activities", force: :cascade do |t|
     t.text "class_name"
@@ -34,15 +34,24 @@ ActiveRecord::Schema.define(version: 2021_09_10_013647) do
   create_table "activities_students", id: false, force: :cascade do |t|
     t.integer "activity_id", null: false
     t.integer "student_id", null: false
+    t.index "\"uni_id\"", name: "index_activities_students_on_uni_id"
     t.index ["activity_id"], name: "index_activities_students_on_activity_id"
-    t.index ["student_id"], name: "index_activities_students_on_student_id"
   end
 
   create_table "activities_teachers", id: false, force: :cascade do |t|
     t.integer "activity_id", null: false
     t.integer "teacher_id", null: false
+    t.index "\"uni_id\"", name: "index_activities_teachers_on_uni_id"
     t.index ["activity_id"], name: "index_activities_teachers_on_activity_id"
-    t.index ["teacher_id"], name: "index_activities_teachers_on_teacher_id"
+  end
+
+  create_table "admins", force: :cascade do |t|
+    t.text "uni_id"
+    t.text "first_name"
+    t.text "last_name"
+    t.text "password"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "restriction_levels", force: :cascade do |t|
