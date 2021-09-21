@@ -11,9 +11,5 @@
 
 
 ## Get Started
-* run `rails db:seed`
-* You may need to run `bundle install`
-* To resolve "SassC::SyntaxError in Tableviewer#index", run `yarn install`
+* To get started, follow this (link)[https://github.cs.adelaide.edu.au/a1674564/ESaS2-Group1-TimetableViewer/wiki/Getting-Started]
 
-## Run
-* Use `rails server` to start the server
