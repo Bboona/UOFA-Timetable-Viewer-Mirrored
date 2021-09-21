@@ -11,5 +11,5 @@
 
 
 ## Get Started
-* To get started, follow this (link)[https://github.cs.adelaide.edu.au/a1674564/ESaS2-Group1-TimetableViewer/wiki/Getting-Started]
+* To get started, follow this [link](https://github.cs.adelaide.edu.au/a1674564/ESaS2-Group1-TimetableViewer/wiki/Getting-Started)
 
