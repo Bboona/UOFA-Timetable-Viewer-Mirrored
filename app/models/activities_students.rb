@@ -1,2 +1,2 @@
-class ActivitiesStudents < PsoftDbBase
+class ActivitiesStudents < ActiveRecord::Base
 end
