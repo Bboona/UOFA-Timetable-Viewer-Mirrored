@@ -1,5 +1,15 @@
 <h1>Add meeting</h1>
 <form style="text-align:center" >
+  <table>
+    <% @test.each do |meeting|%>
+      <tr>
+        <% meeting.attributes.each do |attr_name, attr_value| %>
+          <td><%= attr_value %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </table>
+
   <span>Date: </span>
   <input type="date" id="date"  name="date"required>
   <br>
