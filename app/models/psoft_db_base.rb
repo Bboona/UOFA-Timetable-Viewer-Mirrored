@@ -3,5 +3,5 @@
 # and treat it as a readonly database
 class PsoftDbBase < ActiveRecord::Base
   self.abstract_class = true
-  establish_connection PSOFT_DB
+  # establish_connection PSOFT_DB
 end

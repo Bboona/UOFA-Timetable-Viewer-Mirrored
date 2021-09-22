@@ -1,2 +1,2 @@
-class Weekly < PsoftDbBase
+class Weekly < ActiveRecord::Base
 end
