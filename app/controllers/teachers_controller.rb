@@ -10,6 +10,49 @@ class TeachersController < ApplicationController
   def show
   end
 
+  def add_meeting
+    puts("---------------------------------")
+    puts("---------------------------------")
+    puts("---------------------------------")
+    puts("---------------------------------")
+    puts("---------------------------------")
+    puts("---------------------------------")
+    meeting_date = Date.parse(params[:date])
+    meeting_week = meeting_date.strftime("%W").to_i - 1
+    meeting_week_binary = 2 ** meeting_week
+    meeting_day = meeting_date.cwday - 1
+    meeting_day_binary = 2 ** meeting_day
+
+    start_time = params[:start_time]
+    start_hour = start_time[0..1].to_i
+    start_minute = start_time[3..4].to_i
+    start_power = start_hour * 2 + 1
+    if (start_minute == 30)
+      start_power += 1
+    end
+
+    end_time = params[:end_time]
+    end_hour = end_time[0..1].to_i
+    end_minute = end_time[3..4].to_i
+    end_power = end_hour * 2 + 1
+    if (end_minute == 30)
+      end_power += 1
+    end
+    puts("---------------------------------")
+
+    time_binary = 0
+    for i in start_power...end_power+1
+      time_binary += 2 ** i
+    end
+
+    puts(time_binary)
+    puts("---------------------------------")
+    puts("---------------------------------")
+    puts("---------------------------------")
+    puts("---------------------------------")
+    puts("---------------------------------")
+
+  end
   # GET /teachers/weekly/:id
   def weekly
 
@@ -76,7 +119,6 @@ class TeachersController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_teacher
-      @teacher = Teacher.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.
