@@ -1,10 +1,15 @@
 <h1>Add meeting</h1>
 <form style="text-align:center" >
   <table>
+    <tr>
+      <% @test[0].attributes.each do |attr_name, attr_value| %>
+        <th style="width: 5%"><%= attr_name %></th>
+      <% end %>
+    </tr>
     <% @test.each do |meeting|%>
       <tr>
         <% meeting.attributes.each do |attr_name, attr_value| %>
-          <td><%= attr_value %></td>
+          <td style="width: 5%"><%= attr_value %></td>
         <% end %>
       </tr>
     <% end %>

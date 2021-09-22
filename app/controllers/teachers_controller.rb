@@ -48,7 +48,7 @@ class TeachersController < ApplicationController
       end
       hamming_weight = end_power + 1 - start_power
 
-      puts(time_binary)
+      location = params[:meeting_location]
       puts("---------------------------------")
       puts("---------------------------------")
       puts("---------------------------------")
@@ -56,7 +56,7 @@ class TeachersController < ApplicationController
       puts("---------------------------------")
       @new_meeting = Activity.create(class_name: "Meeting", class_code: "0000", colour: "00FFFF", subject: "Meeting",
                                      term: "S2", weeks: meeting_week_binary.to_s, days: meeting_day_binary.to_s,
-                                     hours: time_binary.to_s, location: "Room 1", size: "2", available: "2",
+                                     hours: time_binary.to_s, location: location, size: "2", available: "2",
                                      class_nbr: "Class number", class_type: "Meeting", hamming_weight: hamming_weight.to_s)
       redirect_to teachers_add_meeting_path
     end
