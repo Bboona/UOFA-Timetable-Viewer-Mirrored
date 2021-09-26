@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get "clashes" => "clashes#index"
   get "clashes" => "clashes#index"
   get "students" => "students#index"
+  get "students/weekly/:id" => "students#weekly"
   get "teachers" => "teachers#index"
   get "meetings" => "teachers#add_meeting"
   get 'students/index'

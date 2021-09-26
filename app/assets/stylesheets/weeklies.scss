@@ -2,24 +2,24 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 table tr th, table tr td{
-    width:12.5%;
-    word-break: break-all;
+    //width:12.5%;
+    //word-break: break-all;
 }
-table tr:first-child td:first-child {
-    border-radius: 20px 0 0 0!important;
-}
-
-table tr:first-child td:last-child {
-border-radius: 0 20px 0 0!important;
-}
-
-table tr:last-child td:first-child {
-border-radius: 0 0 0 20px!important;
-}
-
-table tr:last-child td:last-child {
-border-radius: 0 0 20px 0!important;
-}
+//table tr:first-child td:first-child {
+//    border-radius: 20px 0 0 0!important;
+//}
+//
+//table tr:first-child td:last-child {
+//border-radius: 0 20px 0 0!important;
+//}
+//
+//table tr:last-child td:first-child {
+//border-radius: 0 0 0 20px!important;
+//}
+//
+//table tr:last-child td:last-child {
+//border-radius: 0 0 20px 0!important;
+//}
 
 .class-card {
     width: 10%;

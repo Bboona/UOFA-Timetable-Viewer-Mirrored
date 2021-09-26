@@ -10,7 +10,7 @@
 RestrictionLevel.create( level_current: 0, level_name: "0")
 
 # create 52 - 9 weekly objects
-i=256 # start at 256, as that is week 9
+i=1 # start at week 1
 while i <= 2**52
   Weekly.create(week: i.to_s)
   i = i * 2
@@ -21,7 +21,7 @@ end
 
 activities = [
   # 1-7
-  ["Computer Systems", "COMP SCI", "2000", "12577", "LE01", "300", "98", "FF0000", "S1", "32575", "2", "786432", "MyUni/OL/Online Class", "13"],
+  ["Computer Systems", "COMP SCI", "2000", "12577", "LE01", "300", "98", "FF0000", "S1", "32575", "2", "786432", "MyUni/OL/Online Class", "2"],
   ["Computer Systems", "COMP SCI", "2000", "12587", "WR06", "54", "3", "FF0000", "S1", "10794", "8", "50331648", "Ingkarni Wardli/B23/CAT Suite", "6"],
   ["Computer Systems", "COMP SCI", "2000", "12588", "WR05", "48", "8", "FF0000", "S1", "10794", "8", "12582912", "Ingkarni Wardli/B23/CAT Suite", "6"],
   ["Computer Systems", "COMP SCI", "2000", "12589", "WR04", "41", "0", "FF0000", "S1", "10794", "8", "3145728", "Ingkarni Wardli/B23/CAT Suite", "6"],
@@ -30,16 +30,16 @@ activities = [
   ["Computer Systems", "COMP SCI", "2000", "12592", "WR01", "41", "0", "FF0000", "S1", "10794", "4", "3145728", "Ingkarni Wardli/B23/CAT Suite", "6"],
   
   #8-13
-  ["Computer Systems", "COMP SCI", "2000", "22707", "LE01", "405", "48", "FF0000", "S2", "31999", "2", "786432", "MyUni/OL/Online Class", "13"],
-  ["Computer Systems", "COMP SCI", "2000", "22722", "WR01", "58", "11", "FF0000", "S2", "10410", "4", "3145728", "Ingkarni Wardli/B23/CAT Suite", "6"],
-  ["Computer Systems", "COMP SCI", "2000", "22721", "WR02", "55", "12", "FF0000", "S2", "10410", "4", "12582912", "Ingkarni Wardli/B23/CAT Suite", "6"],
-  ["Computer Systems", "COMP SCI", "2000", "22720", "WR03", "65", "35", "FF0000", "S2", "10410", "4", "50331648", "Ingkarni Wardli/B23/CAT Suite", "6"],
-  ["Computer Systems", "COMP SCI", "2000", "22719", "WR04", "65", "4", "FF0000", "S2", "10410", "8", "3145728", "Ingkarni Wardli/B23/CAT Suite", "6"],
-  ["Computer Systems", "COMP SCI", "2000", "22718", "WR05", "60", "2", "FF0000", "S2", "10410", "8", "12582912", "Ingkarni Wardli/B23/CAT Suite", "6"],
+  ["Computer Systems", "COMP SCI", "2000", "22707", "LE02", "405", "48", "FF0000", "S1", "32575", "8", "12582912", "MyUni/OL/Online Class", "2"],
+  ["Computer Systems", "COMP SCI", "2000", "22722", "WR01", "58", "11", "FF0000", "S1", "10410", "4", "3145728", "Ingkarni Wardli/B23/CAT Suite", "6"],
+  ["Computer Systems", "COMP SCI", "2000", "22721", "WR02", "55", "12", "FF0000", "S1", "10410", "4", "12582912", "Ingkarni Wardli/B23/CAT Suite", "6"],
+  ["Computer Systems", "COMP SCI", "2000", "22720", "WR03", "65", "35", "FF0000", "S1", "10410", "4", "50331648", "Ingkarni Wardli/B23/CAT Suite", "6"],
+  ["Computer Systems", "COMP SCI", "2000", "22719", "WR04", "65", "4", "FF0000", "S1", "10410", "8", "3145728", "Ingkarni Wardli/B23/CAT Suite", "6"],
+  ["Computer Systems", "COMP SCI", "2000", "22718", "WR05", "60", "2", "FF0000", "S1", "10410", "8", "12582912", "Ingkarni Wardli/B23/CAT Suite", "6"],
   
 
   #14-18
-  ["Systems Programming", "COMP SCI", "2005", "12604", "LE01", "170", "58", "FFC107", "S1", "32575", "2", "786432", "MyUni/OL/Online Class", "13"],
+  ["Systems Programming", "COMP SCI", "2005", "12604", "LE01", "170", "58", "FFC107", "S1", "32575", "1", "786432", "MyUni/OL/Online Class", "2"],
   ["Systems Programming", "COMP SCI", "2005", "12599", "WR01", "28", "5", "FFC107", "S1", "10794", "2", "201326592", "Ingkarni Wardli/236/CAT Suite", "6"],
   ["Systems Programming", "COMP SCI", "2005", "12598", "WR02", "24", "13", "FFC107", "S1", "10794", "2", "12582912", "Ingkarni Wardli/236/CAT Suite", "6"],
   ["Systems Programming", "COMP SCI", "2005", "12597", "WR03", "28", "9", "FFC107", "S1", "10794", "16", "3221225472", "MyUni/OL/Online Class", "6"],
@@ -47,7 +47,7 @@ activities = [
   
 
   #19-23
-  ["Operating Systems", "COMP SCI", "3004", "24936", "LE01", "350", "37", "004D40", "S2", "31999", "8", "4026531840", "MyUni/OL/Online Class", "13"],
+  ["Operating Systems", "COMP SCI", "3004", "24936", "LE01", "350", "37", "004D40", "S2", "31999", "8", "4026531840", "MyUni/OL/Online Class", "2"],
   ["Operating Systems", "COMP SCI", "3004", "24947", "WR01", "40", "10", "004D40", "S2", "31992", "1", "3145728", "Engineering & Mathematics/EMG06/Teaching Room", "10"],
   ["Operating Systems", "COMP SCI", "3004", "24945", "WR03", "40", "14", "004D40", "S2", "31992", "2", "12582912", "Engineering & Mathematics/EMG07/Teaching Room", "10"],
   ["Operating Systems", "COMP SCI", "3004", "24943", "WR05", "40", "10", "004D40", "S2", "31992", "2", "251658240", "Barr Smith South/2052/Teaching Room", "10"],
@@ -55,7 +55,7 @@ activities = [
   
 
   #24-30
-  ["Algorithm Design & Data Structures", "COMP SCI", "2103", "12606", "LE01", "400", "28", "D8941B", "S1", "16191", "3", "805306368", "MyUni/OL/Online Class", "12"],
+  ["Algorithm Design & Data Structures", "COMP SCI", "2103", "12606", "LE01", "400", "28", "D8941B", "S1", "16191", "3", "805306368", "MyUni/OL/Online Class", "2"],
   ["Algorithm Design & Data Structures", "COMP SCI", "2103", "12627", "PR01", "37", "2", "D8941B", "S1", "5396", "2", "15728640", "Ingkarni Wardli/B16/CAT Suite", "5"],
   ["Algorithm Design & Data Structures", "COMP SCI", "2103", "12626", "PR02", "37", "11", "D8941B", "S1", "5396", "16", "4026531840", "Ingkarni Wardli/B16/CAT Suite", "5"],
   ["Algorithm Design & Data Structures", "COMP SCI", "2103", "12625", "PR03", "40", "2", "D8941B", "S1", "5396", "4", "16106127360", "MyUni/OL/Online Class", "5"],
@@ -65,22 +65,22 @@ activities = [
   
 
   #31-39
-  ["Algorithm Design & Data Structures", "COMP SCI", "2103", "22724", "LE01", "244", "36", "D8941B", "S2", "15615", "20", "786432", "Physics/103/Kerr Grant Lecture Theatre", "12"],
-  ["Algorithm Design & Data Structures", "COMP SCI", "2103", "22731", "PR01", "38", "4", "D8941B", "S2", "5204", "8", "16106127360", "Ingkarni Wardli/B23/CAT Suite", "5"],
-  ["Algorithm Design & Data Structures", "COMP SCI", "2103", "22730", "PR02", "38", "8", "D8941B", "S2", "5204", "4", "16106127360", "Ingkarni Wardli/B15/CAT Suite", "5"],
-  ["Algorithm Design & Data Structures", "COMP SCI", "2103", "22729", "PR03", "60", "0", "D8941B", "S2", "5204", "8", "1006632960", "MyUni/OL/Online Class", "5"],
-  ["Algorithm Design & Data Structures", "COMP SCI", "2103", "22738", "WR01", "33", "11", "D8941B", "S2", "10410", "2", "786432", "Engineering & Mathematics/EMG07/Teaching Room", "6"],
-  ["Algorithm Design & Data Structures", "COMP SCI", "2103", "22736", "WR03", "60", "0", "D8941B", "S2", "10410", "2", "201326592", "MyUni/OL/Online Class", "6"],
-  ["Algorithm Design & Data Structures", "COMP SCI", "2103", "22735", "WR04", "30", "0", "D8941B", "S2", "10410", "1", "805306368", "Barr Smith South/2051/Teaching Room", "6"],
-  ["Algorithm Design & Data Structures", "COMP SCI", "2103", "22734", "WR05", "30", "3", "D8941B", "S2", "10410", "2", "805306368", "Engineering & Mathematics/EM218/Teaching Room", "6"],
-  ["Algorithm Design & Data Structures", "COMP SCI", "2103", "22733", "WR06", "30", "1", "D8941B", "S2", "10410", "1", "201326592", "Barr Smith South/2051/Teaching Room", "6"],
+  ["Algorithm Design & Data Structures", "COMP SCI", "2103", "22724", "LE01", "244", "36", "D8941B", "S2", "15615", "20", "786432", "Physics/103/Kerr Grant Lecture Theatre", "2"],
+  ["Algorithm Design & Data Structures", "COMP SCI", "2103", "22731", "PR01", "38", "4", "D8941B", "S2", "5204", "8", "16106127360", "Ingkarni Wardli/B23/CAT Suite", "2"],
+  ["Algorithm Design & Data Structures", "COMP SCI", "2103", "22730", "PR02", "38", "8", "D8941B", "S2", "5204", "4", "16106127360", "Ingkarni Wardli/B15/CAT Suite", "2"],
+  ["Algorithm Design & Data Structures", "COMP SCI", "2103", "22729", "PR03", "60", "0", "D8941B", "S2", "5204", "8", "1006632960", "MyUni/OL/Online Class", "2"],
+  ["Algorithm Design & Data Structures", "COMP SCI", "2103", "22738", "WR01", "33", "11", "D8941B", "S2", "10410", "2", "786432", "Engineering & Mathematics/EMG07/Teaching Room", "2"],
+  ["Algorithm Design & Data Structures", "COMP SCI", "2103", "22736", "WR03", "60", "0", "D8941B", "S2", "10410", "2", "201326592", "MyUni/OL/Online Class", "2"],
+  ["Algorithm Design & Data Structures", "COMP SCI", "2103", "22735", "WR04", "30", "0", "D8941B", "S2", "10410", "1", "805306368", "Barr Smith South/2051/Teaching Room", "2"],
+  ["Algorithm Design & Data Structures", "COMP SCI", "2103", "22734", "WR05", "30", "3", "D8941B", "S2", "10410", "2", "805306368", "Engineering & Mathematics/EM218/Teaching Room", "2"],
+  ["Algorithm Design & Data Structures", "COMP SCI", "2103", "22733", "WR06", "30", "1", "D8941B", "S2", "10410", "1", "201326592", "Barr Smith South/2051/Teaching Room", "2"],
   
   #40-44
-  ["Mathematics IA", "MATHS", "1011", "12224", "LE01", "935", "136", "D81B60", "S1", "32575", "16", "805306368", "MyUni/OL/Online Class", "13"],
-  ["Mathematics IA", "MATHS", "1011", "15423", "TU01", "55", "12", "D81B60", "S1", "32575", "4", "201326592", "Badger/G31/Macbeth Lecture Theatre", "13"],
-  ["Mathematics IA", "MATHS", "1011", "15422", "TU02", "55", "8", "D81B60", "S1", "32575", "2", "3145728", "Engineering Sth/S112/Teaching Room", "13"],
-  ["Mathematics IA", "MATHS", "1011", "15421", "TU03", "55", "7", "D81B60", "S1", "32575", "16", "12582912", "Engineering Sth/S112/Teaching Room", "13"],
-  ["Mathematics IA", "MATHS", "1011", "15420", "TU04", "55", "8", "D81B60", "S1", "32575", "8", "12582912", "Engineering Sth/S112/Teaching Room", "13"],
+  ["Mathematics IA", "MATHS", "1011", "12224", "LE01", "935", "136", "D81B60", "S1", "32575", "16", "805306368", "MyUni/OL/Online Class", "2"],
+  ["Mathematics IA", "MATHS", "1011", "15423", "TU01", "55", "12", "D81B60", "S1", "32575", "4", "201326592", "Badger/G31/Macbeth Lecture Theatre", "2"],
+  ["Mathematics IA", "MATHS", "1011", "15422", "TU02", "55", "8", "D81B60", "S1", "32575", "2", "3145728", "Engineering Sth/S112/Teaching Room", "2"],
+  ["Mathematics IA", "MATHS", "1011", "15421", "TU03", "55", "7", "D81B60", "S1", "32575", "16", "12582912", "Engineering Sth/S112/Teaching Room", "2"],
+  ["Mathematics IA", "MATHS", "1011", "15420", "TU04", "55", "8", "D81B60", "S1", "32575", "8", "12582912", "Engineering Sth/S112/Teaching Room", "2"],
   
   #45-49
   ["Mathematics IB", "MATHS", "1012", "24873", "LE01", "700", "127", "D81B60", "S2", "31999", "16", "3221225472", "The Braggs/G60/Bragg Lecture Theatre", "13"],

@@ -36,8 +36,6 @@
   <% end %>
 </div>
 
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -75,10 +73,10 @@
   <h2>TIMETABLE: WEEKLY VIEW</h2>
   <div id="current-week">
     <button id="week-back" type="button">
-      <%= link_to "back", "/teachers/weekly/#{params[:id].to_i-1}" %></button>
+      <%= link_to "back", "/students/weekly/#{params[:id].to_i-1}" %></button>
     <h3></h3>
     <button id="week-forward" type="button" >
-      <%= link_to "forward", "/teachers/weekly/#{params[:id].to_i+1}" %></button>
+      <%= link_to "forward", "/students/weekly/#{params[:id].to_i+1}" %></button>
   </div>
 </div>
 
@@ -117,18 +115,18 @@
           <% end %>
         </td>
         <% @day_bits.each_with_index do |d,j|%>
-            <% next if @this_week[i][j] == 0 %>
-            <% if @this_week[i][j] == 1 %>
-                <td>
-                  &nbsp;
-                </td>
-            <% else %>
-                <td valign="top" rowspan="<%= @this_week[i][j].hamming_weight %>" style="background-color:#<%=@this_week[i][j].colour %>">
-                  <%= @this_week[i][j].class_name %><br>
-                  <%= @this_week[i][j].class_type %><br>
-                  <%= @this_week[i][j].location %><br>
-                </td>
-            <% end %>
+          <% next if @this_week[i][j] == 0 %>
+          <% if @this_week[i][j] == 1 %>
+            <td>
+              &nbsp;
+            </td>
+          <% else %>
+            <td valign="top" rowspan="<%= @this_week[i][j].hamming_weight %>" style="background-color:#<%=@this_week[i][j].colour %>">
+              <%= @this_week[i][j].class_name %><br>
+              <%= @this_week[i][j].class_type %><br>
+              <%= @this_week[i][j].location %><br>
+            </td>
+          <% end %>
         <% end %>
       </tr>
     <% end %>
