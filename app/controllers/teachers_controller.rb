@@ -13,12 +13,6 @@ class TeachersController < ApplicationController
   def add_meeting
     @test = Activity.where(class_name: "Meeting")
     if (params.has_key?(:date))
-      puts("---------------------------------")
-      puts("---------------------------------")
-      puts("---------------------------------")
-      puts("---------------------------------")
-      puts("---------------------------------")
-      puts("---------------------------------")
       meeting_date = Date.parse(params[:date])
       meeting_week = meeting_date.strftime("%W").to_i - 1
       meeting_week_binary = 2 ** meeting_week
@@ -40,7 +34,6 @@ class TeachersController < ApplicationController
       if (end_minute == 30)
         end_power += 1
       end
-      puts("---------------------------------")
 
       time_binary = 0
       for i in start_power...end_power+1
@@ -49,11 +42,7 @@ class TeachersController < ApplicationController
       hamming_weight = end_power + 1 - start_power
 
       location = params[:meeting_location]
-      puts("---------------------------------")
-      puts("---------------------------------")
-      puts("---------------------------------")
-      puts("---------------------------------")
-      puts("---------------------------------")
+
       @new_meeting = Activity.create(class_name: "Meeting", class_code: "0000", colour: "00FFFF", subject: "Meeting",
                                      term: "S2", weeks: meeting_week_binary.to_s, days: meeting_day_binary.to_s,
                                      hours: time_binary.to_s, location: location, size: "2", available: "2",
