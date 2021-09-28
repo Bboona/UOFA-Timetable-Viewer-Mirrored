@@ -21,7 +21,7 @@
 <% end %>
 </br>
 
-<div>
+<!--div>
   <strong>Clashes:</strong>
   </br>
   <% @clashes.each do |clash| %>
@@ -34,7 +34,7 @@
     </tr>
     </br>
   <% end %>
-</div>
+</div-->
 
 <!DOCTYPE html>
 <html>
@@ -72,67 +72,105 @@
 <div>
   <h2>TIMETABLE: WEEKLY VIEW</h2>
   <div id="current-week">
-    <button id="week-back" type="button">
+    <button class="btn btn-light" id="week-back" type="button">
       <%= link_to "back", "/students/weekly/#{params[:id].to_i-1}" %></button>
     <h3></h3>
-    <button id="week-forward" type="button" >
+    <button class="btn btn-light" id="week-forward" type="button" >
       <%= link_to "forward", "/students/weekly/#{params[:id].to_i+1}" %></button>
   </div>
 </div>
 
-<div style="float: left">
-  <a href="https://www.adelaide.edu.au/ask-adelaide/">Ask ADEL</a>
-  <p>Find answers to frequently asked questions</p>
-  <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Online Chat</a>
-  <p>Chat with a service agent</p>
-  <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Phone Us</a>
-  <p>+61 8 83135208</p>
-  <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Enquire</a>
-  <p>Submit your question to a service agent</p>
-  <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Visit Us</a>
-  <p>Level 3 Hub Central North Terrace</p>
-</div>
 
-<div>
-  <table>
-    <tr id="day-headers">
-      <th>Time</th>
-      <th>Monday</th>
-      <th>Tuesday</th>
-      <th>Wednesday</th>
-      <th>Thursday</th>
-      <th>Friday</th>
-      <th>Saturday</th>
-      <th>Sunday</th>
-    </tr>
-    <% @hours.each_with_index do |h,i| %>
-      <tr>
-        <td>
-          <% if @time_names[i] == "" %>
-            &nbsp;
-          <% else %>
-            <%= @time_names[i] %>
-          <% end %>
-        </td>
-        <% @day_bits.each_with_index do |d,j|%>
-          <% next if @this_week[i][j] == 0 %>
-          <% if @this_week[i][j] == 1 %>
-            <td>
+<div class="contents row">
+
+  <div class="col" style="float: left">
+    <a href="https://www.adelaide.edu.au/ask-adelaide/">Ask ADEL</a>
+    <p>Find answers to frequently asked questions</p>
+    <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Online Chat</a>
+    <p>Chat with a service agent</p>
+    <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Phone Us</a>
+    <p>+61 8 83135208</p>
+    <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Enquire</a>
+    <p>Submit your question to a service agent</p>
+    <a href="https://www.adelaide.edu.au/ask-adelaide/contact-us">Visit Us</a>
+    <p>Level 3 Hub Central North Terrace</p>
+  </div>
+
+  <div class="col col-sm-12 col-md-10">
+    <table class="table table-striped table-bordered">
+      <thead class="thead-dark">
+        <tr id="day-headers">
+          <th>Time</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+          <th>Sunday</th>
+        </tr>
+      </thead>
+      <% @hours.each_with_index do |h,i| %>
+        <tr>
+          <td>
+            <% if @time_names[i] == "" %>
               &nbsp;
-            </td>
-          <% else %>
-            <td valign="top" rowspan="<%= @this_week[i][j].hamming_weight %>" style="background-color:#<%=@this_week[i][j].colour %>">
-              <%= @this_week[i][j].class_name %><br>
-              <%= @this_week[i][j].class_type %><br>
-              <%= @this_week[i][j].location %><br>
-            </td>
+            <% else %>
+              <%= @time_names[i] %>
+            <% end %>
+          </td>
+          <% @day_bits.each_with_index do |d,j|%>
+            <% next if @this_week[i][j] == 0 %>
+            <% if @this_week[i][j] == 1 %>
+              <td>
+                &nbsp;
+              </td>
+            <% else %>
+              <td class="class-card" valign="top" rowspan="<%= @this_week[i][j].hamming_weight %>" style="background-color:#<%=@this_week[i][j].colour %>">
+                
+                <div class="class-card-title"><%= @this_week[i][j].class_name %></div>
+                <span class="mt-1 badge badge-pill"><%= @this_week[i][j].class_type %></span>
+                <p class="class-card-desc"><%= @this_week[i][j].location %></p>
+              </td>
+            <% end %>
           <% end %>
-        <% end %>
-      </tr>
-    <% end %>
-  </table>
+        </tr>
+      <% end %>
+    </table>
+
+  </div>
 
 </div>
+
+<div class="row">
+
+  <div class="col-6">
+    <% if !@clashes.nil? %>
+      <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th>Class name</th>
+            <th>Class code</th>
+            <th>Class type</th>
+            <th>Days</th>
+            <th>Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <%= render partial: 'clash', collection: @clashes %>
+        </tbody>
+      </table>
+    <% else %>
+    <div class="col">
+      <h3>
+        There are no clashes to display.
+      </h3>
+    </div>
+    <% end %>
+  </div>
+
+</div>
+
 
 
 
