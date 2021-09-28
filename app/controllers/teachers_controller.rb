@@ -12,10 +12,10 @@ class TeachersController < ApplicationController
 
   # GET /teachers/weekly/:id
   def weekly
-
+    @teacher = Teacher.where(:id => session[:id]).first
     @weekly = Weekly.where(:id => params[:id]).first
     week_bit = @weekly.week.to_i
-    @activities = Teacher.first.activities
+    @activities = Teacher.where(:id => session[:id]).first.activities
     @this_week = Array.new(16){Array.new(7,1)}
     @time_names = ["9:00 am","","10:00 am","","11:00 am","","12:00 pm","","1:00 pm","","2:00 pm","","3:00 pm","","4:00 pm","",]
     @day_bits = [1,2,4,8,16,32,64]
@@ -98,7 +98,7 @@ class TeachersController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_teacher
-      @teacher = Teacher.find(params[:id])
+      @teacher = Teacher.find(session[:id])
     end
 
     # Only allow a list of trusted parameters through.
