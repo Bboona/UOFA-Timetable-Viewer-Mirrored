@@ -39,7 +39,12 @@ table tr th, table tr td{
     text-overflow: ellipsis;
     padding-bottom: 3px;
     margin-bottom: 7px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.class-card-desc {
+    color: white;
 }
 
 .inner-shadow {
