@@ -10,6 +10,51 @@ class TeachersController < ApplicationController
   def show
   end
 
+  def add_meeting
+    @test = Activity.where(class_name: "Meeting")
+    if (params.has_key?(:date))
+      meeting_date = Date.parse(params[:date])
+      meeting_week = meeting_date.strftime("%W").to_i - 1
+      meeting_week_binary = 2 ** meeting_week
+      meeting_day = meeting_date.cwday - 1
+      meeting_day_binary = 2 ** meeting_day
+
+      start_time = params[:start_time]
+      start_hour = start_time[0..1].to_i
+      start_minute = start_time[3..4].to_i
+      start_power = start_hour * 2 + 1
+      if (start_minute == 30)
+        start_power += 1
+      end
+
+      end_time = params[:end_time]
+      end_hour = end_time[0..1].to_i
+      end_minute = end_time[3..4].to_i
+      end_power = end_hour * 2 + 1
+      if (end_minute == 30)
+        end_power += 1
+      end
+
+      time_binary = 0
+      for i in start_power...end_power+1
+        time_binary += 2 ** i
+      end
+      hamming_weight = end_power + 1 - start_power
+
+      location = params[:meeting_location]
+
+      @new_meeting = Activity.create(class_name: "Meeting", class_code: "0000", colour: "00FFFF", subject: "Meeting",
+                                     term: "S2", weeks: meeting_week_binary.to_s, days: meeting_day_binary.to_s,
+                                     hours: time_binary.to_s, location: location, size: "2", available: "2",
+                                     class_nbr: "Class number", class_type: "Meeting", hamming_weight: hamming_weight.to_s)
+      
+      # Enrol teacher with meeting (untested)
+      ActivitiesTeachers.create(session[:id], @new_meeting.id)
+      
+      redirect_to teachers_add_meeting_path
+    end
+
+  end
   # GET /teachers/weekly/:id
   def weekly
     @teacher = Teacher.where(:id => session[:id]).first
