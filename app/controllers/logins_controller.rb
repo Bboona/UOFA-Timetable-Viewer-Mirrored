@@ -1,21 +1,19 @@
 class LoginsController < ApplicationController
   def index
     @wrong = "no"
-    @n1 = params[:user_name]
-    @n2 = params[:password]
+    @username = params[:user_name]
+    @password = params[:password]
 
-    puts "aaadwqqdqd"
-    if @n1 == "xiangyu" and @n2 == "11111"
-      redirect_to teachers_index_path(:name=>@n1)
+    #uni_id #password
+    @user = Teacher.where(:uni_id => @username).first
+
+    if (!params[:user_name].nil?)
+      if (@user.password == @password)
+        session[:id] = @user.id
+        redirect_to '/teachers/weekly/1'
+      end
     end
-    if @n1 != "xiangyu" and @n2 == "11111"
-      @wrong = "name"
-    end
-    if @n1 == "xiangyu" and @n2 != "11111"
-      @wrong = "password"
-    end
-    if @n1 != "xiangyu" and @n2 != "11111"
-      @wrong = "both"
-    end
+
+
   end
 end

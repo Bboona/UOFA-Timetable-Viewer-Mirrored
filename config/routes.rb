@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  # Put get 'teachers/add_meeting' here
+  # to override resources :teachers
+  get 'teachers/add_meeting'
   resources :students
   resources :teachers
   resources :weeklies
@@ -17,6 +20,5 @@ Rails.application.routes.draw do
   get 'students/index'
   get 'admins/index'
   get 'teachers/index'
-  get 'teachers/add_meeting'
   get "teachers/weekly/:id" => "teachers#weekly"
 end

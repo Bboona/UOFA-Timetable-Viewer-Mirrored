@@ -1,6 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  Logged in as:
+  <%= @teacher.first_name %>
+</p>
+<%= link_to teachers_add_meeting_path do %>
+  <button class="login_button">Add meeting</button>
+<% end %>
+<p>
   <strong>Week:</strong>
   <%= @weekly.week %>
 </p>
