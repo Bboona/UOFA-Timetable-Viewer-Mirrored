@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2021_09_19_101503) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "activities", force: :cascade do |t|
     t.text "class_name"
     t.string "class_code"
@@ -32,16 +35,16 @@ ActiveRecord::Schema.define(version: 2021_09_19_101503) do
   end
 
   create_table "activities_students", id: false, force: :cascade do |t|
-    t.integer "activity_id", null: false
-    t.integer "student_id", null: false
-    t.index "\"uni_id\"", name: "index_activities_students_on_uni_id"
+    t.bigint "activity_id", null: false
+    t.bigint "student_id", null: false
+    t.text "uni_id"
     t.index ["activity_id"], name: "index_activities_students_on_activity_id"
   end
 
   create_table "activities_teachers", id: false, force: :cascade do |t|
-    t.integer "activity_id", null: false
-    t.integer "teacher_id", null: false
-    t.index "\"uni_id\"", name: "index_activities_teachers_on_uni_id"
+    t.bigint "activity_id", null: false
+    t.bigint "teacher_id", null: false
+    t.text "uni_id"
     t.index ["activity_id"], name: "index_activities_teachers_on_activity_id"
   end
 
