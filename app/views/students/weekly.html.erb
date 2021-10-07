@@ -72,11 +72,27 @@
 <div>
   <h2>TIMETABLE: WEEKLY VIEW</h2>
   <div id="current-week">
-    <button class="btn btn-light" id="week-back" type="button">
-      <%= link_to "back", "/students/weekly/#{params[:id].to_i-1}" %></button>
-    <h3></h3>
-    <button class="btn btn-light" id="week-forward" type="button" >
-      <%= link_to "forward", "/students/weekly/#{params[:id].to_i+1}" %></button>
+    <% if @weekly.id > 1 %>
+      <button id="week-back" type="button">
+        <%= link_to "back", "/students/weekly/#{params[:id].to_i-1}" %>
+      </button>
+    <% else %>
+      <button id="week-back" type="button" disabled>
+        -
+      </button>
+    <% end %>
+
+    <h3 id="week-start-end"></h3>
+
+    <% if @weekly.id < 52 %>
+      <button id="week-forward" type="button" >
+        <%= link_to "forward", "/students/weekly/#{params[:id].to_i+1}" %>
+      </button>
+    <% else %>
+      <button id="week-forward" type="button" disabled>
+        -
+      </button>
+    <% end %>
   </div>
 </div>
 
@@ -177,6 +193,17 @@
 
 
 <script>
+    var URL = window.location.href;
+    // Get the week ID as the last 2 characters of the URL
+    // Since max week is 52, we only need last 2 characters
+    var weekID = URL.slice(-2);
+
+    // If the week is single digit (0-9), the first character will be a '/'
+    // so remove it, otherwise it will be a number so keep it
+    if (weekID[0] == '/') {
+        weekID = weekID.slice(-1)
+    }
+
     // Get Information about current day
     var currentDate = new Date();
     var day = currentDate.getDay();
@@ -188,12 +215,11 @@
     var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
     // Create date for the start of the week
-    var weekStartDate = new Date();
-    weekStartDate.setDate(date - day + 1);
+    var weekStartDate = new Date(2020, 11, 28);
+    weekStartDate.setDate(weekStartDate.getDate() + 7 * (weekID-1))
 
     // Create date object for the end of the week
-    var weekEndDate = new Date;
-    weekEndDate.setDate(weekStartDate.getDate() + 6);
+    var weekEndDate = new Date(2020, 11, 28);
 
     // Update the week day headers
     setWeekDayHeaders();
@@ -206,6 +232,11 @@
             var d = new Date(weekStartDate);
             d.setDate(weekStartDate.getDate() + i);
 
+            // Set the week's end date when d is the last day in the week
+            if (i == 6) {
+                weekEndDate = d;
+            }
+
             // Get the DOM for the i'th column header
             var dayHeader = document.getElementById("day-headers").children[i+1];
 
@@ -214,31 +245,17 @@
         }
 
         // Write the start and end of the week dates in the timetable header
-        var weekHeader = document.getElementById("current-week").children[1];
+        var weekHeader = document.getElementById("week-start-end");
         weekHeader.innerText = weekStartDate.getDate() + " " + months[weekStartDate.getMonth()] + " - " + weekEndDate.getDate() + " " + months[weekEndDate.getMonth()];
 
         // Highlight the current day in the week
-        if (date >= weekStartDate.getDate() && date <= weekEndDate.getDate()) {
+        if (currentDate >= weekStartDate && currentDate <= weekEndDate) {
             document.getElementById("day-headers").children[day].style.backgroundColor = "grey";
         } else {
             // Remove highlighting
             document.getElementById("day-headers").children[day].style.backgroundColor = "white";
 
         }
-    }
-
-    // If press back one week
-    document.getElementById("week-back").onclick = function() {
-        weekStartDate.setDate(weekStartDate.getDate() - 7);
-        weekEndDate.setDate(weekEndDate.getDate() - 7);
-        setWeekDayHeaders();
-    }
-
-    // If click forward one week
-    document.getElementById("week-forward").onclick = function() {
-        weekStartDate.setDate(weekStartDate.getDate() + 7);
-        weekEndDate.setDate(weekEndDate.getDate() + 7);
-        setWeekDayHeaders();
     }
 
 

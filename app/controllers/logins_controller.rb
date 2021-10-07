@@ -10,7 +10,10 @@ class LoginsController < ApplicationController
     if (!params[:user_name].nil?)
       if (@user.password == @password)
         session[:id] = @user.id
-        redirect_to '/teachers/weekly/1'
+
+        # Get this week's number and redirect to that timetable page
+        this_week = Date.today.cweek + 1;
+        redirect_to ('/teachers/weekly/' + this_week.to_s)
       end
     end
 
