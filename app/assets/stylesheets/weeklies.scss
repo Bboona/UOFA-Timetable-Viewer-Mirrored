@@ -1,29 +1,42 @@
 // Place all the styles related to the weeklies controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-table tr th, table tr td{
-    //width:12.5%;
-    //word-break: break-all;
+h2, h3 {
+    text-align: center;
 }
-//table tr:first-child td:first-child {
-//    border-radius: 20px 0 0 0!important;
-//}
-//
-//table tr:first-child td:last-child {
-//border-radius: 0 20px 0 0!important;
-//}
-//
-//table tr:last-child td:first-child {
-//border-radius: 0 0 0 20px!important;
-//}
-//
-//table tr:last-child td:last-child {
-//border-radius: 0 0 20px 0!important;
-//}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    table-layout: fixed;
+}
+
+th, td {
+    padding: 0.3em 0.8em;
+    padding: 0.3em 0.8em;
+    overflow: hidden!important;
+    width: 8em!important;
+}
+
+
+a {
+    color: #444;
+}
+
+#current-week {
+    text-align: center;
+}
+
+#current-week h3 {
+    display: inline-block;
+}
 
 .class-card {
-    width: 10%;
-    padding: 20px;
+    // width: 10em;
+    overflow: hidden;
     border-radius: 15px;
     border: 1px solid black;
     background-color: #EF9;
@@ -51,4 +64,20 @@ table tr th, table tr td{
     -moz-box-shadow:    inset 0 0 6px rgba(0,0,0,0.3);
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     box-shadow:         inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.today {
+    background-color: grey;
+}
+
+.btn {
+    border-radius: 5px;
+}
+
+.debug {
+    height: 15em;
+    background-color: #EEE;
+    border-radius: 20px;
+    border: 1px solid #BBB;
+    padding: 2em;
 }

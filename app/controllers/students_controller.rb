@@ -12,6 +12,9 @@ class StudentsController < ApplicationController
 
   # GET /students/weekly/:id
   def weekly
+    if params[:id].to_i < 1
+      params[:id] = "1"
+    end
 
     @weekly = Weekly.where(:id => params[:id]).first
     week_bit = @weekly.week.to_i

@@ -880,10 +880,30 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
+"@coreui/coreui-plugin-npm-postinstall@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@coreui/coreui-plugin-npm-postinstall/-/coreui-plugin-npm-postinstall-1.0.2.tgz#6daeb2ec786580d9c0849b05bc3e8d0222d5c463"
+  integrity sha512-yeeoWp+bNS84nP1977Y8UCiQ9pssO+f4QuVj3i0/gYZFjjvOgxx0dnyWhtowD5sLYnCRMPlPpqyjwXze3SlkYg==
+
+"@coreui/coreui@~>2.1.16":
+  version "2.1.16"
+  resolved "https://registry.yarnpkg.com/@coreui/coreui/-/coreui-2.1.16.tgz#93efb7d903bcd53092cc4bcc31ef8703de565457"
+  integrity sha512-1YOnQAlcX2bIgnaX3k9GKaN4lD+wKam7tdDfFj7/ZQTN1XG3dwDELHp4aagWQs78ix2CCO1LyeLrzGpsMcLW3Q==
+  dependencies:
+    "@coreui/coreui-plugin-npm-postinstall" "^1.0.2"
+    bootstrap "^4.3.1"
+    core-js "^3.3.4"
+    regenerator-runtime "^0.13.3"
+
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
   resolved "https://registry.npmjs.org/@csstools/convert-colors/-/convert-colors-1.4.0.tgz"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
+
+"@fortawesome/fontawesome-free@^5.15.3":
+  version "5.15.4"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.15.4.tgz#ecda5712b61ac852c760d8b3c79c96adca5554e5"
+  integrity sha512-eYm8vijH/hpzr/6/1CJ/V/Eb1xQFW2nnUKArb3z+yUWv7HTwj6M7SP957oMjfZjAHU6qpoNc2wQvIxBLWYa/Jg==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -913,11 +933,6 @@
   dependencies:
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
-
-"@popperjs/core@^2.9.3":
-  version "2.9.3"
-  resolved "https://registry.npmjs.org/@popperjs/core/-/core-2.9.3.tgz"
-  integrity sha512-xDu17cEfh7Kid/d95kB6tZsLOmSWKCZKtprnhVepjsSaCij+lM3mItSJDuuHDMbCWTh8Ejmebwb+KONcCJ0eXQ==
 
 "@rails/actioncable@^6.0.0":
   version "6.1.4"
@@ -979,6 +994,15 @@
     webpack-assets-manifest "^3.1.1"
     webpack-cli "^3.3.12"
     webpack-sources "^1.4.3"
+
+"@stimulus/polyfills@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@stimulus/polyfills/-/polyfills-1.1.1.tgz#02bacbb8de1ff592200f20a440d382608160b1f5"
+  integrity sha512-QDdxHvkFozgxEHzhVZQkiKPmgSNdjhnwkrsuRu88v0UohgzxUrSV8MNJEJCs9AqNdpCIY3XmaXItjJe0MnVFIg==
+  dependencies:
+    core-js "^2.5.3"
+    element-closest "^2.0.2"
+    mutation-observer-inner-html-shim "^1.0.0"
 
 "@types/http-proxy@^1.17.5":
   version "1.17.7"
@@ -1499,15 +1523,10 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.npmjs.org/boolbase/-/boolbase-1.0.0.tgz"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
-bootstrap-icons@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/bootstrap-icons/-/bootstrap-icons-1.5.0.tgz#2cb19da148aa9105cb3174de2963564982d3dc55"
-  integrity sha512-44feMc7DE1Ccpsas/1wioN8ewFJNquvi5FewA06wLnqct7CwMdGDVy41ieHaacogzDqLfG8nADIvMNp9e4bfbA==
-
-bootstrap@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.npmjs.org/bootstrap/-/bootstrap-5.1.0.tgz"
-  integrity sha512-bs74WNI9BgBo3cEovmdMHikSKoXnDgA6VQjJ7TyTotU6L7d41ZyCEEelPwkYEzsG/Zjv3ie9IE3EMAje0W9Xew==
+bootstrap@^4.3.1, bootstrap@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.6.0.tgz#97b9f29ac98f98dfa43bf7468262d84392552fd7"
+  integrity sha512-Io55IuQY3kydzHtbGvQya3H+KorS/M9rSNyfCGCg9WZ4pyT/lCxIlpJgG1GXW/PswzC84Tr2fBYi+7+jFVQQBw==
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -2047,10 +2066,20 @@ core-js-compat@^3.14.0, core-js-compat@^3.16.0:
     browserslist "^4.16.6"
     semver "7.0.0"
 
+core-js@^2.5.3:
+  version "2.6.12"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
+  integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
+
 core-js@^3.12.1:
   version "3.16.0"
   resolved "https://registry.npmjs.org/core-js/-/core-js-3.16.0.tgz"
   integrity sha512-5+5VxRFmSf97nM8Jr2wzOwLqRo6zphH2aX+7KsAUONObyzakDNq2G/bgbhinxB4PoV9L3aXQYhiDKyIKWd2c8g==
+
+core-js@^3.15.2, core-js@^3.3.4:
+  version "3.18.2"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.18.2.tgz#63a551e8a29f305cd4123754846e65896619ba5b"
+  integrity sha512-zNhPOUoSgoizoSQFdX1MeZO16ORRb9FFQLts8gSYbZU5FcgXhp24iMWMxnOQo5uIaIG7/6FA/IqJPwev1o9ZXQ==
 
 core-util-is@~1.0.0:
   version "1.0.2"
@@ -2550,6 +2579,11 @@ electron-to-chromium@^1.3.793:
   version "1.3.797"
   resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.3.797.tgz"
   integrity sha512-ASVBCRy2E6mPRSFqUxvi5OjMRVHzv36PXfbIllFlRc4ZLPNuhAZjKRHgmtlv37CLvVU/XYdftwtMxW5iYxGlcg==
+
+element-closest@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/element-closest/-/element-closest-2.0.2.tgz#72a740a107453382e28df9ce5dbb5a8df0f966ec"
+  integrity sha1-cqdAoQdFM4LijfnOXbtajfD5Zuw=
 
 elliptic@^6.5.3:
   version "6.5.4"
@@ -4339,6 +4373,11 @@ multicast-dns@^6.0.1:
     dns-packet "^1.3.1"
     thunky "^1.0.2"
 
+mutation-observer-inner-html-shim@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/mutation-observer-inner-html-shim/-/mutation-observer-inner-html-shim-1.0.1.tgz#84349f51dfc390d0af85011de8fa14e645fb400e"
+  integrity sha512-YmJPDSUWJgBhwqRJP6AMvjdfDHU1gsrT5YdgpxMit2+x1khLYhdYq9fvp4clPsYecVT3JOprBf/KjEX7IqlU+g==
+
 nan@^2.12.1:
   version "2.15.0"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.15.0.tgz#3f34a473ff18e15c1b5626b62903b5ad6e665fee"
@@ -4795,6 +4834,11 @@ pbkdf2@^3.0.3:
     ripemd160 "^2.0.1"
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
+
+perfect-scrollbar@^1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/perfect-scrollbar/-/perfect-scrollbar-1.5.2.tgz#41167ac6bc95e3a5e87a7402fa36fdacca9bc298"
+  integrity sha512-McHAinFkyzKbBZrFtb4MT2mxkehp15KvOX/UrjB8C5EZZXHTHgyETo5IGFYtHRTI2Pb2bsV0OE0YnkjT9Cw3aw==
 
 picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3:
   version "2.3.0"
@@ -5697,9 +5741,9 @@ regenerate@^1.4.0:
   resolved "https://registry.npmjs.org/regenerate/-/regenerate-1.4.2.tgz"
   integrity sha512-zrceR/XhGYU/d/opr2EKO7aRHUeiBI8qjtfHqADTwZd6Szfy16la6kqD0MIUs5z5hx6AaKa+PixpPrR289+I0A==
 
-regenerator-runtime@^0.13.4, regenerator-runtime@^0.13.7:
+regenerator-runtime@^0.13.3, regenerator-runtime@^0.13.4, regenerator-runtime@^0.13.7:
   version "0.13.9"
-  resolved "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz#8925742a98ffd90814988d7566ad30ca3b263b52"
   integrity sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==
 
 regenerator-transform@^0.14.2:
