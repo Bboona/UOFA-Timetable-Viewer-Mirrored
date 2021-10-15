@@ -11,6 +11,25 @@
     </div>
   <% end %>
 
+  <div class="field">
+    <%= form.label :uni_id %>
+    <%= form.text_area :uni_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_area :first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_area :last_name %>
+  </div>
+  <div class="field">
+    <%= form.label :password%>
+    <%= form.password_field :password%>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

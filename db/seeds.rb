@@ -16,8 +16,8 @@ while i <= 2**52
   i = i * 2
 end
 
-  # Example Class Activity
-  #Activity.create(class_name:"Computer Systems - LECTURE",class_code:"15000",colour:"red",description:"COMP_SCI_2000",weeks:"999168",days:"1",hours:"3145728",hamming_weight:"2")
+# Example Class Activity
+#Activity.create(class_name:"Computer Systems - LECTURE",class_code:"15000",colour:"red",description:"COMP_SCI_2000",weeks:"999168",days:"1",hours:"3145728",hamming_weight:"2")
 
 activities = [
   # 1-7
@@ -28,7 +28,7 @@ activities = [
   ["Computer Systems", "COMP SCI", "2000", "12590", "WR03", "50", "0", "FF0000", "S1", "10794", "4", "50331648", "Ingkarni Wardli/B23/CAT Suite", "6"],
   ["Computer Systems", "COMP SCI", "2000", "12591", "WR02", "31", "2", "FF0000", "S1", "10794", "4", "12582912", "Ingkarni Wardli/B23/CAT Suite", "6"],
   ["Computer Systems", "COMP SCI", "2000", "12592", "WR01", "41", "0", "FF0000", "S1", "10794", "4", "3145728", "Ingkarni Wardli/B23/CAT Suite", "6"],
-  
+
   #8-13
   ["Computer Systems", "COMP SCI", "2000", "22707", "LE02", "405", "48", "FF0000", "S1", "32575", "8", "12582912", "MyUni/OL/Online Class", "2"],
   ["Computer Systems", "COMP SCI", "2000", "22722", "WR01", "58", "11", "FF0000", "S1", "10410", "4", "3145728", "Ingkarni Wardli/B23/CAT Suite", "6"],
@@ -36,7 +36,7 @@ activities = [
   ["Computer Systems", "COMP SCI", "2000", "22720", "WR03", "65", "35", "FF0000", "S1", "10410", "4", "50331648", "Ingkarni Wardli/B23/CAT Suite", "6"],
   ["Computer Systems", "COMP SCI", "2000", "22719", "WR04", "65", "4", "FF0000", "S1", "10410", "8", "3145728", "Ingkarni Wardli/B23/CAT Suite", "6"],
   ["Computer Systems", "COMP SCI", "2000", "22718", "WR05", "60", "2", "FF0000", "S1", "10410", "8", "12582912", "Ingkarni Wardli/B23/CAT Suite", "6"],
-  
+
 
   #14-18
   ["Systems Programming", "COMP SCI", "2005", "12604", "LE01", "170", "58", "FFC107", "S1", "32575", "1", "786432", "MyUni/OL/Online Class", "2"],
@@ -44,7 +44,7 @@ activities = [
   ["Systems Programming", "COMP SCI", "2005", "12598", "WR02", "24", "13", "FFC107", "S1", "10794", "2", "12582912", "Ingkarni Wardli/236/CAT Suite", "6"],
   ["Systems Programming", "COMP SCI", "2005", "12597", "WR03", "28", "9", "FFC107", "S1", "10794", "16", "3221225472", "MyUni/OL/Online Class", "6"],
   ["Systems Programming", "COMP SCI", "2005", "12596", "WR04", "30", "27", "FFC107", "S1", "10794", "4", "786432", "Ingkarni Wardli/B15/CAT Suite", "6"],
-  
+
 
   #19-23
   ["Operating Systems", "COMP SCI", "3004", "24936", "LE01", "350", "37", "004D40", "S2", "31999", "8", "4026531840", "MyUni/OL/Online Class", "2"],
@@ -52,7 +52,7 @@ activities = [
   ["Operating Systems", "COMP SCI", "3004", "24945", "WR03", "40", "14", "004D40", "S2", "31992", "2", "12582912", "Engineering & Mathematics/EMG07/Teaching Room", "10"],
   ["Operating Systems", "COMP SCI", "3004", "24943", "WR05", "40", "10", "004D40", "S2", "31992", "2", "251658240", "Barr Smith South/2052/Teaching Room", "10"],
   ["Operating Systems", "COMP SCI", "3004", "24941", "WR07", "40", "4", "004D40", "S2", "31992", "4", "3145728", "Engineering & Mathematics/EMG06/Teaching Room", "10"],
-  
+
 
   #24-30
   ["Algorithm Design & Data Structures", "COMP SCI", "2103", "12606", "LE01", "400", "28", "D8941B", "S1", "16191", "3", "805306368", "MyUni/OL/Online Class", "2"],
@@ -62,7 +62,7 @@ activities = [
   ["Algorithm Design & Data Structures", "COMP SCI", "2103", "12617", "WR01", "33", "0", "D8941B", "S1", "10794", "2", "50331648", "Engineering & Mathematics/EMG07/Teaching Room", "6"],
   ["Algorithm Design & Data Structures", "COMP SCI", "2103", "12616", "WR02", "33", "0", "D8941B", "S1", "10794", "4", "3145728", "Engineering & Mathematics/EMG07/Teaching Room", "6"],
   ["Algorithm Design & Data Structures", "COMP SCI", "2103", "12615", "WR03", "30", "0", "D8941B", "S1", "10794", "4", "51539607552", "MyUni/OL/Online Class", "6"],
-  
+
 
   #31-39
   ["Algorithm Design & Data Structures", "COMP SCI", "2103", "22724", "LE01", "244", "36", "D8941B", "S2", "15615", "20", "786432", "Physics/103/Kerr Grant Lecture Theatre", "2"],
@@ -74,29 +74,29 @@ activities = [
   ["Algorithm Design & Data Structures", "COMP SCI", "2103", "22735", "WR04", "30", "0", "D8941B", "S2", "10410", "1", "805306368", "Barr Smith South/2051/Teaching Room", "2"],
   ["Algorithm Design & Data Structures", "COMP SCI", "2103", "22734", "WR05", "30", "3", "D8941B", "S2", "10410", "2", "805306368", "Engineering & Mathematics/EM218/Teaching Room", "2"],
   ["Algorithm Design & Data Structures", "COMP SCI", "2103", "22733", "WR06", "30", "1", "D8941B", "S2", "10410", "1", "201326592", "Barr Smith South/2051/Teaching Room", "2"],
-  
+
   #40-44
   ["Mathematics IA", "MATHS", "1011", "12224", "LE01", "935", "136", "D81B60", "S1", "32575", "16", "805306368", "MyUni/OL/Online Class", "2"],
   ["Mathematics IA", "MATHS", "1011", "15423", "TU01", "55", "12", "D81B60", "S1", "32575", "4", "201326592", "Badger/G31/Macbeth Lecture Theatre", "2"],
   ["Mathematics IA", "MATHS", "1011", "15422", "TU02", "55", "8", "D81B60", "S1", "32575", "2", "3145728", "Engineering Sth/S112/Teaching Room", "2"],
   ["Mathematics IA", "MATHS", "1011", "15421", "TU03", "55", "7", "D81B60", "S1", "32575", "16", "12582912", "Engineering Sth/S112/Teaching Room", "2"],
   ["Mathematics IA", "MATHS", "1011", "15420", "TU04", "55", "8", "D81B60", "S1", "32575", "8", "12582912", "Engineering Sth/S112/Teaching Room", "2"],
-  
+
   #45-49
   ["Mathematics IB", "MATHS", "1012", "24873", "LE01", "700", "127", "D81B60", "S2", "31999", "16", "3221225472", "The Braggs/G60/Bragg Lecture Theatre", "13"],
   ["Mathematics IB", "MATHS", "1012", "25424", "TU01", "55", "4", "D81B60", "S2", "31999", "2", "3145728", "Barr Smith South/2060/Teaching Room", "13"],
   ["Mathematics IB", "MATHS", "1012", "25423", "TU02", "55", "8", "D81B60", "S2", "31999", "4", "3145728", "Barr Smith South/1062/Teaching Room", "13"],
   ["Mathematics IB", "MATHS", "1012", "25422", "TU03", "55", "9", "D81B60", "S2", "31999", "16", "12884901888", "Barr Smith South/1062/Teaching Room", "13"],
   ["Mathematics IB", "MATHS", "1012", "25421", "TU04", "55", "4", "D81B60", "S2", "31999", "4", "12582912", "Barr Smith South/2060/Teaching Room", "13"],
-  
+
   #50-51
   ["Ethics and Data Management I", "APP DATA", "1010", "11956", "LE01", "50", "23", "1E88E5", "S1", "32575", "4", "3145728", "MyUni/OL/Online Class", "13"],
   ["Ethics and Data Management I", "APP DATA", "1010", "11957", "WR01", "50", "23", "1E88E5", "S1", "10794", "2", "17112760320", "Horace Lamb/422/Teaching Room", "6"],
-  
+
   #52-53
   ["Ethics and Data Management I", "APP DATA", "1010", "29625", "LE01", "50", "0", "1E88E5", "S2", "31999", "1", "51539607552", "MyUni/OL/Online Class", "13"],
   ["Ethics and Data Management I", "APP DATA", "1010", "29626", "WR01", "50", "1", "1E88E5", "S2", "10410", "2", "4380866641920", "Horace Lamb/422/Teaching Room", "6"],
-  
+
   #54-59
   ["Materials & Manufacturing", "MECH ENG", "2020", "10728", "LE01", "200", "68", "6352E2", "S1", "32575", "8", "15728640", "Helen Mayo Nth/103N/Florey Lecture Theatre", "13"],
   ["Materials & Manufacturing", "MECH ENG", "2020", "10733", "TU01", "40", "8", "6352E2", "S1", "16191", "4", "786432", "Engineering Sth/S111/Teaching Room", "12"],
@@ -104,12 +104,12 @@ activities = [
   ["Materials & Manufacturing", "MECH ENG", "2020", "10731", "TU03", "40", "10", "6352E2", "S1", "16191", "4", "805306368", "Engineering Sth/S112/Teaching Room", "12"],
   ["Materials & Manufacturing", "MECH ENG", "2020", "10730", "TU04", "40", "32", "6352E2", "S1", "16191", "2", "50331648", "Engineering Sth/S111/Teaching Room", "12"],
   ["Materials & Manufacturing", "MECH ENG", "2020", "10729", "TU05", "40", "1", "6352E2", "S1", "16191", "2", "12582912", "Engineering Sth/S111/Teaching Room", "12"],
-  
+
   #60-62
   ["Introduction to Mining Engineering I", "MINING", "1011", "23999", "LE01", "25", "7", "F54681", "S2", "15615", "2", "62914560", "MyUni/OL/Online Class", "12"],
   ["Introduction to Mining Engineering I", "MINING", "1011", "24000", "PJ01", "25", "7", "F54681", "S2", "15615", "4", "12582912", "Ingkarni Wardli/236/CAT Suite", "12"],
   ["Introduction to Mining Engineering I", "MINING", "1011", "24001", "TU01", "25", "7", "F54681", "S2", "15615", "4", "201326592", "Engineering & Mathematics/EMG07/Teaching Room", "12"],
-  
+
   #63-64
   ["Industry Internship II", "ARTS", "2201", "10917", "SG01", "15", "5", "088C7A", "S1", "16191", "4", "64424509440", "Napier/102/Lecture Theatre", "12"],
   ["Industry Internship II", "ARTS", "2201", "21544", "SG01", "20", "3", "088C7A", "S2", "15615", "8", "4026531840", "Lower Napier/LG28/Lecture Theatre", "12"],
@@ -135,12 +135,12 @@ activities = [
   ["Mathematics for Data Science I", "MATHS", "1004", "24043", "CO05", "45", "0", "EA8DAC", "S2", "5205", "2", "12582912", "Ingkarni Wardli/234/CAT Suite", "6"],
   ["Mathematics for Data Science I", "MATHS", "1004", "24042", "CO06", "40", "0", "EA8DAC", "S2", "5205", "16", "50331648", "MyUni/OL/Online Class", "6"]
 
-    ]
+]
 
 activities.each do |class_name, subject, class_code, class_nbr, class_type, size, available, colour, term, weeks, days, hours, location, hamming_weight|
   Activity.create(:class_name => class_name, :subject => subject, :class_code => class_code, :class_nbr => class_nbr, :class_type => class_type,
-                :size => size, :available => available, :colour => colour, :term => term, :weeks => weeks, :days => days,
-                :hours => hours, :location => location, :hamming_weight => hamming_weight)
+                  :size => size, :available => available, :colour => colour, :term => term, :weeks => weeks, :days => days,
+                  :hours => hours, :location => location, :hamming_weight => hamming_weight)
 end
 
 
@@ -157,10 +157,10 @@ student_list = [
   ["a1231246","Eliot","Huerta","icecube"],["a1231247","Callan","Henderson","wineglass"],
   ["a1231248","Farah","Neville","woodenspoon"],["a1231249","Kaiden","Vaughn","helmet"],
   ["a1231250","Frances","Lindsay","acorn"]
-    ]
+]
 
 student_list.each do |uni_id,first_name,last_name,password|
-  Student.create(:uni_id => uni_id,:first_name => first_name,:last_name => last_name,:password => password)
+  Student.create(:uni_id => uni_id,:first_name => first_name,:last_name => last_name,:password_digest=> password_digest)
 end
 
 
@@ -228,7 +228,7 @@ student_enrolment = [
 
   #frances
   #NA
-    ]
+]
 
 student_enrolment.each do |student_id, activity_id|
   ActivitiesStudents.create(:student_id => student_id, :activity_id => activity_id)
@@ -236,23 +236,25 @@ end
 
 #--------------------------------Students END HERE--------------------------------
 #--------------------------------Teachers START HERE--------------------------------
-          # Example Teacher
-          #Teacher.create(uni_id:"a1674564",first_name:"Aufeef",last_name:"Chauhan")
+# Example Teacher
+#Teacher.create(uni_id:"a1674564",first_name:"Aufeef",last_name:"Chauhan")
 
-          # Example Teacher - Activity join
-          #ActivitiesTeachers.create(teacher_id:1,activity_id:1)
+# Example Teacher - Activity join
+#ActivitiesTeachers.create(teacher_id:1,activity_id:1)
 
 #teacher creation
 teacher_list = [
   ["a1674564","Aufeef","Chauhan","gradualideology"],["a1670000","Madonna","Croutons","springnationalism"],
   ["a1670001","Kylie","Dessert","extractimplication"],["a1670002","Billie","Angelcake","reformexpectation"],
   ["a1670003","Nicki","Hickory","guardheaven"],["a1670004","Delta","Selby","definiteillusion"]
-    ]
+]
 
 teacher_list.each do |uni_id,first_name,last_name,password|
-  Teacher.create(:uni_id => uni_id,:first_name => first_name,:last_name => last_name,:password => password)
+  Teacher.create(:uni_id => uni_id,:first_name => first_name,:last_name => last_name,:password_digest=> password_digest)
 end
-
+Teacher.create!(uni_id: 'a1781040',
+                first_name: 'shabi',last_name:'da',
+                password_digest: '123456' )
 #teacher enrolment
 teacher_enrolment = [
   #aufeef
@@ -273,7 +275,7 @@ teacher_enrolment = [
   #delta
   [6,63],[6,64],[6,65],[6,66],[6,67],[6,68],[6,69],[6,70],[6,71],[6,72],[6,73],[6,74],[6,75],[6,76],[6,77],[6,78],[6,79],
   [6,80],[6,81]
-    ]
+]
 
 teacher_enrolment.each do |teacher_id, activity_id|
   ActivitiesTeachers.create(:teacher_id => teacher_id, :activity_id => activity_id)
@@ -285,7 +287,7 @@ admin_list = [
   ["a1000000","Sunny","Rylan","fryingpan"],["a1000001","Uladzimir","Sunita","postagestamp"],
   ["a1000002","Melania","Hani","umbrella"],["a1000003","Lilo","Emilio","miniatureportrait"],
   ["a1000004","Toni","Judith","streetlights"]
-    ]
+]
 
 admin_list.each do |uni_id,first_name,last_name,password|
   Admin.create(:uni_id => uni_id,:first_name => first_name,:last_name => last_name,:password => password)

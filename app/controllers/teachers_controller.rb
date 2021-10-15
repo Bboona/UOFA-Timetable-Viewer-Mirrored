@@ -47,10 +47,10 @@ class TeachersController < ApplicationController
                                      term: "S2", weeks: meeting_week_binary.to_s, days: meeting_day_binary.to_s,
                                      hours: time_binary.to_s, location: location, size: "2", available: "2",
                                      class_nbr: "Class number", class_type: "Meeting", hamming_weight: hamming_weight.to_s)
-      
+
       # Enrol teacher with meeting (untested)
       ActivitiesTeachers.create(session[:id], @new_meeting.id)
-      
+
       redirect_to teachers_add_meeting_path
     end
 
@@ -141,13 +141,13 @@ class TeachersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_teacher
-      @teacher = Teacher.find(session[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_teacher
+    @teacher = Teacher.find(params[:id])
+  end
 
-    # Only allow a list of trusted parameters through.
-    def teacher_params
-      params.require(:teacher).permit(:uni_id, :first_name, :last_name)
-    end
+  # Only allow a list of trusted parameters through.
+  def teacher_params
+    params.require(:teacher).permit(:uni_id, :first_name, :last_name,:password)
+  end
 end
