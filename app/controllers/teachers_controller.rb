@@ -11,45 +11,61 @@ class TeachersController < ApplicationController
   end
 
   def add_meeting
+    # Test to display all meetings
     @test = Activity.where(class_name: "Meeting")
+
     if (params.has_key?(:date))
       meeting_date = Date.parse(params[:date])
-      meeting_week = meeting_date.strftime("%W").to_i - 1
+
+      # Get the week
+      meeting_week = meeting_date.strftime("%W").to_i
       meeting_week_binary = 2 ** meeting_week
+
+      # Get the day
       meeting_day = meeting_date.cwday - 1
       meeting_day_binary = 2 ** meeting_day
 
+      # Get the start time
       start_time = params[:start_time]
+      # First two characters are hour
       start_hour = start_time[0..1].to_i
+      # Seocnd two characters are minute
       start_minute = start_time[3..4].to_i
-      start_power = start_hour * 2 + 1
-      if (start_minute == 30)
+      start_power = start_hour * 2 - 2
+      # Round down to :00 or :30
+      if (start_minute >= 30)
         start_power += 1
       end
 
       end_time = params[:end_time]
       end_hour = end_time[0..1].to_i
       end_minute = end_time[3..4].to_i
-      end_power = end_hour * 2 + 1
-      if (end_minute == 30)
+      end_power = end_hour * 2 - 2
+      # Round up to :30 or next :00
+      if (end_minute != 0)
+        end_power += 1;
+      end
+      if (end_minute > 30)
         end_power += 1
       end
 
+      # Convert time to binary
       time_binary = 0
-      for i in start_power...end_power+1
+      for i in start_power...end_power
         time_binary += 2 ** i
       end
-      hamming_weight = end_power + 1 - start_power
+      hamming_weight = end_power - start_power
 
       location = params[:meeting_location]
-
+      meeting_type = params[:meeting_type]
       @new_meeting = Activity.create(class_name: "Meeting", class_code: "0000", colour: "00FFFF", subject: "Meeting",
                                      term: "S2", weeks: meeting_week_binary.to_s, days: meeting_day_binary.to_s,
                                      hours: time_binary.to_s, location: location, size: "2", available: "2",
-                                     class_nbr: "Class number", class_type: "Meeting", hamming_weight: hamming_weight.to_s)
-
-      # Enrol teacher with meeting (untested)
-      ActivitiesTeachers.create(session[:id], @new_meeting.id)
+                                     class_nbr: "Class number", class_type: meeting_type, hamming_weight: hamming_weight.to_s)
+      
+      # Enrol teacher with meeting
+      ActivitiesTeachers.create(:teacher_id => session[:id], :activity_id => @new_meeting.id)
+      
 
       redirect_to teachers_add_meeting_path
     end
