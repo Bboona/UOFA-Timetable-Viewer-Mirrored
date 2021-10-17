@@ -12,28 +12,8 @@
   <div class = "logo">
     <a href="https://ibb.co/LQgDnV0"><img src="https://i.ibb.co/LQgDnV0/Wechat-IMG16.jpg" alt="Wechat-IMG16" border="0"></a>
   </div>
-  <form method="get" style="text-align:center">
-    <h1>Log in page</h1>
-    <p>User_name:</p> <input type="text" name="user_name" id="user_name"  required/>
-    <p>Password:</p> <input type="text" name="password" id="password" required/>
-    <br>
-    <br>
-    <br>
 
-    <input type="submit" value="Submit" />
-  </form>
-  <% if @wrong == "name" %>
-    <h1 style="background-color:powderblue;">Wrong username, please check</h1>
-  <% end %>
-  <% if @wrong == "password" %>
-    <h1 style="background-color:powderblue;">Wrong password, please check</h1>
-  <% end %>
 
-  <% if @wrong == "both" %>
-    <h1 style="background-color:powderblue;">All wrong</h1>
-  <% end %>
 
-  <%= link_to root_path do %>
-    <button>back</button>
-  <% end %>
+  <li><%= link_to "Log in", login_path, class: "mx-2" %></li>
 </div>

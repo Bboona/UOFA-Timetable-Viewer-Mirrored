@@ -12,6 +12,9 @@ class StudentsController < ApplicationController
 
   # GET /students/weekly/:id
   def weekly
+    if params[:id].to_i < 1
+      params[:id] = "1"
+    end
 
     @weekly = Weekly.where(:id => params[:id]).first
     week_bit = @weekly.week.to_i
@@ -97,13 +100,13 @@ class StudentsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_student
-      @student = Student.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_student
+    @student = Student.find(params[:id])
+  end
 
-    # Only allow a list of trusted parameters through.
-    def student_params
-      params.fetch(:student, {})
-    end
+  # Only allow a list of trusted parameters through.
+  def student_params
+    params.require(:student).permit(:uni_id, :first_name, :last_name,:password)
+  end
 end

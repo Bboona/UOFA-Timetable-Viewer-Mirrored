@@ -66,6 +66,7 @@ class TeachersController < ApplicationController
       # Enrol teacher with meeting
       ActivitiesTeachers.create(:teacher_id => session[:id], :activity_id => @new_meeting.id)
       
+
       redirect_to teachers_add_meeting_path
     end
 
@@ -156,13 +157,13 @@ class TeachersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_teacher
-      @teacher = Teacher.find(session[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_teacher
+    @teacher = Teacher.find(params[:id])
+  end
 
-    # Only allow a list of trusted parameters through.
-    def teacher_params
-      params.require(:teacher).permit(:uni_id, :first_name, :last_name)
-    end
+  # Only allow a list of trusted parameters through.
+  def teacher_params
+    params.require(:teacher).permit(:uni_id, :first_name, :last_name,:password)
+  end
 end

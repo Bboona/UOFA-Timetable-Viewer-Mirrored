@@ -21,4 +21,7 @@ Rails.application.routes.draw do
   get 'admins/index'
   get 'teachers/index'
   get "teachers/weekly/:id" => "teachers#weekly"
+  get    '/login',   to: 'sessions#new'
+  post   '/login',   to: 'sessions#create'
+  delete '/logout',  to: 'sessions#destroy'
 end

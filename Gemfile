@@ -7,6 +7,7 @@ ruby '2.7.2'
 gem 'rails', '~> 6.1.4'
 # # Use pg as the database for Active Record
 gem 'pg',         '1.2.3'
+gem 'bcrypt'
 # Use Puma as the app server
 # gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -73,7 +74,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # bootstrap
-gem 'bootstrap-sass'
+# gem 'bootstrap-sass'
 
 # fontawesome icons
 gem "font-awesome-rails"
