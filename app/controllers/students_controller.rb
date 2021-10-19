@@ -12,6 +12,48 @@ class StudentsController < ApplicationController
 
   # GET /students/weekly/:id
   def weekly
+
+    # Converts hour bits to the representation of the hours
+    def hour_bits_to_name(act)
+      hour_bits = act.hours.to_i
+      hours = ["00:00","00:30","01:00","01:30","02:00","02:30","03:00","03:30","04:00","04:30","05:00","05:30",
+               "06:00","06:30","07:00","07:30","08:00","08:30","09:00","09:30","10:00","10:30","11:00","11:30",
+               "12:00","12:30","13:00","13:30","14:00","14:30","15:00","15:30","16:00","16:30","17:00","17:30",
+               "18:00","18:30","19:00","19:30","20:00","20:30","21:00","21:30","22:00","22:30","23:00","23:30",]
+      counter = 1
+      i = 0
+      while hour_bits & counter != counter
+        counter = counter * 2
+        i = i + 1
+      end
+      hours_name = hours[i] + "-" + hours[i + act.hamming_weight.to_i]
+      act.hours = hours_name
+      return act
+    end
+
+    # Converts the day bits to the representation of the days
+    def day_bits_to_name(act)
+      day_bits = act.days.to_i
+      days = ""
+      if day_bits & 1 == 1
+        days = days + "Monday "
+      end
+      if day_bits & 2 == 2
+        days = days + "Tuesday "
+      end
+      if day_bits & 4 == 4
+        days = days + "Wednesday "
+      end
+      if day_bits & 8 == 8
+        days = days + "Thursday "
+      end
+      if day_bits & 16 == 16
+        days = days + "Friday "
+      end
+      act.days = days
+      return act
+    end
+
     if params[:id].to_i < 1
       params[:id] = "1"
     end
@@ -43,14 +85,16 @@ class StudentsController < ApplicationController
               end
             else
               if @clashes.exclude?(act)
-                @clashes << act
+                act_with_names = act
+                act_with_names = day_bits_to_name(act_with_names)
+                act_with_names = hour_bits_to_name(act_with_names)
+                @clashes << act_with_names
               end
             end
           end
         end
       end
     end
-
   end
 
   # GET /students/new
