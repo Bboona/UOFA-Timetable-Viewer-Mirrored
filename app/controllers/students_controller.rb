@@ -18,7 +18,7 @@ class StudentsController < ApplicationController
 
     @weekly = Weekly.where(:id => params[:id]).first
     week_bit = @weekly.week.to_i
-    @activities = Student.first.activities
+    @activities = Student.where(:uni_id => session[:uni_id]).first.activities
     @this_week = Array.new(16){Array.new(7,1)}
     @time_names = ["9:00 am","","10:00 am","","11:00 am","","12:00 pm","","1:00 pm","","2:00 pm","","3:00 pm","","4:00 pm","",]
     @day_bits = [1,2,4,8,16,32,64]

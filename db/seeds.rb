@@ -160,7 +160,7 @@ student_list = [
 ]
 
 student_list.each do |uni_id,first_name,last_name,password|
-  Student.create(:uni_id => uni_id,:first_name => first_name,:last_name => last_name,:password_digest=> password_digest)
+  Student.create(:uni_id => uni_id,:first_name => first_name,:last_name => last_name,:password_digest=> password)
 end
 
 
@@ -250,7 +250,7 @@ teacher_list = [
 ]
 
 teacher_list.each do |uni_id,first_name,last_name,password|
-  Teacher.create(:uni_id => uni_id,:first_name => first_name,:last_name => last_name,:password_digest=> password_digest)
+  Teacher.create(:uni_id => uni_id,:first_name => first_name,:last_name => last_name,:password_digest=> password)
 end
 Teacher.create!(uni_id: 'a1781040',
                 first_name: 'shabi',last_name:'da',
