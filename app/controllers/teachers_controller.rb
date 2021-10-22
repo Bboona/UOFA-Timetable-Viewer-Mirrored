@@ -18,7 +18,8 @@ class TeachersController < ApplicationController
       meeting_date = Date.parse(params[:date])
 
       # Get the week
-      meeting_week = meeting_date.strftime("%W").to_i
+      # -9 to correspond with the seed dates that start in March
+      meeting_week = meeting_date.strftime("%W").to_i - 9
       meeting_week_binary = 2 ** meeting_week
 
       # Get the day
@@ -64,8 +65,8 @@ class TeachersController < ApplicationController
                                      class_nbr: "Class number", class_type: meeting_type, hamming_weight: hamming_weight.to_s)
       
       # Enrol teacher with meeting
-      ActivitiesTeachers.create(:teacher_id => session[:id], :activity_id => @new_meeting.id)
-      
+      id = Teacher.where(:uni_id => session[:uni_id]).first.id
+      ActivitiesTeachers.create(:teacher_id => id, :activity_id => @new_meeting.id)
 
       redirect_to teachers_add_meeting_path
     end

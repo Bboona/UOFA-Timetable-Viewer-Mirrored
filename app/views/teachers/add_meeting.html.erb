@@ -33,7 +33,7 @@
     <br>
     <span>Description:</span><input id="meeting_description" name="meeting_description">
     <br>
-    <%= link_to teachers_index_path do %>
+    <%= link_to '/teachers/' + Teacher.find_by(uni_id: session[:uni_id]).id.to_s do %>
       <button>back</button>
     <% end %>
     <input type="submit" value="Submit" />
