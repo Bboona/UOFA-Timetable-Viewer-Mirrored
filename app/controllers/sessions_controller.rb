@@ -2,13 +2,24 @@ require 'date'
 
 class SessionsController < ApplicationController
   def new
+    unless session[:uni_id].nil?
+      teacher = Teacher.find_by(uni_id: session[:uni_id])
+
+      # Redirect to current week
+      date = Date.today
+      week = date.cweek + 1
+
+      user_val = teacher ? 'teachers' : 'students'
+
+      redirect_to( '/' + user_val + '/weekly/' + week.to_s)
+    end
   end
 
   def create
     teacher = Teacher.find_by(uni_id: params[:session][:uni_id])
     student = Student.find_by(uni_id: params[:session][:uni_id])
     if student==nil && teacher==nil
-      flash.now[:danger] = 'Invalid id/password combination'
+      flash[:danger] = 'Invalid id/password combination'
       redirect_to root_url
     end
     if teacher!=nil
@@ -28,7 +39,7 @@ class SessionsController < ApplicationController
 
 
       else
-        flash.now[:danger] = 'Invalid id/password combination'
+        flash[:danger] = 'Invalid id/password combination'
         redirect_to root_url
       end
     end
@@ -49,19 +60,16 @@ class SessionsController < ApplicationController
 
 
       else
-        flash.now[:danger] = 'Invalid id/password combination'
+        flash[:danger] = 'Invalid id/password combination'
         redirect_to root_url
       end
     end
   end
-
 
   def destroy
     session.delete(:teacher_id)
     @current_teacher = nil
     redirect_to root_url
   end
-
-
 end
 
