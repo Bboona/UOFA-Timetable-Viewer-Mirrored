@@ -1,3 +1,5 @@
+require 'date'
+
 class SessionsController < ApplicationController
   def new
   end
@@ -12,9 +14,16 @@ class SessionsController < ApplicationController
     if teacher!=nil
       if teacher && teacher.authenticate(params[:session][:password])
         session[:uni_id] = teacher.uni_id
-        session[:forwarding_url] = request.original_url if request.get?
-        redirect_to(session[:forwarding_url] || teacher)
-        session.delete(:forwarding_url)
+
+        # Old redirect
+        # session[:forwarding_url] = request.original_url if request.get?
+        # redirect_to(session[:forwarding_url] || teacher)
+        # session.delete(:forwarding_url)
+
+        # Redirect to current week
+        date = Date.today
+        week = date.cweek + 1
+        redirect_to('/teachers/weekly/' + week.to_s)
 
 
 
@@ -27,10 +36,16 @@ class SessionsController < ApplicationController
     if student!=nil
       if  student &&  student.authenticate(params[:session][:password])
         session[:uni_id] = student.uni_id
-        session[:forwarding_url] = request.original_url if request.get?
-        redirect_to(session[:forwarding_url] || student)
-        session.delete(:forwarding_url)
 
+        # Old redirect
+        #session[:forwarding_url] = request.original_url if request.get?
+        #redirect_to(session[:forwarding_url] || student)
+        #session.delete(:forwarding_url)
+
+        # Redirect to current week
+        date = Date.today
+        week = date.cweek + 1
+        redirect_to('/students/weekly/' + week.to_s)
 
 
       else
