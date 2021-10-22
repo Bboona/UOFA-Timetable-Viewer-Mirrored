@@ -12,3 +12,5 @@ node_modules/
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+db/development.sqlite3
+db/test.sqlite3
