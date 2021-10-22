@@ -116,7 +116,7 @@ class TeachersController < ApplicationController
     end
 
     @teacher = Teacher.where(:uni_id => session[:uni_id]).first
-    @weekly = Weekly.where(:id => params[:id]).first
+    @weekly = Weekly.where(:id => (params[:id].to_i - 9)).first
     week_bit = @weekly.week.to_i
     @activities = Teacher.where(:uni_id => session[:uni_id]).first.activities
     @this_week = Array.new(16){Array.new(7,1)}
