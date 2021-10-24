@@ -160,7 +160,7 @@ student_list = [
 ]
 
 student_password = "foobar"
-i = 0
+i = 1
 student_list.each do |uni_id,first_name,last_name,password|
   t = Student.new
 
@@ -260,7 +260,7 @@ teacher_list = [
 ]
 
 teacher_password = "foobar"
-i = 0
+i = 1
 teacher_list.each do |uni_id,first_name,last_name,password|
   t = Teacher.new
 
@@ -310,9 +310,9 @@ admin_list = [
 ]
 
 admin_password = "foobar"
-i = 0
+i = 1
 admin_list.each do |uni_id,first_name,last_name,password|
-  t = Teacher.new
+  t = Admin.new
 
   t.id = i
   i = i + 1
