@@ -77,24 +77,19 @@ class StudentsController < ApplicationController
       @act_details = []
       @clashes = []
 
-        @day_bits.each_with_index do |day,i|
-          @hours.each_with_index do |time,j|
-            @activities.each do |act|
-              if act.weeks.to_i & week_bit == week_bit && act.hours.to_i & time == time && act.days.to_i & day == day && @act_details.exclude?(act)
-                if @this_week[j][i] == 1
-                  @act_details << act
-                  @this_week[j][i] = act
-                  @hamming_temp = act.hamming_weight
-                  for n in 1..@hamming_temp.to_i-1 do
-                    if j+n < 16
-                      @this_week[j+n][i] = 0
-                    else
-                      break
-                    end
-                  end
-                else
-                  if @clashes.exclude?(act)
-                    @clashes << act
+      @day_bits.each_with_index do |day,i|
+        @hours.each_with_index do |time,j|
+          @activities.each do |act|
+            if act.weeks.to_i & week_bit == week_bit && act.hours.to_i & time == time && act.days.to_i & day == day && @act_details.exclude?(act)
+              if @this_week[j][i] == 1
+                @act_details << act
+                @this_week[j][i] = act
+                @hamming_temp = act.hamming_weight
+                for n in 1..@hamming_temp.to_i-1 do
+                  if j+n < 16
+                    @this_week[j+n][i] = 0
+                  else
+                    break
                   end
                 end
               else
@@ -109,6 +104,7 @@ class StudentsController < ApplicationController
           end
         end
       end
+    end
   end
 
   # GET /students/new

@@ -136,6 +136,7 @@ class TeachersController < ApplicationController
       @hours = [65536,131072,262144,524288,1048576,2097152,4194304,8388608,16777216,33554432,67108864,134217728,268435456,536870912,1073741824,2147483648]
       @act_details = []
       @clashes = []
+
       @day_bits.each_with_index do |day,i|
         @hours.each_with_index do |time,j|
           @activities.each do |act|

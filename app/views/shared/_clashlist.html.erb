@@ -1,0 +1,28 @@
+<div class="row justify-content-center">
+
+  <div class="col-6">
+    <% if !@clashes.nil? %>
+      <table class="table table-sm table-striped table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th>Class name</th>
+            <th>Class code</th>
+            <th>Class type</th>
+            <th>Days</th>
+            <th>Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <%= render partial: 'clash', collection: @clashes %>
+        </tbody>
+      </table>
+    <% else %>
+    <div class="col">
+      <h3>
+        There are no clashes to display.
+      </h3>
+    </div>
+    <% end %>
+  </div>
+
+</div>
