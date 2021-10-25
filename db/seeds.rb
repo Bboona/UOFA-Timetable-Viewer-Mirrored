@@ -159,10 +159,20 @@ student_list = [
   ["a1231250","Frances","Lindsay","acorn"]
 ]
 
+student_password = "foobar"
+i = 1
 student_list.each do |uni_id,first_name,last_name,password|
-  Student.create(:uni_id => uni_id,:first_name => first_name,:last_name => last_name,:password_digest=> password)
-end
+  t = Student.new
 
+  t.id = i
+  i = i + 1
+  t.uni_id = uni_id
+  t.first_name = first_name
+  t.last_name = last_name
+  t.password = student_password
+
+  t.save
+end
 
 student_enrolment = [
   #rosalie
@@ -249,12 +259,22 @@ teacher_list = [
   ["a1670003","Nicki","Hickory","guardheaven"],["a1670004","Delta","Selby","definiteillusion"]
 ]
 
+teacher_password = "foobar"
+i = 1
 teacher_list.each do |uni_id,first_name,last_name,password|
-  Teacher.create(:uni_id => uni_id,:first_name => first_name,:last_name => last_name,:password_digest=> password)
+  t = Teacher.new
+
+  t.id = i
+  i = i + 1
+  t.uni_id = uni_id
+  t.first_name = first_name
+  t.last_name = last_name
+  t.password = teacher_password
+
+  t.save
+  # Teacher.create(:uni_id => uni_id,:first_name => first_name,:last_name => last_name,:password_digest=> password)
 end
-Teacher.create!(uni_id: 'a1781040',
-                first_name: 'shabi',last_name:'da',
-                password_digest: '123456' )
+
 #teacher enrolment
 teacher_enrolment = [
   #aufeef
@@ -289,7 +309,19 @@ admin_list = [
   ["a1000004","Toni","Judith","streetlights"]
 ]
 
+admin_password = "foobar"
+i = 1
 admin_list.each do |uni_id,first_name,last_name,password|
-  Admin.create(:uni_id => uni_id,:first_name => first_name,:last_name => last_name,:password => password)
+  t = Admin.new
+
+  t.id = i
+  i = i + 1
+  t.uni_id = uni_id
+  t.first_name = first_name
+  t.last_name = last_name
+  t.password = admin_password
+
+  t.save
+  # Teacher.create(:uni_id => uni_id,:first_name => first_name,:last_name => last_name,:password_digest=> password)
 end
 #--------------------------------Admins END HERE--------------------------------

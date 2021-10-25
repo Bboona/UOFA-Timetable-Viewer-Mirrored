@@ -1,0 +1,22 @@
+
+<div class="container debug overflow-auto">
+  <p>
+    <strong>Week:</strong>
+    <%= @weekly.week %>
+  </p>
+
+  <p>
+    <strong>Activity:</strong>
+  </p>
+
+  <% @act_details.each do |activity| %>
+    <ul>
+      <li><%= activity.class_name %>
+      <%= activity.class_code %>
+      <%= activity.colour %>
+      <%= activity.days %>
+      <%= activity.hours %></li>
+    </ul>
+  <% end %>
+  </br>
+</div>

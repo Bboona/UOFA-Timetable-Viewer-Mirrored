@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :teachers
   resources :weeklies
   resources :activities
-  root "logins#index"
+  root "sessions#new"
   get "admins" => "admins#index"
   # get "admins" => "admins#index"
   post "admins" => "admins#set_restriction_level"
