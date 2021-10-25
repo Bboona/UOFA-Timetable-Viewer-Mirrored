@@ -13,6 +13,7 @@ class ActivitiesController < ApplicationController
   # GET /activities/new
   def new
     @activity = Activity.new
+    @days = ["Monday","Tuesday","Wedensday","Thursday","Friday"]
   end
 
   # GET /activities/1/edit
