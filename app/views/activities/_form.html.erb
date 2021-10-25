@@ -17,8 +17,33 @@
   </div>
 
   <div class="field">
+    <%= form.label :subject %>
+    <%= form.text_area :subject %>
+  </div>
+
+  <div class="field">
     <%= form.label :class_code %>
-    <%= form.text_field :class_code %>
+    <%= form.text_area :class_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :class_nbr %>
+    <%= form.text_area :class_nbr %>
+  </div>
+
+  <div class="field">
+    <%= form.label :class_type %>
+    <%= form.text_area :class_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :size %>
+    <%= form.text_area :size %>
+  </div>
+
+  <div class="field">
+    <%= form.label :available %>
+    <%= form.text_area :available %>
   </div>
 
   <div class="field">
@@ -27,24 +52,34 @@
   </div>
 
   <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
+    <%= form.label :term %>
+    <%= form.select :term, ["S1", "S2"] %>
   </div>
 
   <div class="field">
     <%= form.label :weeks %>
-    <%= form.text_area :weeks %>
+    <%= form.collection_check_boxes :weeks, Weekly.all, :id, :id %>
+
   </div>
 
   <div class="field">
     <%= form.label :days %>
-    <%= form.text_area :days %>
+    <%= form.collection_check_boxes :weeks, @days, :itself, :itself %>
   </div>
 
   <div class="field">
     <%= form.label :hours %>
-    <%= form.text_area :hours %>
+    <span>From:</span> <input type="time" id="start_time" name="start_time"
+                              min="09:00" max="18:00" required>
+    <span>To: </span>  <input type="time" id="end_time" name="end_time"
+                              min="09:00" max="18:00" required>
   </div>
+
+  <div class="field">
+    <%= form.label :location %>
+    <%= form.text_area :location %>
+  </div>
+
 
   <div class="actions">
     <%= form.submit %>
