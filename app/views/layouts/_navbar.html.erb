@@ -1,12 +1,18 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top justify-content-between">
     <%= link_to root_path do %>
-     <%= image_tag("", width: "50", height: "50", alt: "logo") %>
+     <%#= image_tag("", width: "50", height: "50", alt: "logo") %>
+    <%= fa_icon "calendar", style: "color: white;" %>
     <% end %>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
         <%= link_to 'Home', root_path, class: "nav-link" %>
       </li>
+      <% unless session[:uni_id].nil? %>
+        <li class="nav-item">
+          <%= link_to 'Logout', logout_path, method: :delete, class: "nav-link" %>
+        </li>
+      <% end %>
     </ul>
   </div>
   <a class="navbar-brand p-2" href="#"><%= yield :title %></a>

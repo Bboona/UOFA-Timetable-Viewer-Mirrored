@@ -35,5 +35,7 @@
 </div>
 
 <%= render partial: 'shared/clashlist' %>
-<%= render partial: 'shared/debugmenu' %>
 
+<% if Rails.env.development? %>
+  <%= render partial: 'shared/debugmenu' %>
+<% end %>
