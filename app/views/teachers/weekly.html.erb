@@ -12,6 +12,13 @@
 
 <div class="container">
   <h2>TIMETABLE: WEEKLY VIEW</h2>
+  
+  <% if @restriction_level.level_current > 0 %>
+  <div class="alert alert-warning">
+    Wear a mask! We are at <strong>restriction level <%= @restriction_level.level_name %></strong>.  Click <a href="<%=@SAGov_restrictions_website %>" target="_blank"><strong>here</strong></a> to view the SA Government Activity restriction levels in a new tab.
+  </div>
+  <% end %>
+
   <div id="current-week">
 
     <h3 id="week-start-end"></h3>

@@ -74,6 +74,9 @@ class TeachersController < ApplicationController
   end
   # GET /teachers/weekly/:id
   def weekly
+
+    @restriction_level = RestrictionLevel.first
+
     if @teacher.nil?
       if session[:uni_id].nil?
         redirect_to root_url

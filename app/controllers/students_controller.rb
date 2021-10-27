@@ -12,6 +12,9 @@ class StudentsController < ApplicationController
 
   # GET /students/weekly/:id
   def weekly
+
+    @restriction_level = RestrictionLevel.first
+
     if @student.nil?
       if session[:uni_id].nil?
         redirect_to root_url
