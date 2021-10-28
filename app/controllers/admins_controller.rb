@@ -1,5 +1,7 @@
 class AdminsController < ApplicationController
 
+  before_action :is_admin
+
   SAGov_restrictions_website = "https://www.covid-19.sa.gov.au/restrictions-and-responsibilities/activities-and-gatherings/restriction-levels"
 
 
@@ -29,6 +31,13 @@ class AdminsController < ApplicationController
   def admin_params
     params.require(:admin).permit(:level)
   end
+
+  private
+    def is_admin
+      if Admin.where(:uni_id => session[:uni_id]).first.nil?
+        redirect_to '/students/weekly/' + '44'
+      end
+    end
 
 end
 

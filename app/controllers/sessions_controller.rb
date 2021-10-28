@@ -4,21 +4,27 @@ class SessionsController < ApplicationController
   def new
     unless session[:uni_id].nil?
       teacher = Teacher.find_by(uni_id: session[:uni_id])
+      admin = Admin.find_by(uni_id: session[:uni_id])
 
-      # Redirect to current week
-      date = Date.today
-      week = date.cweek + 1
+      if admin
+        redirect_to ('/admins')
+      else 
+        # Redirect to current week
+        date = Date.today
+        week = date.cweek + 1
 
-      user_val = teacher ? 'teachers' : 'students'
+        user_val = teacher ? 'teachers' : 'students'
 
-      redirect_to( '/' + user_val + '/weekly/' + week.to_s)
+        redirect_to( '/' + user_val + '/weekly/' + week.to_s)
+      end
     end
   end
 
   def create
     teacher = Teacher.find_by(uni_id: params[:session][:uni_id])
     student = Student.find_by(uni_id: params[:session][:uni_id])
-    if student==nil && teacher==nil
+    admin = Admin.find_by(uni_id: params[:session][:uni_id])
+    if student==nil && teacher==nil && admin==nil
       flash[:danger] = 'Invalid id/password combination'
       redirect_to root_url
     end
@@ -64,10 +70,24 @@ class SessionsController < ApplicationController
         redirect_to root_url
       end
     end
+
+    if admin!=nil
+      if  admin &&  admin.authenticate(params[:session][:password])
+        session[:uni_id] = admin.uni_id
+
+        # Redirect to admins
+        redirect_to('/admins')
+
+
+      else
+        flash[:danger] = 'Invalid id/password combination'
+        redirect_to root_url
+      end
+    end
   end
 
   def destroy
-    session.delete(:teacher_id)
+    session.delete(:uni_id)
     @current_teacher = nil
     redirect_to root_url
   end

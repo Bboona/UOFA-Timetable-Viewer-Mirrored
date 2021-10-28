@@ -1,5 +1,6 @@
 class TeachersController < ApplicationController
   before_action :set_teacher, only: %i[ show edit update destroy weekly ]
+  before_action :admin_only, only: %i[ index show edit update destroy ]
 
   # GET /teachers or /teachers.json
   def index
@@ -78,7 +79,13 @@ class TeachersController < ApplicationController
       if session[:uni_id].nil?
         redirect_to root_url
       else
-        redirect_to '/students/weekly/' + params[:id]
+        admin = Admin.find_by(uni_id: session[:uni_id])
+
+        if admin
+          redirect_to ('/admins')
+        else 
+          redirect_to '/students/weekly/' + params[:id]
+        end
       end
     else
       if params[:id].to_i < 1
@@ -222,5 +229,13 @@ class TeachersController < ApplicationController
   # Only allow a list of trusted parameters through.
   def teacher_params
     params.require(:teacher).permit(:uni_id, :first_name, :last_name,:password)
+  end
+
+  def admin_only
+    admin = Admin.find_by(uni_id: session[:uni_id])
+
+    unless admin 
+      redirect_to root_path
+    end
   end
 end
