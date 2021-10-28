@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :weekly do
+  factory :weekly_view do
     
   end
 end
