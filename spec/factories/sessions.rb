@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :activity do
+  factory :sessions do
     
   end
 end
