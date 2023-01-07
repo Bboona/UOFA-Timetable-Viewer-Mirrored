@@ -27,3 +27,5 @@
   
  * Down buttom you can see a list of classes/meetings which have a clash with your other classes
 
+# Video demo of the application
+* https://youtu.be/mc_rWxFKouw
